@@ -1,11 +1,55 @@
-body{
-    font-family: sans-serif;
+@import "vars";
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
     background: black;
     color:white;
-    a{
-        color: rgb(157, 232, 157);
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+nav {
+    a {
+        margin: 0 0.6rem;
+        color:white;
+        &:hover {
+            color: $primary;
+        }
     }
     .current {
-        color: lightsalmon;
+        color: $primary;
     }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#home {
+    margin: 3rem 0;
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
 }

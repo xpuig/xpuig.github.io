@@ -1,8 +1,39 @@
+.container-fluid {
+  padding: 0; }
+
 body {
-  font-family: sans-serif;
+  font-family: "Courier New", Courier, monospace;
   background: black;
   color: white; }
-  body a {
+
+a {
+  text-decoration: none;
+  color: #9de89d; }
+  a:hover {
+    text-decoration: none;
+    color: white; }
+
+nav a {
+  margin: 0 0.6rem;
+  color: white; }
+  nav a:hover {
     color: #9de89d; }
-  body .current {
-    color: lightsalmon; }
+nav .current {
+  color: #9de89d; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+#home {
+  margin: 3rem 0; }
+  #home h1 {
+    font-size: 3rem;
+    font-weight: 600; }
+
+footer {
+  text-align: center;
+  padding: 1rem; }

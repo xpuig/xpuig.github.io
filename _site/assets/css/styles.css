@@ -1,3 +1,8 @@
-body { font-family: sans-serif; background: black; color: white; }
-body a { color: #9de89d; }
-body .current { color: yellow; }
+body {
+  font-family: sans-serif;
+  background: black;
+  color: white; }
+  body a {
+    color: #9de89d; }
+  body .current {
+    color: lightsalmon; }

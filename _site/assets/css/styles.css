@@ -14,6 +14,8 @@
   padding: .3rem .3rem; }
 
 body {
+  background-image: url("/assets/img/noise.png");
+  background-repeat: repeat;
   font-family: "Ubuntu Mono", sans-serif;
   background-color: #2D2A27;
   color: white;

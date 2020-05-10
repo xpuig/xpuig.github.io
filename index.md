@@ -12,7 +12,7 @@ title: Home
             <p>Echa un vistazo a mi <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>.</p>
         </div>
         <div class="col-sm-12 col-md-6">
-            <img src="assets/img/rocks.png">
+            <!--<img src="assets/img/rocks.png">-->
         </div>
     </div>
 </section>

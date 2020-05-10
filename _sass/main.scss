@@ -4,10 +4,31 @@
     padding: 0;
 }
 
+.navbar-dark .navbar-toggler {
+    border:0;
+    color: white;
+}
+
 body {
-    font-family: "Courier New", Courier, monospace;
-    background: black;
+    font-family: $f-base;
+    background: $main-bg;
     color:white;
+}
+
+h1, h2, h3, h4 {
+    font-family: $f-light;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 a {
@@ -43,9 +64,21 @@ li {
 
 #home {
     margin: 3rem 0;
-    h1 {
-        font-size: 3rem;
-        font-weight: 600;
+    @media (min-width: $mq-tablet) {
+        margin: 10rem 0;
+    }
+}
+
+.home_posts {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    margin:2rem 0 4rem;
+    @media (min-width: $mq-tablet) {
+        -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
     }
 }
 

@@ -1,14 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
 .container-fluid {
   padding: 0; }
 
+.navbar-dark .navbar-toggler {
+  border: 0;
+  color: white; }
+
 body {
   font-family: "Courier New", Courier, monospace;
-  background: black;
+  background: #0d132b;
   color: white; }
+
+h1, h2, h3, h4 {
+  font-family: "Lalezar", serif; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
 
 a {
   text-decoration: none;
-  color: #9de89d; }
+  color: #00FF00; }
   a:hover {
     text-decoration: none;
     color: white; }
@@ -17,9 +34,9 @@ nav a {
   margin: 0 0.6rem;
   color: white; }
   nav a:hover {
-    color: #9de89d; }
+    color: #00FF00; }
 nav .current {
-  color: #9de89d; }
+  color: #00FF00; }
 
 ul {
   margin: 0;
@@ -30,9 +47,21 @@ li {
 
 #home {
   margin: 3rem 0; }
-  #home h1 {
-    font-size: 3rem;
-    font-weight: 600; }
+  @media (min-width: 768px) {
+    #home {
+      margin: 10rem 0; } }
+
+.home_posts {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  margin: 2rem 0 4rem; }
+  @media (min-width: 768px) {
+    .home_posts {
+      -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto; } }
 
 footer {
   text-align: center;

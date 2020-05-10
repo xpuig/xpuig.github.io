@@ -1,1 +1,17 @@
-$primary: #9de89d;
+////****** Colors ******////
+
+$main-bg: #0d132b;
+$primary: #00FF00;
+
+////****** Breakpoints ******////
+
+$mq-mobile: 480px;
+$mq-tablet: 768px;
+$mq-desktop: 1200px;
+
+////****** Tipografía ******////
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+$f-base: 'Courier New', Courier, monospace;
+$f-light: 'Lalezar',serif;

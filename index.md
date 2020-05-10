@@ -6,7 +6,7 @@ title: Home
 <section id="home">
     <div class="row align-items-center">
         <div class="col-12">
-            <h1>{{ "Hello World!" | upcase }}</h1>
+            <h1>{{ "Hello World" | upcase }} 👋</h1>
             <p>Soy diseñador de producto y a ratos hago lo que puedo con el código.</p>
             <p>Me he especializado en Design Research en <a href="https://www.uxerschool.com" target="_blank">@Uxer School</a> y en Usabilidad en la <a href="https://www.uoc.edu" target="_blank">@UOC</a>.<br>
             Actualmente trabajo en Yournewself como UX/UI y diseñador de producto.</p>

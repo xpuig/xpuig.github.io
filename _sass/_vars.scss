@@ -18,3 +18,14 @@ $mq-desktop: 1200px;
 
 $f-base: 'Ubuntu Mono',sans-serif;
 $f-light: 'Rubik',serif;
+
+@font-face {
+    font-family: 'Pixelogist';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pixelogist'),
+         url('/assets/fonts/Pixelogist.woff2') format('woff2'),
+         url('/assets/fonts/Pixelogist.woff') format('woff'),
+         url('/assets/fonts/Pixelogist.ttf') format('truetype'),
+         url('/assets/fonts/Pixelogist.eot') format('embedded-opentype');
+  }

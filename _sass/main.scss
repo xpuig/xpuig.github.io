@@ -33,10 +33,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-family: 'Pixelogist', $f-light, sans-serif;
+    font-size: 2rem;
     margin: 2rem 0;
     @media (min-width: $mq-tablet) {
         margin: 4rem 0;
+        font-size: 3rem;
     }
 }
 

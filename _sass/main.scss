@@ -5,15 +5,13 @@
     padding: 0;
 }
 
-.navbar-dark .navbar-toggler {
-    border:0;
+.navbar-light .navbar-toggler{
+    background-color: wheat;
+    border:none;
+    padding: .3rem .3rem;
 }
 
 body {
-    background-image: url("/assets/img/bg_home.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0 -4rem;
     font-family: $f-base;
     background-color: $base;
     color: white;
@@ -21,6 +19,10 @@ body {
 }
 
 header {
+    padding: 0;
+    @media (min-width: $mq-tablet) {
+        padding: 2rem 0;
+    }
 }
 
 h1, h2, h3, h4 {
@@ -30,7 +32,10 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 3rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
+    @media (min-width: $mq-tablet) {
+        margin: 4rem 0;
+    }
 }
 
 h2 {
@@ -51,10 +56,10 @@ a {
 }
 
 nav {
+
     a {
         margin: 0 0.6rem;
         color: white;
-        padding: 2rem 0;
         text-transform: uppercase;
         font-family: $f-light;
     }
@@ -100,6 +105,7 @@ li {
     .post {
         border: .1rem solid rgba(255,255,255,.1);
         padding: 2rem 2rem 1rem;
+        border-radius: 1rem;
     }
 }
 

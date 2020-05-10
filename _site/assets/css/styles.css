@@ -8,18 +8,22 @@
 .container-fluid {
   padding: 0; }
 
-.navbar-dark .navbar-toggler {
-  border: 0; }
+.navbar-light .navbar-toggler {
+  background-color: wheat;
+  border: none;
+  padding: .3rem .3rem; }
 
 body {
-  background-image: url("/assets/img/bg_home.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 -4rem;
   font-family: "Ubuntu Mono", sans-serif;
   background-color: #2D2A27;
   color: white;
   font-size: 1rem; }
+
+header {
+  padding: 0; }
+  @media (min-width: 768px) {
+    header {
+      padding: 2rem 0; } }
 
 h1, h2, h3, h4 {
   font-family: "Rubik", serif;
@@ -27,7 +31,10 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3rem;
-  margin: 4rem 0; }
+  margin: 2rem 0; }
+  @media (min-width: 768px) {
+    h1 {
+      margin: 4rem 0; } }
 
 h2 {
   font-size: 2rem; }
@@ -45,7 +52,6 @@ a {
 nav a {
   margin: 0 0.6rem;
   color: white;
-  padding: 2rem 0;
   text-transform: uppercase;
   font-family: "Rubik", serif; }
 nav .current {
@@ -83,7 +89,8 @@ li {
       grid-template-columns: auto auto auto; } }
   .home_posts .post {
     border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    padding: 2rem 2rem 1rem; }
+    padding: 2rem 2rem 1rem;
+    border-radius: 1rem; }
 
 footer {
   text-align: center;

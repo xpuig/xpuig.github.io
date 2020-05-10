@@ -11,9 +11,11 @@
     {% seo %}
   </head>
   <body>
-    <div class="container-fluid">
-      {% include navigation.html %}
-    </div>
+    <header>
+      <div class="container">
+        {% include navigation.html %}
+      </div>
+    </header>
     <div class="container">
       {{ content }}
     </div>

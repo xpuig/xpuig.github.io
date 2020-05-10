@@ -1,4 +1,5 @@
 @import "vars";
+@import "posts";
 
 .container-fluid {
     padding: 0;
@@ -6,21 +7,28 @@
 
 .navbar-dark .navbar-toggler {
     border:0;
-    color: white;
+    color: $base;
 }
 
 body {
     font-family: $f-base;
-    background: $main-bg;
-    color:white;
+    background: white;
+    color: #777;
+    font-size: 1rem;
+}
+
+header {
+    background: $base;
 }
 
 h1, h2, h3, h4 {
     font-family: $f-light;
+    color: $base;
 }
 
 h1 {
     font-size: 3rem;
+    margin: 4rem 0;
 }
 
 h2 {
@@ -33,20 +41,20 @@ h3 {
 
 a {
     text-decoration: none;
-    color: $primary;
+    color: $base;
     &:hover {
         text-decoration: none;
-        color: white;
+        color: $primary;
     }
 }
 
 nav {
     a {
         margin: 0 0.6rem;
-        color:white;
-        &:hover {
-            color: $primary;
-        }
+        color: white;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-family: $f-light;
     }
     .current {
         color: $primary;
@@ -80,9 +88,18 @@ li {
         -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
+    @media (min-width: $mq-desktop) {
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    .post {
+        border: .1rem solid $base;
+        padding: 2rem 2rem 1rem;
+    }
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 3rem 0;
+    background: $base;
 }

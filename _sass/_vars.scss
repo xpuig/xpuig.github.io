@@ -1,8 +1,9 @@
 ////****** Colors ******////
 
-$main-bg: #0d132b;
-$primary: #00FF00;
-
+$main-bg: #f3f3f3;
+$base: #000;
+$primary: #a85349;
+$light: #aeb3bb;
 ////****** Breakpoints ******////
 
 $mq-mobile: 480px;
@@ -12,6 +13,8 @@ $mq-desktop: 1200px;
 ////****** Tipografía ******////
 
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$f-base: 'Courier New', Courier, monospace;
-$f-light: 'Lalezar',serif;
+$f-base: 'Ubuntu Mono',sans-serif;
+$f-light: 'Rubik',serif;

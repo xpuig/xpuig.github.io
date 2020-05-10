@@ -12,8 +12,9 @@ title: Home
 <h2>{{ "Últimos posts" | upcase }}</h2>
 
 <ul class="home_posts">
+
   {% for post in site.posts %}
-    <li>
+    <li class="post">
       <h3>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h3>

@@ -1,21 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.info-post {
+  text-transform: uppercase;
+  color: #aeb3bb; }
+
 .container-fluid {
   padding: 0; }
 
 .navbar-dark .navbar-toggler {
   border: 0;
-  color: white; }
+  color: #000; }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  background: #0d132b;
-  color: white; }
+  font-family: "Ubuntu Mono", sans-serif;
+  background: white;
+  color: #777;
+  font-size: 1rem; }
+
+header {
+  background: #000; }
 
 h1, h2, h3, h4 {
-  font-family: "Lalezar", serif; }
+  font-family: "Rubik", serif;
+  color: #000; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  margin: 4rem 0; }
 
 h2 {
   font-size: 2rem; }
@@ -25,18 +37,19 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #00FF00; }
+  color: #000; }
   a:hover {
     text-decoration: none;
-    color: white; }
+    color: #a85349; }
 
 nav a {
   margin: 0 0.6rem;
-  color: white; }
-  nav a:hover {
-    color: #00FF00; }
+  color: white;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-family: "Rubik", serif; }
 nav .current {
-  color: #00FF00; }
+  color: #a85349; }
 
 ul {
   margin: 0;
@@ -62,7 +75,15 @@ li {
     .home_posts {
       -ms-grid-columns: auto auto;
       grid-template-columns: auto auto; } }
+  @media (min-width: 1200px) {
+    .home_posts {
+      -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto; } }
+  .home_posts .post {
+    border: 0.1rem solid #000;
+    padding: 2rem 2rem 1rem; }
 
 footer {
   text-align: center;
-  padding: 1rem; }
+  padding: 3rem 0;
+  background: #000; }

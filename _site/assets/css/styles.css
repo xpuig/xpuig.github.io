@@ -49,15 +49,17 @@ a {
   color: #F6DFB4; }
   a:hover {
     text-decoration: none;
-    color: #a85349; }
+    color: #F74121; }
 
+nav img {
+  max-width: 30px; }
 nav a {
   margin: 0 0.6rem;
   color: white;
   text-transform: uppercase;
   font-family: "Rubik", serif; }
 nav .current {
-  color: #a85349; }
+  color: #F74121; }
 
 ul {
   margin: 0;
@@ -66,7 +68,17 @@ ul {
 li {
   list-style: none; }
 
+#hero {
+  /*background-image: url("/assets/img/0cvffgS.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;*/
+  margin-bottom: 4rem; }
+  #hero img {
+    width: 100%; }
+
 #home {
+  text-align: center;
   margin: 3rem 0; }
   @media (min-width: 768px) {
     #home {

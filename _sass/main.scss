@@ -58,7 +58,9 @@ a {
 }
 
 nav {
-
+    img {
+        max-width: 30px;
+    }
     a {
         margin: 0 0.6rem;
         color: white;
@@ -79,7 +81,19 @@ li {
     list-style: none;
 }
 
+#hero {
+    /*background-image: url("/assets/img/0cvffgS.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;*/
+    img {
+        width: 100%;
+    }
+    margin-bottom: 4rem;
+}
+
 #home {
+    text-align: center;
     margin: 3rem 0;
     @media (min-width: $mq-tablet) {
         margin: 1rem 0 8rem;

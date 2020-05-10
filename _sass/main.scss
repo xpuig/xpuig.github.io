@@ -33,12 +33,15 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-family: 'Pixelogist', $f-light, sans-serif;
     font-size: 2rem;
     margin: 2rem 0;
     @media (min-width: $mq-tablet) {
         margin: 4rem 0;
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+    @media (min-width: $mq-desktop) {
+        margin: 4rem 0;
+        font-size: 6rem;
     }
 }
 
@@ -126,11 +129,13 @@ li {
 }
 
 #blog {
+    text-align: center;
     border-top: 2px dashed rgba(255,255,255,.2);
     padding: 4rem 0;
 }
 
 #home {
+    
     text-align: center;
     margin: 3rem 0;
     @media (min-width: $mq-tablet) {
@@ -167,4 +172,14 @@ li {
 footer {
     text-align: center;
     padding: 3rem 0;
+    li {
+        display: inline-block;
+        margin: 0 1rem 0 0;
+    }
+    @media (max-width: $mq-tablet) {
+        .item_footer {
+            width:100%;
+            margin-bottom: 1rem;
+        }
+    }
 }

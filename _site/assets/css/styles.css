@@ -72,7 +72,8 @@ li {
     #home {
       margin: 1rem 0 8rem; } }
   #home img {
-    width: 100%; }
+    width: 100%;
+    margin-top: 5rem; }
 
 .home_posts {
   display: -ms-grid;

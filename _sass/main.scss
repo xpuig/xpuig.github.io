@@ -73,6 +73,36 @@ nav {
     .current {
         color: $primary;
     }
+    ul {
+        margin: 0 !important;
+        width: 100%;
+        display: block;
+        @media (min-width: $mq-tablet) {
+            width: 300px;
+            display: flex;
+        }
+    }
+    li {
+        display: inline-block;
+        
+    }
+}
+
+.navbar-brand {
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+    @media (min-width: $mq-tablet) {
+        width: auto;
+        margin:0 1rem 0 0;
+    }
+}
+
+.navbar-nav {
+    display: block;
+    @media (max-width: $mq-tablet) {
+        text-align: center;
+    }
 }
 
 ul {

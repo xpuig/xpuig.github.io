@@ -3,10 +3,18 @@ layout: default
 title: Home
 ---
 <section id="home">
-    <h1>{{ "Hello World!" | upcase }}</h1>
-    
-    <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.</p>
-    <p>The most common cultivar group of kiwifruit is oval, about the size of a large hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in diameter). It has a fibrous, dull greenish-brown skin and bright green or golden flesh with rows of tiny, black, edible seeds. The fruit has a soft texture, with a sweet and unique flavor.</p>
+    <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6">
+            <h1>{{ "Hello World!" | upcase }}</h1>
+            <p>Soy diseñador de producto y a ratos hago lo que puedo con el código.</p>
+            <p>Me he especializado en Design Research en <a href="https://www.uxerschool.com" target="_blank">@Uxer School</a> y en Usabilidad en la <a href="https://www.uoc.edu" target="_blank">@UOC</a>.<br>
+            Actualmente trabajo en Yournewself como UX/UI y diseñador de producto.</p>
+            <p>Echa un vistazo a mi <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>.</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            
+        </div>
+    </div>
 </section>
 
 <h2>{{ "Últimos posts" | upcase }}</h2>

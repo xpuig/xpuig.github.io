@@ -12,13 +12,14 @@
   border: 0; }
 
 body {
+  background-image: url("/assets/img/bg_home.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 -4rem;
   font-family: "Ubuntu Mono", sans-serif;
-  background: #2D2A27;
+  background-color: #2D2A27;
   color: white;
   font-size: 1rem; }
-
-header {
-  background: #2D2A27; }
 
 h1, h2, h3, h4 {
   font-family: "Rubik", serif;
@@ -61,7 +62,9 @@ li {
   margin: 3rem 0; }
   @media (min-width: 768px) {
     #home {
-      margin: 7rem 0 8rem; } }
+      margin: 1rem 0 8rem; } }
+  #home img {
+    width: 100%; }
 
 .home_posts {
   display: -ms-grid;
@@ -83,6 +86,8 @@ li {
     padding: 2rem 2rem 1rem; }
 
 footer {
+  background-image: url("/assets/img/ground.png");
+  background-repeat: repeat-x;
   text-align: center;
-  padding: 3rem 0;
-  background: #2D2A27; }
+  padding: 3rem 0 8rem;
+  background-size: 20%; }

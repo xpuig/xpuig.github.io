@@ -18,20 +18,22 @@ title: Home
     </div>
 </section>
 
-<section id="hero">
+<!--<section id="hero">
     <img src="assets/img/0cvffgS.gif">
+</section>-->
+
+<section id="blog">
+    <h2>{{ "Últimos posts" | upcase }}</h2>
+
+    <ul class="home_posts">
+
+    {% for post in site.posts %}
+        <li class="post">
+        <h3>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        {{ post.excerpt }}
+        </li>
+    {% endfor %}
+    </ul>
 </section>
-
-<h2>{{ "Últimos posts" | upcase }}</h2>
-
-<ul class="home_posts">
-
-  {% for post in site.posts %}
-    <li class="post">
-      <h3>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>

@@ -39,17 +39,17 @@ h1 {
       margin: 4rem 0; } }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 a {
   text-decoration: none;
   color: #F6DFB4; }
   a:hover {
     text-decoration: none;
-    color: #F74121; }
+    color: #a85349; }
 
 nav img {
   max-width: 30px; }
@@ -57,9 +57,10 @@ nav a {
   margin: 0 0.6rem;
   color: white;
   text-transform: uppercase;
-  font-family: "Rubik", serif; }
+  font-family: "Rubik", serif;
+  font-size: 0.9rem; }
 nav .current {
-  color: #F74121; }
+  color: #a85349; }
 
 ul {
   margin: 0;
@@ -76,6 +77,10 @@ li {
   margin-bottom: 4rem; }
   #hero img {
     width: 100%; }
+
+#blog {
+  border-top: 2px dashed rgba(255, 255, 255, 0.2);
+  padding: 4rem 0; }
 
 #home {
   text-align: center;

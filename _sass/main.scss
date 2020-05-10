@@ -7,13 +7,12 @@
 
 .navbar-dark .navbar-toggler {
     border:0;
-    color: $base;
 }
 
 body {
     font-family: $f-base;
-    background: white;
-    color: #777;
+    background: $base;
+    color: white;
     font-size: 1rem;
 }
 
@@ -23,7 +22,7 @@ header {
 
 h1, h2, h3, h4 {
     font-family: $f-light;
-    color: $base;
+    color: $light;
 }
 
 h1 {
@@ -41,7 +40,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: $base;
+    color: $light;
     &:hover {
         text-decoration: none;
         color: $primary;
@@ -52,7 +51,7 @@ nav {
     a {
         margin: 0 0.6rem;
         color: white;
-        padding: 1rem 0;
+        padding: 2rem 0;
         text-transform: uppercase;
         font-family: $f-light;
     }
@@ -73,7 +72,7 @@ li {
 #home {
     margin: 3rem 0;
     @media (min-width: $mq-tablet) {
-        margin: 10rem 0;
+        margin: 7rem 0 8rem;
     }
 }
 
@@ -93,7 +92,7 @@ li {
         grid-template-columns: auto auto auto;
     }
     .post {
-        border: .1rem solid $base;
+        border: .1rem solid rgba(255,255,255,.1);
         padding: 2rem 2rem 1rem;
     }
 }

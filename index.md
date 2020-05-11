@@ -27,15 +27,21 @@ title: Home
 
     <ul class="home_posts">
 
-    {% for post in site.posts %}
-        <li class="post">
-        <img src="{{ post.featured_img }}" class="img_post"/>
-        <h3>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        
-        {{ post.excerpt }}
-        </li>
+    {% for post in site.posts limit: 3 %}
+        {% if post == 2 %}
+            {% break %}
+        {% else %}
+            <li class="post">
+            <img src="{{ post.featured_img }}" class="img_post"/>
+            <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            
+            {{ post.excerpt }}
+            </li>
+        {% endif %}
     {% endfor %}
     </ul>
+
+    Si te parece interesante, puedes seguir leyendo el <a href="blog">resto de artículos</a>
 </section>

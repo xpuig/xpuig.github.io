@@ -114,7 +114,7 @@ li {
 
 #blog {
   text-align: center;
-  border-top: 2px dashed rgba(255, 255, 255, 0.2);
+  border-top: 2px dotted rgba(255, 255, 255, 0.1);
   padding: 4rem 0; }
 
 #home {

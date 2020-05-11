@@ -169,9 +169,22 @@ li {
     }
     .post {
         border: .1rem solid rgba(255,255,255,.1);
-        padding: 2rem 2rem 1rem;
+        /*padding: 2rem 2rem 1rem;*/
+        overflow: hidden;
         border-radius: 1rem;
+        h3 {
+            font-size: 2rem;
+            margin: 1rem 2rem;
+        }
+        p {
+            margin: 1rem 2rem 3rem;
+        }
     }
+}
+
+.img_post {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 footer {

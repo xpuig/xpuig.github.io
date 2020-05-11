@@ -29,9 +29,11 @@ title: Home
 
     {% for post in site.posts %}
         <li class="post">
+        <img src="{{ post.featured_img }}" class="img_post"/>
         <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
+        
         {{ post.excerpt }}
         </li>
     {% endfor %}

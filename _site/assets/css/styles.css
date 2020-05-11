@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@font-face {
-  font-family: 'Pixelogist';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Pixelogist"), url("/assets/fonts/Pixelogist.woff2") format("woff2"), url("/assets/fonts/Pixelogist.woff") format("woff"), url("/assets/fonts/Pixelogist.ttf") format("truetype"), url("/assets/fonts/Pixelogist.eot") format("embedded-opentype"); }
 .info-post {
   text-transform: uppercase;
   color: #F6DFB4; }
@@ -149,8 +144,18 @@ li {
       grid-template-columns: auto auto auto; } }
   .home_posts .post {
     border: 0.1rem solid rgba(255, 255, 255, 0.1);
-    padding: 2rem 2rem 1rem;
+    /*padding: 2rem 2rem 1rem;*/
+    overflow: hidden;
     border-radius: 1rem; }
+    .home_posts .post h3 {
+      font-size: 2rem;
+      margin: 1rem 2rem; }
+    .home_posts .post p {
+      margin: 1rem 2rem 3rem; }
+
+.img_post {
+  width: 100%;
+  margin-bottom: 1rem; }
 
 footer {
   text-align: center;

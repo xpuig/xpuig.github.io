@@ -153,7 +153,7 @@ li {
     overflow: hidden;
     border-radius: 1rem; }
     .home_posts .post h3 {
-      font-size: 2rem;
+      font-size: 1.4rem;
       margin: 1rem 2rem; }
     .home_posts .post p {
       margin: 1rem 2rem 3rem; }
@@ -196,7 +196,7 @@ li {
     overflow: hidden;
     border-radius: 1rem; }
     #blog-page li h3 {
-      font-size: 2rem;
+      font-size: 1.4rem;
       margin: 1rem 2rem; }
     #blog-page li p {
       margin: 1rem 2rem 3rem; }

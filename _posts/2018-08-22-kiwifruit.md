@@ -6,6 +6,14 @@ featured_img: /assets/img/test.png
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
 berry of several species of woody vines in the genus Actinidia.
 
+`
+            <li class="post">
+            <img src="{{ post.featured_img }}" class="img_post"/>
+            <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+`
+
 The most common cultivar group of kiwifruit is oval, about the size of a large
 hen's egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
 diameter). It has a fibrous, dull greenish-brown skin and bright green or

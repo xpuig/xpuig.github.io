@@ -18,10 +18,6 @@ title: Home
     </div>
 </section>
 
-<!--<section id="hero">
-    <img src="assets/img/0cvffgS.gif">
-</section>-->
-
 <section id="blog">
     <h2>{{ "Últimos posts" | upcase }}</h2>
 

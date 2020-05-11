@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .info-post {
   text-transform: uppercase;
-  color: #F6DFB4; }
+  color: #FFB394; }
 
 html {
   cursor: url("/assets/img/cursor.png"), url("/assets/img/cursor.png"), auto; }
@@ -20,7 +20,7 @@ body {
   background-image: url("/assets/img/noise.png");
   background-repeat: repeat;
   font-family: "Ubuntu Mono", sans-serif;
-  background-color: #2D2A27;
+  background-color: #221C2A;
   color: white;
   font-size: 1rem; }
 
@@ -32,7 +32,7 @@ header {
 
 h1, h2, h3, h4 {
   font-family: "Rubik", serif;
-  color: #F6DFB4; }
+  color: #FFB394; }
 
 h1 {
   font-size: 2rem;
@@ -55,7 +55,7 @@ h3 {
 a {
   text-decoration: none;
   cursor: url("/assets/img/cursor.png"), url("/assets/img/cursor.png"), auto;
-  color: #F6DFB4; }
+  color: #FFB394; }
   a:hover {
     text-decoration: none;
     color: #a85349; }

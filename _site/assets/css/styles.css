@@ -10,6 +10,9 @@
   text-transform: uppercase;
   color: #F6DFB4; }
 
+html {
+  cursor: url("/assets/img/cursor.png"), url("/assets/img/cursor.png"), auto; }
+
 .container-fluid {
   padding: 0; }
 
@@ -56,6 +59,7 @@ h3 {
 
 a {
   text-decoration: none;
+  cursor: url("/assets/img/cursor.png"), url("/assets/img/cursor.png"), auto;
   color: #F6DFB4; }
   a:hover {
     text-decoration: none;

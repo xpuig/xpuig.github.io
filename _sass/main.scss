@@ -1,6 +1,10 @@
 @import "vars";
 @import "posts";
 
+html {
+    cursor: $cursor;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -55,6 +59,7 @@ h3 {
 
 a {
     text-decoration: none;
+    cursor: $cursor;
     color: $light;
     &:hover {
         text-decoration: none;

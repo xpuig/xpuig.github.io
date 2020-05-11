@@ -47,7 +47,8 @@ h1 {
       font-size: 6rem; } }
 
 h2 {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4); }
 
 h3 {
   font-size: 2rem; }
@@ -69,7 +70,7 @@ nav a {
   font-family: "Rubik", serif;
   font-size: 0.9rem; }
 nav .current {
-  color: #a85349; }
+  color: #FFB394; }
 nav ul {
   margin: 0 !important;
   width: 100%;
@@ -157,9 +158,46 @@ li {
     .home_posts .post p {
       margin: 1rem 2rem 3rem; }
 
+.post-title {
+  font-size: 3rem; }
+
 .img_post {
   width: 100%;
   margin-bottom: 1rem; }
+
+#about {
+  max-width: 700px;
+  margin-bottom: 4rem; }
+  #about h1 {
+    font-size: 3rem; }
+
+#blog-page h1 {
+  font-size: 3rem; }
+#blog-page ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  margin: 2rem 0 4rem; }
+  @media (min-width: 768px) {
+    #blog-page ul {
+      -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto; } }
+  @media (min-width: 1200px) {
+    #blog-page ul {
+      -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto; } }
+#blog-page li {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  /*padding: 2rem 2rem 1rem;*/
+  overflow: hidden;
+  border-radius: 1rem; }
+  #blog-page li h3 {
+    font-size: 2rem;
+    margin: 1rem 2rem; }
+  #blog-page li p {
+    margin: 1rem 2rem 3rem; }
 
 footer {
   text-align: center;

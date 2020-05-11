@@ -51,6 +51,7 @@ h1 {
 
 h2 {
     font-size: 1rem;
+    color: rgba(255,255,255,.4)
 }
 
 h3 {
@@ -79,7 +80,7 @@ nav {
         font-size: 0.9rem;
     }
     .current {
-        color: $primary;
+        color: $light;
     }
     ul {
         margin: 0 !important;
@@ -187,9 +188,56 @@ li {
     }
 }
 
+.post-title {
+    font-size: 3rem;
+}
+
 .img_post {
     width: 100%;
     margin-bottom: 1rem;
+}
+
+#about {
+    max-width: 700px;
+    margin-bottom: 4rem;
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+#blog-page {
+    h1 {
+        font-size: 3rem;
+    }
+    ul {
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 20px;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+        margin:2rem 0 4rem;
+    @media (min-width: $mq-tablet) {
+        -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    }
+    @media (min-width: $mq-desktop) {
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+    }
+    li {
+        border: .1rem solid rgba(255,255,255,.1);
+        /*padding: 2rem 2rem 1rem;*/
+        overflow: hidden;
+        border-radius: 1rem;
+        h3 {
+            font-size: 2rem;
+            margin: 1rem 2rem;
+        }
+        p {
+            margin: 1rem 2rem 3rem;
+        }
+    }
 }
 
 footer {

@@ -33,6 +33,7 @@ title: Home
                 {% endfor %}
                 <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>      
                 {{ post.excerpt }}
+                {{ post.categories | join: ', ' }}
             </li>
         {% endfor %}
     </ul>

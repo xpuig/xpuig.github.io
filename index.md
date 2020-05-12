@@ -12,32 +12,29 @@ title: Home
             Actualmente trabajo en Yournewself como UX/UI y diseñador de producto.</p>
             <p>Echa un vistazo a mi <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>.</p>
         </div>
-        <!--<div class="col-sm-12 col-md-6">
-            <img src="assets/img/bg_home.gif">
-        </div>-->
     </div>
 </section>
 
 <section id="blog">
-    <h2>{{ "Últimos posts" | upcase }}</h2>
-
+    <h2>{{ "Últimos posts" | upcase }}</h2>  
     <ul class="home_posts">
-
-    {% for post in site.posts limit: 3 %}
-        {% if post == 2 %}
-            {% break %}
-        {% else %}
+        {% for post in site.posts limit: 3 %}
             <li class="post">
-            <img src="{{ post.featured_img }}" class="img_post"/>
-            <h3>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-            </h3>
-            
-            {{ post.excerpt }}
+                {% assign foundImage = 0 %}
+                {% assign images = post.content | split:"<img " %}
+                {% for image in images %}
+                    {% if image contains 'src' %}
+                        {% if foundImage == 0 %}
+                        {% assign html = image | split:"/>" | first %}
+                        <img {{ html }} class="img_post"/>
+                        {% assign foundImage = 1 %}
+                    {% endif %}
+                    {% endif %}
+                {% endfor %}
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>      
+                {{ post.excerpt }}
             </li>
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
     </ul>
-
-    Si te parece interesante, puedes seguir leyendo el <a href="blog">resto de artículos</a>
+    <span>Si te parece interesante, puedes seguir leyendo el <a href="blog">resto de artículos</a></span>
 </section>

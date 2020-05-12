@@ -6,13 +6,26 @@ title: Blog
 <section id="blog-page">
   <h1>{{ "Blog" | upcase }}</h1>
 
-  <ul>
+  <ul class="home_posts">
     {% for post in site.posts %}
-      <li>
-        <img src="{{ post.featured_img }}" class="img_post"/>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        {{ post.excerpt }}
-      </li>
+    <li class="post">
+      {% assign foundImage = 0 %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+          {% if foundImage == 0 %}
+          {% assign html = image | split:"/>" | first %}
+          <img {{ html }} class="img_post" />
+          {% assign foundImage = 1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+
+      {{ post.excerpt }}
+    </li>
     {% endfor %}
   </ul>
-</section>

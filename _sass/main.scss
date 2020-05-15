@@ -125,6 +125,35 @@ SECCIONES HOME
     }
 }
 
+#featured {
+
+    .swiper-container {
+        width: 100%;
+        height: 160px;
+    }
+
+    .swiper-wrapper {
+    
+    }
+
+    .swiper-slide {
+        background: $c-light;
+        border-radius: .5rem;
+        padding: 1.2rem 1.5rem;
+
+        h3 {
+            font-size: $f-size-normal;
+            margin: .5rem 0;
+        }
+
+        span {
+            font-size: $f-size-smallest;
+            color: $c-grey;
+            text-transform: uppercase;
+        }
+    }
+}
+
 #last-posts {
     margin: 2.5rem 0 3rem;
     border-top: 1px solid $c-light;
@@ -181,30 +210,3 @@ SECCIONES HOME
         }
     }
 }
-
-
-.swiper-container {
-    width: 100%;
-    height: 160px;
-}
-
-.swiper-wrapper {
-   
-}
-
-.swiper-slide {
-    background: $c-light;
-    border-radius: .5rem;
-    padding: 1.2rem 1.5rem;
-
-    h3 {
-        font-size: $f-size-normal;
-        margin: .5rem 0;
-    }
-
-    span {
-        font-size: $f-size-smallest;
-        color: $c-grey;
-        text-transform: uppercase;
-    }
-} 

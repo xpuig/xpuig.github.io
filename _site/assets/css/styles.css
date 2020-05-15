@@ -29,10 +29,11 @@ body {
 
 header {
   margin: 2rem 0; }
-  header .logo {
-    max-width: 20px; }
   header .navbar {
     padding: 0; }
+  header .navbar-brand {
+    margin: 0;
+    font-size: 1.1rem; }
   header .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row; }

@@ -26,12 +26,13 @@ body {
 header {
     margin: 2rem 0;
 
-    .logo {
-        max-width: 20px;
-    }
-
     .navbar {
         padding: 0;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        font-size: 1.1rem;
     }
 
     .navbar-nav {

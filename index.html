@@ -60,5 +60,35 @@ title: Home
                 </li>
             {% endfor %}
         </ul>
+    </section>
+
+    <section id="last-posts">
+        <span class="small-titles">{{ "los insights más top" | upcase }}</span>  
+        <ul>
+            {% for post in site.posts limit: 3 %}
+                <li>
+                    <div class="image-post">
+                        {% assign foundImage = 0 %}
+                        {% assign images = post.content | split:"<img " %}
+                        {% for image in images %}
+                            {% if image contains 'src' %}
+                                {% if foundImage == 0 %}
+                                {% assign html = image | split:"/>" | first %}
+                                <a href="{{ post.url }}"><img {{ html }} /></a>
+                                {% assign foundImage = 1 %}
+                            {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="info-post">
+                        <h3>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <span>{{ post.categories | join: ', ' }}</span>
+                        <!--{{ post.excerpt }}-->
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
         <button class="btn cta-primary">Ver más insights</button>
     </section>

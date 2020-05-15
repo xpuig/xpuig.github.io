@@ -1,0 +1,63 @@
+---
+layout: default
+title: Home
+---
+
+    <section id="hero">
+        <div>
+            <h1>{{ "Overflow" | upcase }}</h1>
+            <p>Insights <em>caseros</em> sobre UX y Desarrollo web</p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Swiper -->
+<div class="container">
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        {% for post in site.posts limit: 4 %}
+            <div class="swiper-slide">
+                <h3>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h3>
+                <span>{{ post.categories | join: ', ' }}</span>
+            </div>
+        {% endfor %}
+    </div>
+    <!--<div class="swiper-pagination"></div>-->
+  </div>
+</div>
+
+<div class="container">
+    <section id="last-posts">
+        <span class="small-titles">{{ "los más recientes" | upcase }}</span>  
+        <ul>
+            {% for post in site.posts limit: 3 %}
+                <li>
+                    <div class="image-post">
+                        {% assign foundImage = 0 %}
+                        {% assign images = post.content | split:"<img " %}
+                        {% for image in images %}
+                            {% if image contains 'src' %}
+                                {% if foundImage == 0 %}
+                                {% assign html = image | split:"/>" | first %}
+                                <a href="{{ post.url }}"><img {{ html }} /></a>
+                                {% assign foundImage = 1 %}
+                            {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="info-post">
+                        <h3>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                        <span>{{ post.categories | join: ', ' }}</span>
+                        <!--{{ post.excerpt }}-->
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <button class="btn cta-primary">Ver más insights</button>
+    </section>

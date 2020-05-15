@@ -1,116 +1,67 @@
-@import "vars";
-@import "posts";
+/*------------------------------------------------------
+IMPORTS
+------------------------------------------------------*/
 
-html {
-    cursor: $cursor;
+@import "vars";
+
+/*------------------------------------------------------
+BÁSICOS
+------------------------------------------------------*/
+
+.container {
+    padding: 0 30px;
 }
 
 .container-fluid {
     padding: 0;
 }
 
-.navbar-light .navbar-toggler{
-    background-color: wheat;
-    border:none;
-    padding: .3rem .3rem;
-}
-
 body {
-    background-image: url("/assets/img/noise.png");
-    background-repeat: repeat;
+    background-color: $main-bg;
     font-family: $f-base;
-    background-color: $base;
-    color: white;
-    font-size: 1rem;
+    font-size: $f-size-normal;
+    color: $c-base;
 }
 
 header {
-    padding: 0;
-    @media (min-width: $mq-tablet) {
-        padding: 2rem 0;
-    }
-}
-
-h1, h2, h3, h4 {
-    font-family: $f-light;
-    color: $light;
-}
-
-h1 {
-    font-size: 2rem;
     margin: 2rem 0;
-    @media (min-width: $mq-tablet) {
-        margin: 4rem 0;
-        font-size: 5rem;
-    }
-    @media (min-width: $mq-desktop) {
-        margin: 4rem 0;
-        font-size: 6rem;
-    }
-}
 
-h2 {
-    font-size: 1rem;
-    color: rgba(255,255,255,.4)
-}
+    .logo {
+        max-width: 20px;
+    }
 
-h3 {
-    font-size: 2rem;
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    a {
+        margin: 0 0.6rem;
+        color: $c-base;
+        font-size: $f-size-small;
+        font-weight: 600;
+    }
+
+    .current {
+        color: $c-base;
+        border-bottom: 2px solid $c-base;
+        padding-bottom: .3rem;
+    }
 }
 
 a {
     text-decoration: none;
-    cursor: $cursor;
-    color: $light;
+    color: $c-base;
+    font-weight: 600;
+    font-size: $f-size-normal;
+
     &:hover {
         text-decoration: none;
-        color: $primary;
-    }
-}
-
-nav {
-    img {
-        max-width: 30px;
-    }
-    a {
-        margin: 0 0.6rem;
-        color: white;
-        text-transform: uppercase;
-        font-family: $f-light;
-        font-size: 0.9rem;
-    }
-    .current {
-        color: $light;
-    }
-    ul {
-        margin: 0 !important;
-        width: 100%;
-        display: block;
-        @media (min-width: $mq-tablet) {
-            width: 300px;
-            display: flex;
-        }
-    }
-    li {
-        display: inline-block;
-        
-    }
-}
-
-.navbar-brand {
-    width: 100%;
-    text-align: center;
-    margin: 2rem;
-    @media (min-width: $mq-tablet) {
-        width: auto;
-        margin:0 1rem 0 0;
-    }
-}
-
-.navbar-nav {
-    display: block;
-    @media (max-width: $mq-tablet) {
-        text-align: center;
+        color: $c-base;
     }
 }
 
@@ -123,133 +74,30 @@ li {
     list-style: none;
 }
 
-#hero {
-    /*background-image: url("/assets/img/0cvffgS.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;*/
-    img {
-        width: 100%;
-    }
-    margin-bottom: 4rem;
-}
-
-#blog {
-    text-align: center;
-    border-top: 2px dotted rgba(255,255,255,.1);
-    padding: 4rem 0;
-}
-
-.cover {
-    width:100%;
-    margin-bottom: 2rem;
-}
-
-#home {
-    
-    text-align: center;
-    margin: 3rem 0;
-    @media (min-width: $mq-tablet) {
-        margin: 1rem 0 8rem;
-    }
-    img {
-        width: 100%;
-        margin-top: 5rem;
-    }
-}
-
-.home_posts {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 20px;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    margin:2rem 0;
-    @media (min-width: $mq-tablet) {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    }
-    @media (min-width: $mq-desktop) {
-        -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    }
-    .post {
-        /*border: .1rem solid rgba(255,255,255,.1);
-        padding: 2rem 2rem 1rem;
-        border-radius: 1rem;*/
-        overflow: hidden;
-        h3 {
-            font-size: 1.4rem;
-            margin: 1rem 2rem;
-        }
-        p {
-            margin: 1rem 2rem 3rem;
-        }
-    }
-}
-
-.post-title {
-    font-size: 3rem;
-}
-
-.img_post {
+.cta-primary {
+    font-size: $f-size-small;
+    background: $c-base;
+    color: $main-bg;
     width: 100%;
-    margin-bottom: 1rem;
-    border-radius: .3rem
+    padding: .8rem 0;
+    border-radius: .5rem;
 }
 
-#about {
-    max-width: 700px;
-    margin-bottom: 4rem;
-    h1 {
-        font-size: 2rem;
-    }
-}
-
-#blog-page {
-    text-align: center;
-    h1 {
-        font-size: 2rem;
-    }
-    ul {
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 20px;
-        -ms-grid-columns: auto;
-        grid-template-columns: auto;
-        margin:2rem 0 4rem;
-    @media (min-width: $mq-tablet) {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-    }
-    @media (min-width: $mq-desktop) {
-        -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    }
-    }
-    li {
-        /*border: .1rem solid rgba(255,255,255,.1);
-        padding: 2rem 2rem 1rem;
-        border-radius: 1rem;*/
-        overflow: hidden;
-        
-        h3 {
-            font-size: 1.4rem;
-            margin: 1rem 2rem;
-        }
-        p {
-            margin: 1rem 2rem 3rem;
-        }
-    }
+.small-titles {
+    font-size: $f-size-small;
+    font-weight: 500;
 }
 
 footer {
+    border-top: 1px solid $c-light;
     text-align: center;
-    padding: 6rem 0 3rem;
+    padding: 3rem 0;
+
     li {
         display: inline-block;
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem;
     }
+
     @media (max-width: $mq-tablet) {
         .item_footer {
             width:100%;
@@ -258,22 +106,105 @@ footer {
     }
 }
 
-.pagination a, .pagination span {
-    padding: 7px 18px;
-    border: 1px solid #eee;
-    margin-left: -2px;
-    margin-right: -2px;
-    background-color: #ffffff;
-    display: inline-block;
-  }
+/*------------------------------------------------------
+SECCIONES HOME
+------------------------------------------------------*/
 
-.pagination a {    
-    &:hover {
-        background-color: #f1f1f1;
-        color: #333;
+#hero {
+    margin: 2.5rem 0;
+    
+    h1 {
+        font-size: 1.6rem;
+        margin: 2rem 0 .5rem;
+        font-weight: 600;
     }
- }
 
-.pagination {
-    text-align: center;
- }
+    p {
+        color: $c-grey;
+        font-size: $f-size-small;
+    }
+}
+
+#last-posts {
+    margin: 2.5rem 0 3rem;
+    border-top: 1px solid $c-light;
+    padding-top: 2rem;
+
+    ul {
+        margin:2rem 0;
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 2rem;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+
+        @media (min-width: $mq-tablet) {
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto;
+        }
+
+        @media (min-width: $mq-desktop) {
+            -ms-grid-columns: auto auto auto;
+            grid-template-columns: auto auto auto;
+        }
+
+        li {
+            display: flex;
+
+            .image-post {
+                width: 30%;
+                margin-right: 1.5rem;
+                img {
+                    width: 100%;
+                    border-radius: .3rem
+                }   
+            }
+
+            .info-post {
+                width: 70%;
+
+                h3 {
+                    font-size: $f-size-big;
+                    margin: .5rem 0;
+                }
+
+                span {
+                    font-size: .8rem;
+                    color: $c-grey;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    margin: 1rem 2rem 3rem;
+                }
+            }         
+        }
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 160px;
+}
+
+.swiper-wrapper {
+   
+}
+
+.swiper-slide {
+    background: $c-light;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem;
+
+    h3 {
+        font-size: $f-size-normal;
+        margin: .5rem 0;
+    }
+
+    span {
+        font-size: $f-size-smallest;
+        color: $c-grey;
+        text-transform: uppercase;
+    }
+} 

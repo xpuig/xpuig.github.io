@@ -1,24 +1,36 @@
-////****** Colors ******////
+/*------------------------------------------------------
+COLORES
+------------------------------------------------------*/
 
-$main-bg: #f3f3f3;
-$base: #221C2A;
-$primary: #a85349;
-$light: #FFB394;
-////****** Breakpoints ******////
+$main-bg:#fff;
+$c-base: #000;
+$c-grey: #7B7B7B;
+$c-light: #f0f0f0;
+
+$c-1: #FFD0BD;
+$c-2: #FFE1B2;
+$c-3: #F8F0D3;
+$c-4: #DFEDF2;
+$c-5: #E4E7F3;
+$c-6: #DFECD8;
+
+/*------------------------------------------------------
+BREAKPOINTS
+------------------------------------------------------*/
 
 $mq-mobile: 480px;
 $mq-tablet: 768px;
 $mq-desktop: 1200px;
 
-////****** Tipografía ******////
+/*------------------------------------------------------
+TIPOGRAFÍA
+------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$f-base: 'Ubuntu Mono',sans-serif;
-$f-light: 'Rubik',serif;
+$f-base: 'Rubik',serif;
 
-////****** Cursor ******////
-
-$cursor: url("/assets/img/cursor.png"), url("/assets/img/cursor.png"), auto;
+$f-size-smallest: .8rem;
+$f-size-small: .9rem;
+$f-size-normal: 1rem;
+$f-size-big: 1.2rem;

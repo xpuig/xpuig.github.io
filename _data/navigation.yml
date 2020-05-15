@@ -1,6 +1,4 @@
-- name: 🏡 Home
-  link: /
-- name: 🐵 Sobre mí
-  link: /about.html
-- name: 🦄 Blog
+- name: Insights
   link: /blog.html
+- name: Sobre mí
+  link: /about.html

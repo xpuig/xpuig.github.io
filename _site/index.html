@@ -1,15 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Home</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Home" />
@@ -20,145 +23,226 @@
 {"@type":"WebSite","url":"http://localhost:4000/","headline":"Home","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="/"><img src="/assets/img/logo.png"></a>
-    <ul class="navbar-nav ml-auto">  
-        
-        <li class="nav-item"></li>
-          <a href="/" class="current">
-          🏡 Home
-          </a>
-        </li>
-        
-        <li class="nav-item"></li>
-          <a href="/about.html" >
-          🐵 Sobre mí
-          </a>
-        </li>
-        
-        <li class="nav-item"></li>
-          <a href="/blog.html" >
-          🦄 Blog
-          </a>
-        </li>
-        
+</head>
 
-    </ul>
+<body>
 
-</nav>
-      </div>
-    </header>
+  <header>
     <div class="container">
-      <section id="home">
-    <div class="row align-items-center">
-        <div class="col-12">
-            <h1>HELLO WORLD</h1>
-            <p>Soy diseñador de producto y a ratos hago lo que puedo con el código.</p>
-            <p>Me he especializado en Design Research en <a href="https://www.uxerschool.com" target="_blank">@Uxer School</a> y en Usabilidad en la <a href="https://www.uoc.edu" target="_blank">@UOC</a>.<br />
-            Actualmente trabajo en Yournewself como UX/UI y diseñador de producto.</p>
-            <p>Echa un vistazo a mi <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>.</p>
+      <nav class="navbar navbar-light justify-content-between">
+  <a class="navbar-brand" href="/"><img src="/assets/img/logo.png" class="logo"></a>
+  <ul class="navbar-nav ml-auto">  
+      
+      <li class="nav-item">
+        <a href="/blog.html" >
+        Insights
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="/about.html" >
+        Sobre mí
+        </a>
+      </li>
+      
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <div class="container">
+        <section id="hero">
+        <div>
+            <h1>OVERFLOW</h1>
+            <p>Insights <em>caseros</em> sobre UX y Desarrollo web</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="blog">
-    <h2>ÚLTIMOS POSTS</h2>  
-    <ul class="home_posts">
+</div>
+
+<!-- Swiper -->
+<div class="container">
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
         
-            <li class="post">
-                
-                
-                
-                    
-                
-                    
+            <div class="swiper-slide">
+                <h3>
+                    <a href="/jekyll/design/2020/05/09/the-fruit-is-variable-in-size.html">The Fruit Is Variable In Size</a>
+                </h3>
+                <span>jekyll, design</span>
+            </div>
+        
+            <div class="swiper-slide">
+                <h3>
+                    <a href="/jekyll/design/2018/08/22/the-chunk-of-lorem-ipsum.html">The Chunk Of Lorem Ipsum</a>
+                </h3>
+                <span>jekyll, design</span>
+            </div>
+        
+            <div class="swiper-slide">
+                <h3>
+                    <a href="/jekyll/design/2018/08/21/this-book-is-a-treatise-on-the-theory.html">This Book Is A Treatise On The Theory</a>
+                </h3>
+                <span>jekyll, design</span>
+            </div>
+        
+            <div class="swiper-slide">
+                <h3>
+                    <a href="/jekyll/design/2018/08/20/the-fruit-is-variable-in-size.html">The Fruit Is Variable In Size</a>
+                </h3>
+                <span>jekyll, design</span>
+            </div>
+        
+    </div>
+    <!--<div class="swiper-pagination"></div>-->
+  </div>
+</div>
+
+<div class="container">
+    <section id="last-posts">
+        <span class="small-titles">LOS MÁS RECIENTES</span>  
+        <ul>
+            
+                <li>
+                    <div class="image-post">
                         
                         
-                        <img src="/assets/img/posts/how-to-fetch-images-from-jekyll-post.jpg" class="img_post" />
                         
-                    
-                    
-                
-                <h3><a href="/jekyll/design/2020/05/09/testing.html">Testing</a></h3>      
-                <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+                            
+                        
+                            
+                                
+                                
+                                <a href="/jekyll/design/2020/05/09/the-fruit-is-variable-in-size.html"><img src="/assets/img/posts/default.png"  /></a>
+                                
+                            
+                            
+                        
+                    </div>
+                    <div class="info-post">
+                        <h3>
+                            <a href="/jekyll/design/2020/05/09/the-fruit-is-variable-in-size.html">The Fruit Is Variable In Size</a>
+                        </h3>
+                        <span>jekyll, design</span>
+                        <!--<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
 berry of several species of woody vines in the genus Actinidia.</p>
 
-
-                jekyll, design
-            </li>
-        
-            <li class="post">
-                
-                
-                
-                    
-                
-                    
+-->
+                    </div>
+                </li>
+            
+                <li>
+                    <div class="image-post">
                         
                         
-                        <img src="/assets/img/posts/how-to-fetch-images-from-jekyll-post.jpg" class="img_post" />
                         
-                    
-                    
-                
-                <h3><a href="/jekyll/design/2018/08/22/kiwifruit.html">Kiwifruit</a></h3>      
-                <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.</p>
+                            
+                        
+                            
+                                
+                                
+                                <a href="/jekyll/design/2018/08/22/the-chunk-of-lorem-ipsum.html"><img src="/assets/img/posts/default.png"  /></a>
+                                
+                            
+                            
+                        
+                    </div>
+                    <div class="info-post">
+                        <h3>
+                            <a href="/jekyll/design/2018/08/22/the-chunk-of-lorem-ipsum.html">The Chunk Of Lorem Ipsum</a>
+                        </h3>
+                        <span>jekyll, design</span>
+                        <!--<p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+berry of several species of woody vines in the genus.</p>
 
-
-                jekyll, design
-            </li>
-        
-            <li class="post">
-                
-                
-                
-                    
-                
-                    
+-->
+                    </div>
+                </li>
+            
+                <li>
+                    <div class="image-post">
                         
                         
-                        <img src="/assets/img/posts/how-to-fetch-images-from-jekyll-post.jpg" class="img_post" />
                         
-                    
-                    
-                
-                <h3><a href="/jekyll/design/2018/08/21/apples.html">Apples</a></h3>      
-                <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+                            
+                        
+                            
+                                
+                                
+                                <a href="/jekyll/design/2018/08/21/this-book-is-a-treatise-on-the-theory.html"><img src="/assets/img/posts/default.png"  /></a>
+                                
+                            
+                            
+                        
+                    </div>
+                    <div class="info-post">
+                        <h3>
+                            <a href="/jekyll/design/2018/08/21/this-book-is-a-treatise-on-the-theory.html">This Book Is A Treatise On The Theory</a>
+                        </h3>
+                        <span>jekyll, design</span>
+                        <!--<p>An apple is a sweet, edible fruit produced by an apple tree. Apple trees are cultivated worldwide, and are the most widely grown species in the genus Malus.</p>
 
+-->
+                    </div>
+                </li>
+            
+        </ul>
+        <button class="btn cta-primary">Ver más insights</button>
+    </section>
+  </div>
 
-                jekyll, design
-            </li>
-        
-    </ul>
-    <span>Si te parece interesante, puedes seguir leyendo el <a href="blog">resto de artículos</a></span>
-</section>
+  <footer>
 
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+
+    <div class="item_footer">
+      <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>
+        </li>
+        <li>
+            <a href="https://www.behance.net/xavipuig" target="_blank">Behance</a>
+        </li>
+        <li>
+            <a href="https://dribbble.com/xavipuig" target="_blank">Dribbble</a>
+        </li>
+      </ul>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row d-flex justify-content-between">
-          <div class="item_footer">
-            <span style="margin: 0 0 0 1rem;">Copyright 2020 · Little Grasshopper 🦖</span>
-          </div>
-          <div class="item_footer">
-            <ul>
-              <li><a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">💎 Linkedin</a></li>
-              <li><a href="https://www.behance.net/xavipuig" target="_blank">🔥 Behance</a></li>
-              <li><a href="https://dribbble.com/xavipuig" target="_blank">🌈 Dribbble</a></li>
-          </ul>
-          </div>
-        
-      </div>
-        
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    
+    <div class="item_footer">
+        <span style="margin: 0 0 0 1rem;">Copyright 2020</span>
+    </div>
+
+</div>
+    </div>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+ 
+  <!-- Swiper JS -->
+  <script type="text/javascript" src="/assets/js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>

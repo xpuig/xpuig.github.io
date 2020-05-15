@@ -3,9 +3,9 @@ layout: post
 author: jill
 categories: jekyll design
 ---
-An apple is a sweet, edible fruit produced by an apple tree.
+An apple is a sweet, edible fruit produced by an apple tree. Apple trees are cultivated worldwide, and are the most widely grown species in the genus Malus.
 
-<img src="/assets/img/posts/how-to-fetch-images-from-jekyll-post.jpg">
+<img src="/assets/img/posts/default.png">
 
 Apple trees are cultivated worldwide, and are the most widely grown species in
 the genus Malus. The tree originated in Central Asia, where its wild ancestor,

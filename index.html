@@ -62,7 +62,7 @@ title: Home
         </ul>
     </section>
 
-    <section id="last-posts">
+    <section id="top-posts">
         <span class="small-titles">{{ "los insights más top" | upcase }}</span>  
         <ul>
             {% for post in site.posts limit: 3 %}
@@ -90,5 +90,5 @@ title: Home
                 </li>
             {% endfor %}
         </ul>
-        <button class="btn cta-primary">Ver más insights</button>
+        <a href="/blog" class="btn cta-primary">Ver más insights</a>
     </section>

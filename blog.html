@@ -1,31 +1,50 @@
 ---
 layout: default
-title: Blog
+title: Insights
 ---
 
-<section id="blog-page">
-  <h1>{{ "Blog" | upcase }}</h1>
+<section id="hero">
+  <div>
+      <h1>{{ "Insights" | upcase }}</h1>
+      <p>Insights <em>caseros</em> sobre UX y Desarrollo web</p>
+  </div>
+</section>
 
-  <ul class="home_posts">
-    {% for post in site.posts %}
-    <li class="post">
-      {% assign foundImage = 0 %}
-      {% assign images = post.content | split:"<img " %}
-      {% for image in images %}
-        {% if image contains 'src' %}
-          {% if foundImage == 0 %}
-          {% assign html = image | split:"/>" | first %}
-          <img {{ html }} class="img_post" />
-          {% assign foundImage = 1 %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      <h3>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
-      {{ post.categories | join: ', ' }}
-      {{ post.excerpt }}
-    </li>
-    {% endfor %}
+<section id="categories">
+  <ul>
+    <li class="current">todos</li>
+  {% for category in site.categories %}
+    <li>{{ category[0] }}</li>
+  {% endfor %}
   </ul>
+</section>
+
+<section id="last-posts">
+  Categorías: Design
+  <ul>
+      {% for post in site.categories.design %}
+          <li>
+              <div class="image-post">
+                  {% assign foundImage = 0 %}
+                  {% assign images = post.content | split:"<img " %}
+                  {% for image in images %}
+                      {% if image contains 'src' %}
+                          {% if foundImage == 0 %}
+                          {% assign html = image | split:"/>" | first %}
+                          <a href="{{ post.url }}"><img {{ html }} /></a>
+                          {% assign foundImage = 1 %}
+                      {% endif %}
+                      {% endif %}
+                  {% endfor %}
+              </div>
+              <div class="info-post">
+                  <h3>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                  </h3>
+                  <span>{{ post.categories | join: ', ' }}</span>
+                  <!--{{ post.excerpt }}-->
+              </div>
+          </li>
+      {% endfor %}
+  </ul>
+</section>

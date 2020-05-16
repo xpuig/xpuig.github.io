@@ -33,7 +33,7 @@ header {
     padding: 0; }
   header .navbar-brand {
     margin: 0;
-    font-size: 1.1rem; }
+    font-size: 1rem; }
   header .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row; }
@@ -67,6 +67,17 @@ li {
   font-size: 0.9rem;
   background: #000;
   color: #fff;
+  font-weight: 600;
+  width: 100%;
+  padding: .8rem 0;
+  border-radius: .5rem; }
+
+.cta-secondary {
+  font-size: 0.9rem;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  font-weight: 600;
   width: 100%;
   padding: .8rem 0;
   border-radius: .5rem; }
@@ -76,14 +87,22 @@ li {
   font-weight: 500; }
 
 footer {
-  border-top: 1px solid #f0f0f0;
-  text-align: center;
-  padding: 3rem 0; }
+  padding: 0 0 2rem; }
+  footer .newsletter {
+    background: #F8F0D3;
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem; }
+    footer .newsletter span {
+      display: block;
+      margin-bottom: 1.5rem; }
   footer li {
     display: inline-block;
     margin: 0 .5rem; }
   @media (max-width: 768px) {
     footer .item_footer {
+      text-align: center;
       width: 100%;
       margin-bottom: 1rem; } }
 
@@ -115,11 +134,11 @@ SECCIONES HOME
     color: #7B7B7B;
     text-transform: uppercase; }
 
-#last-posts {
+#last-posts, #top-posts, #related-posts {
   margin: 2.5rem 0 3rem;
   border-top: 1px solid #f0f0f0;
   padding-top: 2rem; }
-  #last-posts ul {
+  #last-posts ul, #top-posts ul, #related-posts ul {
     margin: 2rem 0;
     display: -ms-grid;
     display: grid;
@@ -127,29 +146,44 @@ SECCIONES HOME
     -ms-grid-columns: auto;
     grid-template-columns: auto; }
     @media (min-width: 768px) {
-      #last-posts ul {
+      #last-posts ul, #top-posts ul, #related-posts ul {
         -ms-grid-columns: auto auto;
         grid-template-columns: auto auto; } }
     @media (min-width: 1200px) {
-      #last-posts ul {
+      #last-posts ul, #top-posts ul, #related-posts ul {
         -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto; } }
-    #last-posts ul li {
+    #last-posts ul li, #top-posts ul li, #related-posts ul li {
       display: flex; }
-      #last-posts ul li .image-post {
+      #last-posts ul li .image-post, #top-posts ul li .image-post, #related-posts ul li .image-post {
         width: 30%;
         margin-right: 1.5rem; }
-        #last-posts ul li .image-post img {
+        #last-posts ul li .image-post img, #top-posts ul li .image-post img, #related-posts ul li .image-post img {
           width: 100%;
           border-radius: 0.3rem; }
-      #last-posts ul li .info-post {
+      #last-posts ul li .info-post, #top-posts ul li .info-post, #related-posts ul li .info-post {
         width: 70%; }
-        #last-posts ul li .info-post h3 {
+        #last-posts ul li .info-post h3, #top-posts ul li .info-post h3, #related-posts ul li .info-post h3 {
           font-size: 1.2rem;
           margin: .5rem 0; }
-        #last-posts ul li .info-post span {
+        #last-posts ul li .info-post span, #top-posts ul li .info-post span, #related-posts ul li .info-post span {
           font-size: .8rem;
           color: #7B7B7B;
           text-transform: uppercase; }
-        #last-posts ul li .info-post p {
+        #last-posts ul li .info-post p, #top-posts ul li .info-post p, #related-posts ul li .info-post p {
           margin: 1rem 2rem 3rem; }
+
+/*------------------------------------------------------
+SECCIONES BLOG
+------------------------------------------------------*/
+#categories li {
+  display: inline-block;
+  background-color: #f0f0f0;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: .3rem .6rem;
+  text-transform: uppercase; }
+#categories .current {
+  background-color: #000;
+  color: #fff; }

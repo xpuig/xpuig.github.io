@@ -187,3 +187,9 @@ SECCIONES BLOG
 #categories .current {
   background-color: #000;
   color: #fff; }
+
+/*------------------------------------------------------
+SECCIONES ABOUT
+------------------------------------------------------*/
+.about {
+  margin-bottom: 2rem; }

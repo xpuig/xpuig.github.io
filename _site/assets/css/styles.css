@@ -213,3 +213,10 @@ SECCIONES ABOUT
   .about li {
     list-style-type: disc;
     margin-left: 1.2rem; }
+  .about img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: .6rem; }
+    @media (min-width: 768px), (min-width: 1200px) {
+      .about img {
+        max-width: 600px; } }

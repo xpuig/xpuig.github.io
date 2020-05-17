@@ -6,7 +6,7 @@ categories: miscelanea
 A banana is an edible fruit – botanically a berry – produced by several kinds
 of large herbaceous flowering plants in the genus Musa.
 
-<img src="/assets/img/posts/default.png" style="width:100%"/>
+<img src="/assets/img/posts/default.png"/>
 
 > In some countries, bananas used for cooking may be called "plantains",
 distinguishing them from dessert bananas. The fruit is variable in size, color,

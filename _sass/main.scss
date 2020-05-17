@@ -285,4 +285,13 @@ SECCIONES ABOUT
         list-style-type: disc;
         margin-left: 1.2rem;
     }
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
+        border-radius: .6rem;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            max-width: 600px;
+        }
+    }
 }

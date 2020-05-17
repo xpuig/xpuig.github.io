@@ -179,7 +179,7 @@ SECCIONES HOME
     }
 
     .swiper-slide {
-        background: $c-light;
+        background: $c-6;
         border-radius: .5rem;
         padding: 1.2rem 1.5rem;
 
@@ -272,6 +272,19 @@ SECCIONES BLOG
     .current {
         background-color: $c-base;
         color: $main-bg;
+    }
+}
+
+/*------------------------------------------------------
+SECCIONES POST
+------------------------------------------------------*/
+
+.content-post {
+    img {
+        width: 100%;
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            max-width: 400px;
+        }
     }
 }
 

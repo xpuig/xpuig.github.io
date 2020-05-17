@@ -38,7 +38,7 @@ header {
     -ms-flex-direction: row;
     flex-direction: row; }
   header a {
-    margin: 0 0.6rem;
+    margin: 0 0 0 .8rem;
     color: #000;
     font-size: 0.9rem;
     font-weight: 600; }
@@ -132,7 +132,9 @@ SECCIONES HOME
   #featured .swiper-slide span {
     font-size: 0.7rem;
     color: #7B7B7B;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1.35rem; }
 
 #last-posts, #top-posts, #related-posts {
   margin: 2.5rem 0 3rem;
@@ -193,3 +195,6 @@ SECCIONES ABOUT
 ------------------------------------------------------*/
 .about {
   margin-bottom: 2rem; }
+  .about li {
+    list-style-type: disc;
+    margin-left: 1.2rem; }

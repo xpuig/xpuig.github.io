@@ -41,7 +41,7 @@ header {
     }
 
     a {
-        margin: 0 0.6rem;
+        margin: 0 0 0 .8rem;
         color: $c-base;
         font-size: $f-size-small;
         font-weight: 600;
@@ -157,10 +157,6 @@ SECCIONES HOME
         height: 160px;
     }
 
-    .swiper-wrapper {
-    
-    }
-
     .swiper-slide {
         background: $c-light;
         border-radius: .5rem;
@@ -175,6 +171,8 @@ SECCIONES HOME
             font-size: $f-size-smallest;
             color: $c-grey;
             text-transform: uppercase;
+            position: absolute;
+            bottom: 1.35rem;
         }
     }
 }
@@ -262,4 +260,8 @@ SECCIONES ABOUT
 
 .about {
     margin-bottom: 2rem;
+    li {
+        list-style-type: disc;
+        margin-left: 1.2rem;
+    }
 }

@@ -17,18 +17,27 @@ BÁSICOS
 ------------------------------------------------------*/
 .container {
   padding: 0 30px; }
+  @media (min-width: 768px), (min-width: 1200px) {
+    .container {
+      max-width: 900px; } }
 
 .container-fluid {
   padding: 0; }
 
 body {
-  background-color: #fff;
+  background-color: #f0f0f0;
   font-family: "Rubik", serif;
   font-size: 1rem;
   color: #000; }
 
+.wrapper {
+  background: #fff;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05); }
+
 header {
-  margin: 2rem 0; }
+  padding: 2rem 0; }
   header .navbar {
     padding: 0; }
   header .navbar-brand {
@@ -69,8 +78,11 @@ li {
   color: #fff;
   font-weight: 600;
   width: 100%;
-  padding: .8rem 0;
+  padding: .8rem 1rem;
   border-radius: .5rem; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    .cta-primary {
+      width: auto; } }
 
 .cta-secondary {
   font-size: 0.9rem;
@@ -79,17 +91,20 @@ li {
   border: 2px solid #000;
   font-weight: 600;
   width: 100%;
-  padding: .8rem 0;
+  padding: .8rem 1rem;
   border-radius: .5rem; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    .cta-secondary {
+      width: auto; } }
 
 .small-titles {
   font-size: 0.9rem;
   font-weight: 500; }
 
 footer {
-  padding: 0 0 2rem; }
+  padding: 0 0 3rem; }
   footer .newsletter {
-    background: #F8F0D3;
+    background: #DFEDF2;
     font-size: 1.2rem;
     padding: 2rem;
     border-radius: .5rem;

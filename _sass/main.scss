@@ -10,21 +10,34 @@ BÁSICOS
 
 .container {
     padding: 0 30px;
+
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        max-width: 900px;
+    }
 }
 
 .container-fluid {
     padding: 0;
 }
 
+
+
 body {
-    background-color: $main-bg;
+    background-color: $c-light;
     font-family: $f-base;
     font-size: $f-size-normal;
     color: $c-base;
 }
 
+.wrapper {
+    background: $main-bg;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+}
+
 header {
-    margin: 2rem 0;
+    padding: 2rem 0;
 
     .navbar {
         padding: 0;
@@ -81,8 +94,12 @@ li {
     color: $main-bg;
     font-weight: 600;
     width: 100%;
-    padding: .8rem 0;
+    padding: .8rem 1rem;
     border-radius: .5rem;
+
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        width: auto;
+    }
 }
 
 .cta-secondary {
@@ -92,8 +109,12 @@ li {
     border: 2px solid $c-base;
     font-weight: 600;
     width: 100%;
-    padding: .8rem 0;
+    padding: .8rem 1rem;
     border-radius: .5rem;
+
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        width: auto;
+    }
 }
 
 .small-titles {
@@ -102,10 +123,10 @@ li {
 }
 
 footer {
-    padding: 0 0 2rem;;
+    padding: 0 0 3rem;
 
     .newsletter {
-        background: $c-3;
+        background: $c-4;
         font-size: $f-size-big;
         padding: 2rem;
         border-radius: .5rem;

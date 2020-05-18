@@ -11,3 +11,5 @@ fields:
 - type: text
   name: categories
   label: categories
+pages:
+- _posts/Prueba de titulo sin guiones.md

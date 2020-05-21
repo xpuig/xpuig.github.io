@@ -32,7 +32,7 @@ body {
 
 .wrapper {
   background: #fff;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05); }
 
@@ -60,10 +60,13 @@ a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  font-size: 1rem; }
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s; }
   a:hover {
     text-decoration: none;
-    color: #000; }
+    color: #000;
+    border-bottom: 2px solid #000; }
 
 ul {
   margin: 0;
@@ -162,14 +165,6 @@ SECCIONES HOME
     grid-gap: 2rem;
     -ms-grid-columns: auto;
     grid-template-columns: auto; }
-    @media (min-width: 768px) {
-      #last-posts ul, #top-posts ul, #related-posts ul {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto; } }
-    @media (min-width: 1200px) {
-      #last-posts ul, #top-posts ul, #related-posts ul {
-        -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto; } }
     #last-posts ul li, #top-posts ul li, #related-posts ul li {
       display: flex; }
       #last-posts ul li .image-post, #top-posts ul li .image-post, #related-posts ul li .image-post {
@@ -187,8 +182,32 @@ SECCIONES HOME
           font-size: .8rem;
           color: #7B7B7B;
           text-transform: uppercase; }
+          @media (min-width: 768px), (min-width: 1200px) {
+            #last-posts ul li .info-post span, #top-posts ul li .info-post span, #related-posts ul li .info-post span {
+              display: block;
+              margin: 0.3rem 0; } }
         #last-posts ul li .info-post p, #top-posts ul li .info-post p, #related-posts ul li .info-post p {
-          margin: 1rem 2rem 3rem; }
+          display: none; }
+          @media (min-width: 768px), (min-width: 1200px) {
+            #last-posts ul li .info-post p, #top-posts ul li .info-post p, #related-posts ul li .info-post p {
+              display: block;
+              font-size: 0.9rem;
+              color: #7B7B7B; } }
+
+#home-posts {
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto; }
+  @media (min-width: 768px), (min-width: 1200px) {
+    #home-posts {
+      -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto; }
+      #home-posts #last-posts {
+        margin-right: 1rem; }
+      #home-posts #top-posts {
+        margin-left: 1rem; }
+      #home-posts .btn {
+        display: none; } }
 
 /*------------------------------------------------------
 SECCIONES BLOG

@@ -93,10 +93,18 @@ colonists.</p>
                 
                     
                 
+                    
+                        
+                          
+                          <a href="/miscelanea/2020/05/18/prueba-de-titulo-sin-guiones.html"><img src="/assets/img/posts/img_20200220_115531_928.jpg" /></a>
+                          
+                        
+                    
+                
             </div>
       <div class="info-post">
         <h3>
-          <a href="/miscelanea/2020/05/18/Prueba-de-titulo-sin-guiones.html">Prueba de titulo sin guiones</a>
+          <a href="/miscelanea/2020/05/18/prueba-de-titulo-sin-guiones.html">Prueba De Titulo Sin Guiones</a>
         </h3>
         <span>miscelanea</span>
       </div>
@@ -184,9 +192,10 @@ colonists.</p>
   <script type="text/javascript" src="/assets/js/swiper.js"></script>
 
   <!-- Initialize Swiper -->
+  
+  
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 2,
       spaceBetween: 20,
       pagination: {
         el: '.swiper-pagination',
@@ -196,6 +205,21 @@ colonists.</p>
         delay: 5000,
         disableOnInteraction: false,
       },
+      slidesPerView: 1,
+
+      breakpoints: {
+        // when window width is <= 499px
+        499: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 50
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 50
+        }
+    }
+
     });
   </script>
 </body>

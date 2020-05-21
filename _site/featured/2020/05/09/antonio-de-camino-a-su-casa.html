@@ -173,9 +173,10 @@ texture, with a sweet and unique flavor.</p>
   <script type="text/javascript" src="/assets/js/swiper.js"></script>
 
   <!-- Initialize Swiper -->
+  
+  
   <script>
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 2,
       spaceBetween: 20,
       pagination: {
         el: '.swiper-pagination',
@@ -185,6 +186,21 @@ texture, with a sweet and unique flavor.</p>
         delay: 5000,
         disableOnInteraction: false,
       },
+      slidesPerView: 1,
+
+      breakpoints: {
+        // when window width is <= 499px
+        499: {
+            slidesPerView: 2,
+            spaceBetweenSlides: 50
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 3,
+            spaceBetweenSlides: 50
+        }
+    }
+
     });
   </script>
 </body>

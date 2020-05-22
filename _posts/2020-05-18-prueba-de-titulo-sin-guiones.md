@@ -5,7 +5,7 @@ categories: miscelanea
 ---
 Aunque no posee actualmente fuentes para justificar sus hipótesis, el profesor de filología clásica.
 
-<img src="/assets/img/posts/img_20200220_115531_928.jpg"/>
+<img src="/assets/img/posts/default.png"/>
 
 Esto es una prueba de post desde Forestry.
 

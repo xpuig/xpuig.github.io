@@ -33,23 +33,21 @@ body {
 .wrapper {
   background: #fff;
   max-width: 1100px;
-  margin: auto;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05); }
+  margin: auto; }
 
 header {
-  padding: 2rem 0 0; }
+  padding: 2rem 0 1.7rem;
+  border-bottom: 1px solid #f0f0f0; }
   header .navbar {
     padding: 0; }
   header .navbar-brand {
-    margin: 0;
-    font-size: 1rem; }
+    margin: 0; }
   header .navbar-nav {
     -ms-flex-direction: row;
     flex-direction: row; }
   header a {
     margin: 0 0 0 .8rem;
     color: #000;
-    font-size: 0.9rem;
     font-weight: 600; }
   header .current {
     color: #000;
@@ -142,7 +140,7 @@ SECCIONES HOME
 
 #featured .swiper-container {
   width: 100%;
-  height: 160px; }
+  height: auto; }
 #featured .swiper-pagination-bullets {
   bottom: 1rem;
   right: 1.2rem;
@@ -152,22 +150,22 @@ SECCIONES HOME
   #featured .swiper-pagination-bullets {
     display: none; } }
 #featured .swiper-slide {
-  background: #F8F0D3;
+  background: #fff;
   border-radius: .5rem;
-  padding: 1.2rem 1.5rem; }
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #f0f0f0; }
+  #featured .swiper-slide img {
+    width: 100%; }
   #featured .swiper-slide h3 {
     font-size: 1rem;
-    margin: .5rem 0; }
+    margin: 1rem; }
   #featured .swiper-slide span {
     font-size: 0.7rem;
     color: #7B7B7B;
     text-transform: uppercase;
-    position: absolute;
-    bottom: 1.35rem; }
-#featured .swiper-slide:first-child {
-  background: #DFEDF2; }
-#featured .swiper-slide:last-child {
-  background: #DFECD8; }
+    margin: 1rem;
+    display: block; }
 
 #last-posts, #related-posts {
   margin: 2.5rem 0 3rem;

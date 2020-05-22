@@ -227,7 +227,7 @@ SECCIONES HOME
     }
 }
 
-#last-posts, #top-posts, #related-posts {
+#last-posts, #related-posts {
     margin: 2.5rem 0 3rem;
     border-top: 1px solid $c-light;
     padding-top: 2rem;
@@ -270,7 +270,7 @@ SECCIONES HOME
                     text-transform: uppercase;
 
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                        display: block;
+                        display: none;
                         margin: 0.3rem 0;
                     }
                 }

@@ -12,7 +12,7 @@ BÁSICOS
     padding: 0 30px;
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        max-width: 900px;
+        max-width: 1200px;
     }
 }
 
@@ -31,8 +31,8 @@ body {
 
 .wrapper {
     background: $main-bg;
-    max-width: 1100px;
-    margin: auto;
+    /*max-width: 1100px;
+    margin: auto;*/
 }
 
 header {
@@ -97,14 +97,17 @@ li {
     width: 100%;
     padding: .8rem 1rem;
     border-radius: .5rem;
+    transition: 0.3s ease-out;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         width: auto;
-        border-bottom: 2px solid $c-base; 
     }
 
-    &hover {
-        color: red;
+    &:hover {
+        color: $c-base;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        background-color: $c-light;
     }
 }
 
@@ -147,6 +150,10 @@ footer {
     li {
         display: inline-block;
         margin: 0 .5rem;
+    }
+
+    .row {
+        margin:0;
     }
 
     @media (max-width: $mq-tablet) {
@@ -228,6 +235,10 @@ SECCIONES HOME
     border-top: 1px solid $c-light;
     padding-top: 2rem;
 
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        margin: 2.5rem 0 6rem;
+    }
+
     ul {
         margin:2rem 0;
         display: -ms-grid;
@@ -237,8 +248,8 @@ SECCIONES HOME
         grid-template-columns: auto;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            -ms-grid-columns: auto auto;
-            grid-template-columns: auto auto;
+            -ms-grid-columns: auto auto auto;
+            grid-template-columns: auto auto auto;
         }
 
         li {
@@ -276,7 +287,7 @@ SECCIONES HOME
                     
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                         display:block;
-                        font-size: $f-size-small;
+                        font-size: $f-size-smallest;
                         color: $c-grey;
                     }
                 }

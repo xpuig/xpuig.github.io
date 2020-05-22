@@ -17,7 +17,7 @@ title: Home
         <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            {% for post in site.posts limit: 3 %} 
+            {% for post in site.categories.featured limit: 6 %} 
                 <div class="swiper-slide">
                     <div class="image-post">
                         {% assign foundImage = 0 %}
@@ -33,7 +33,7 @@ title: Home
                         {% endfor %}
                     </div>
                     <h3>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <a href="{{ post.url }}">{{ post.title | truncatewords: 6, "..." }}</a>
                     </h3>
                     <span>{{ post.categories | join: ', ' }}</span>
                 </div>

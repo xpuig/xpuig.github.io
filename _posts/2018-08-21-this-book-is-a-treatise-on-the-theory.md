@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jill
-categories: miscelanea
+categories: featured miscelanea
 ---
 An apple is a sweet, edible fruit produced by an apple tree. Apple trees are cultivated worldwide, and are the most widely grown species in the genus Malus.
 

@@ -2,7 +2,6 @@
 layout: post
 author: xavi
 categories: miscelanea
-
 ---
 Aunque no posee actualmente fuentes para justificar sus hipótesis, el profesor de filología clásica.
 

@@ -85,7 +85,10 @@ li {
   border-radius: .5rem; }
   @media (min-width: 1200px), (min-width: 768px) {
     .cta-primary {
-      width: auto; } }
+      width: auto;
+      border-bottom: 2px solid #000; } }
+  .cta-primaryhover {
+    color: red; }
 
 .cta-secondary {
   font-size: 0.9rem;
@@ -140,6 +143,14 @@ SECCIONES HOME
 #featured .swiper-container {
   width: 100%;
   height: 160px; }
+#featured .swiper-pagination-bullets {
+  bottom: 1rem;
+  right: 1.2rem;
+  width: auto;
+  left: auto; }
+@media (min-width: 768px), (min-width: 1200px) {
+  #featured .swiper-pagination-bullets {
+    display: none; } }
 #featured .swiper-slide {
   background: #F8F0D3;
   border-radius: .5rem;
@@ -153,6 +164,10 @@ SECCIONES HOME
     text-transform: uppercase;
     position: absolute;
     bottom: 1.35rem; }
+#featured .swiper-slide:first-child {
+  background: #DFEDF2; }
+#featured .swiper-slide:last-child {
+  background: #DFECD8; }
 
 #last-posts, #top-posts, #related-posts {
   margin: 2.5rem 0 3rem;
@@ -165,6 +180,10 @@ SECCIONES HOME
     grid-gap: 2rem;
     -ms-grid-columns: auto;
     grid-template-columns: auto; }
+    @media (min-width: 768px), (min-width: 1200px) {
+      #last-posts ul, #top-posts ul, #related-posts ul {
+        -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto; } }
     #last-posts ul li, #top-posts ul li, #related-posts ul li {
       display: flex; }
       #last-posts ul li .image-post, #top-posts ul li .image-post, #related-posts ul li .image-post {
@@ -176,8 +195,7 @@ SECCIONES HOME
       #last-posts ul li .info-post, #top-posts ul li .info-post, #related-posts ul li .info-post {
         width: 70%; }
         #last-posts ul li .info-post h3, #top-posts ul li .info-post h3, #related-posts ul li .info-post h3 {
-          font-size: 1.2rem;
-          margin: .5rem 0; }
+          font-size: 1.2rem; }
         #last-posts ul li .info-post span, #top-posts ul li .info-post span, #related-posts ul li .info-post span {
           font-size: .8rem;
           color: #7B7B7B;
@@ -193,21 +211,6 @@ SECCIONES HOME
               display: block;
               font-size: 0.9rem;
               color: #7B7B7B; } }
-
-#home-posts {
-  display: grid;
-  -ms-grid-columns: auto;
-  grid-template-columns: auto; }
-  @media (min-width: 768px), (min-width: 1200px) {
-    #home-posts {
-      -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto; }
-      #home-posts #last-posts {
-        margin-right: 1rem; }
-      #home-posts #top-posts {
-        margin-left: 1rem; }
-      #home-posts .btn {
-        display: none; } }
 
 /*------------------------------------------------------
 SECCIONES BLOG

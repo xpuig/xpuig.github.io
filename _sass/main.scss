@@ -102,6 +102,11 @@ li {
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         width: auto;
+        border-bottom: 2px solid $c-base; 
+    }
+
+    &hover {
+        color: red;
     }
 }
 
@@ -181,10 +186,23 @@ SECCIONES HOME
         height: 160px;
     }
 
+    .swiper-pagination-bullets {
+        bottom: 1rem;
+        right: 1.2rem;
+        width: auto;
+        left: auto;
+    }
+
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        .swiper-pagination-bullets {
+            display: none;
+        }
+    }
+
     .swiper-slide {
         background: $c-3;
         border-radius: .5rem;
-        padding: 1.2rem 1.5rem;
+        padding: 1.2rem 1.5rem; 
 
         h3 {
             font-size: $f-size-normal;
@@ -198,6 +216,14 @@ SECCIONES HOME
             position: absolute;
             bottom: 1.35rem;
         }
+    }
+
+    .swiper-slide:first-child {
+        background: $c-4;
+    }
+
+    .swiper-slide:last-child {
+        background: $c-6;
     }
 }
 
@@ -213,6 +239,11 @@ SECCIONES HOME
         grid-gap: 2rem;
         -ms-grid-columns: auto;
         grid-template-columns: auto;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto;
+        }
 
         li {
             display: flex;
@@ -231,7 +262,6 @@ SECCIONES HOME
 
                 h3 {
                     font-size: $f-size-big;
-                    margin: .5rem 0;
                 }
 
                 span {
@@ -256,30 +286,6 @@ SECCIONES HOME
                 }
             }         
         }
-    }
-}
-
-#home-posts {
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-
-    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-
-        #last-posts {
-            margin-right: 1rem;
-        }
-        
-        #top-posts {
-            margin-left: 1rem;
-        }
-
-        .btn {
-            display: none;
-        }
-
     }
 }
 

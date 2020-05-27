@@ -1,7 +1,7 @@
 ---
 layout: post
 author: xavi
-categories: scss
+categories: featured scss
 ---
 
 ¿Te has planteado alguna vez que en lugar de tener un documento CSS enorme te gustaría poder trocearlo?

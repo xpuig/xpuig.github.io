@@ -37,7 +37,7 @@ body {
 
 header {
     padding: 2rem 0 1.7rem;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid $c-light;
 
     .navbar {
         padding: 0;
@@ -189,6 +189,9 @@ SECCIONES HOME
     .swiper-container {
         width: 100%;
         height: auto;
+        @media (min-width: $mq-desktop) {
+            overflow: visible;
+        }
     }
 
     .swiper-pagination-bullets {
@@ -211,6 +214,12 @@ SECCIONES HOME
         overflow: hidden;
         border: 1px solid $c-light;
 
+        @media (min-width: $mq-desktop) {
+            &:hover {
+                box-shadow: 0 1rem 1rem rgba(0,0,0,.05);
+            }
+        }
+
         img {
             width: 100%;
         }
@@ -230,7 +239,7 @@ SECCIONES HOME
     }
 }
 
-#last-posts, #related-posts {
+#last-posts, #related-posts, #blog-list {
     margin: 2.5rem 0 3rem;
     border-top: 1px solid $c-light;
     padding-top: 2rem;
@@ -313,6 +322,37 @@ SECCIONES BLOG
     .current {
         background-color: $c-base;
         color: $main-bg;
+    }
+}
+
+#blog-list {
+    ul {
+        margin:2rem 0;
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 2rem;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto;
+        }
+    }
+
+    p { 
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            display:block;
+            font-size: $f-size-small !important;
+            color: $c-grey;
+        }
+    }
+
+    span {
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            display: block !important;
+        }
     }
 }
 

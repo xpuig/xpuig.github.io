@@ -188,7 +188,12 @@ SECCIONES HOME
 
 #intro {
     background: $main-bg;
-    padding: 2rem 0 10rem;
+    padding: 0rem 0 7rem;
+
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        padding: 2rem 0 10rem;
+    }
+    
 
     .intro-dots {
         background: url("/assets/img/dot-pattern.svg");
@@ -203,17 +208,26 @@ SECCIONES HOME
     }
 
     .intro-text {
-        max-width: 60%;
+        max-width: 100%;
         height: 230px;
-        top: 1.5rem;
+        top: 0rem;
         position: relative;
         z-index: 99;
 
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            max-width: 60%;
+            top: 1.5rem;
+        }
+
         h1 {
             font-family: $f-base;
-            font-size: 3rem;
+            font-size: 2rem;
             margin: 2rem 0 2rem;
             font-weight: 400;
+
+            @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                font-size: 3rem;;
+            }
         }
 
         p {
@@ -225,10 +239,14 @@ SECCIONES HOME
     .intro-img {
         position: absolute;
         width: 33%;
-        height: 50vh;
         right: 0;
         top: 10rem;
         margin: auto;
+        display: none;
+
+        @media (min-width: $mq-desktop) {
+            display: block;
+        }
 
         img {
             width: 100%;
@@ -295,11 +313,6 @@ SECCIONES HOME
         height: auto;
     }
 
-    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        .swiper-pagination-bullets {
-        }
-    }
-
     .swiper-slide {
 
         img {
@@ -346,16 +359,25 @@ SECCIONES HOME
         display: -ms-grid;
         display: grid;
         grid-gap: 2rem;
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+
+        @media (min-width: $mq-desktop) {
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto;
+        }
 
         li {
             display: flex;
 
             .image-post {
                 width: 30%;
-                margin-right: 2.5rem;
-                margin: 0rem 2.5rem 2.5rem 0;
+                margin: 0rem 1rem 1rem 0;
+
+                @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                    margin: 0rem 2.5rem 2.5rem 0;
+                }
+
                 img {
                     width: 100%;
                 }   
@@ -386,8 +408,10 @@ SECCIONES HOME
                     padding: .5rem 1rem;
                     border: 2px solid $c-base;
                     left: 0;
+                    display: none;
 
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                        display: block;
                         margin: 0.3rem 0;
                         position: absolute;
                         bottom: 3rem;
@@ -395,11 +419,17 @@ SECCIONES HOME
                 }
 
                 p {
-                    
+                    display: none;
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                         display:block;
                         font-size: $f-size-small;
                         color: $c-grey;
+                    }
+                }
+
+                h6 {
+                    @media (min-width: $mq-desktop) {
+                        display: none;
                     }
                 }
             }

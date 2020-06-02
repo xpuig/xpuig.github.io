@@ -1,54 +1,69 @@
 ---
 layout: default
 ---
+<div id="post-page" class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <section id="title">
+        <div>
+          <h1 class="post-title">{{ page.title }}</h1>
+        </div>
+      </section>
 
-<section id="hero">
-  <div>
-    <h1 class="post-title">{{ page.title }}</h1>
-    <span>{{ page.categories }}</span>
-  </div>
-</section>
-
-<div class="content-post">
-  {{ content }}
-</div>
-
-<div id="related-posts">
-
-  {% unless page.categories == null %}
-  {% capture pageCategories %}{{ page.categories }}{% endcapture %}
-  {% unless site.categories[pageCategories].size == 1 %}
-
-  <span class="small-titles">{{ "Insights relacionados" | upcase }}</span>
-  <ul>
-    {% for post in site.categories[pageCategories] limit:3 %}
-    {% unless post.title == page.title %}
-    <li>
-      <div class="image-post">
-                {% assign foundImage = 0 %}
-                {% assign images = post.content | split:"<img " %}
-                {% for image in images %}
-                    {% if image contains 'src' %}
-                        {% if foundImage == 0 %}
-                          {% assign html = image | split:"/>" | first %}
-                          <a href="{{ post.url }}"><img {{ html }} /></a>
-                          {% assign foundImage = 1 %}
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-            </div>
-      <div class="info-post">
-        <h3>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        <span>{{ post.categories | join: ', ' }}</span>
+      <div class="content-post">
+        {{ content }}
       </div>
-    </li>
-    {% endunless %}
-    {% endfor %}
-  </ul>
+    </div>
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-4">
+      <div class="about-widget">
+        <span class="small-titles">{{ "Sobre el autor" | upcase }}</span>
+        <p>Apple trees are cultivated worldwide, and are the most widely grown species in the genus Malus. The tree
+          originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been
+          grown for thousands of years in Asia and Europe, and were brought to North America by European colonists.</p>
+      </div>
 
-{% endunless %}
-{% endunless %}
+      <div id="related-posts">
 
+        {% unless page.categories == null %}
+        {% capture pageCategories %}{{ page.categories }}{% endcapture %}
+        {% unless site.categories[pageCategories].size == 1 %}
+
+        <span class="small-titles">{{ "Insights relacionados" | upcase }}</span>
+        <ul>
+          {% for post in site.categories[pageCategories] limit:3 %}
+          {% unless post.title == page.title %}
+          <li>
+            <div class="image-post">
+              {% assign foundImage = 0 %}
+              {% assign images = post.content | split:"<img " %}
+              {% for image in images %}
+              {% if image contains 'src' %}
+              {% if foundImage == 0 %}
+              {% assign html = image | split:"/>" | first %}
+              <a href="{{ post.url }}"><img {{ html }} /></a>
+              {% assign foundImage = 1 %}
+              {% endif %}
+              {% endif %}
+              {% endfor %}
+            </div>
+            <div class="info-post">
+              <h3>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h3>
+              {{ post.excerpt }}
+              <span><a href="{{ post.url }}">Leer más</a></span>
+            </div>
+          </li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+
+        {% endunless %}
+        {% endunless %}
+
+      </div>
+    </div>
+  </div>
 </div>

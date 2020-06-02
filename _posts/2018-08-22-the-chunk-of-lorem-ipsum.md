@@ -1,10 +1,16 @@
 ---
 layout: post
-author: ted
-categories: featured scss
+author: xavi
+categories: scss
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
 berry of several species of woody vines in the genus.
+
+Apple trees are cultivated worldwide, and are the most widely grown species in
+the genus Malus. The tree originated in Central Asia, where its wild ancestor,
+Malus sieversii, is still found today. Apples have been grown for thousands of
+years in Asia and Europe, and were brought to North America by European
+colonists.
 
 <img src="/assets/img/posts/default.png"/>
 

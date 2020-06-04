@@ -134,7 +134,7 @@ SECCIONES HOME
   #intro {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
-@media (min-width: 768px), (min-width: 1200px) {
+@media (min-width: 1200px) {
   #intro .intro-text {
     max-width: 60%; } }
 #intro .intro-text h1 {

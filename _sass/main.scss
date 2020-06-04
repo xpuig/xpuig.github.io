@@ -174,7 +174,7 @@ SECCIONES HOME
     }
 
     .intro-text {
-        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        @media (min-width: $mq-desktop) {
             max-width: 60%;
         }
 

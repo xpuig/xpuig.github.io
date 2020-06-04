@@ -10,35 +10,22 @@ BÁSICOS
 
 .container {
     padding: 0 30px;
-
-    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        max-width: 1200px;
-    }
 }
 
 .container-fluid {
     padding: 0;
 }
 
-
-
 body {
-    background-color: $c-hero;
+    background: $main-bg;
     font-family: $f-base;
     font-size: $f-size-normal;
     color: $c-base;
 }
 
-.wrapper {
-    background: $main-bg;
-    border-top: 3px solid $c-hero;
-    /*max-width: 1100px;
-    margin: auto;*/
-}
-
 header {
     width: 100%;
-    padding: 3.5rem 0 2rem;
+    padding: 2rem 0;
 
     .navbar {
         padding: 0;
@@ -46,12 +33,7 @@ header {
 
     .navbar-brand {
         margin: 0;
-        color: $c-base !important;
-        font-weight: 500;
-
-        span {
-            color: $c-hero;
-        }
+        font-weight: 400;
     }
 
     .navbar-nav {
@@ -62,7 +44,6 @@ header {
     a {
         margin: 0 0 0 1.5rem;
         color: $c-base;
-        font-weight: 500;
 
         &:hover {
             text-decoration: none;
@@ -103,7 +84,7 @@ img {
 
 .cta-primary {
     font-size: $f-size-smallest;
-    background: $c-hero;
+    background: $c-base;
     color: $main-bg;
     font-weight: 500;
     width: 100%;
@@ -118,7 +99,7 @@ img {
     }
 
     &:hover {
-        color: $c-hero;
+        color: $main-bg;
         background: $c-base;
         text-decoration: none;
     }
@@ -187,46 +168,24 @@ SECCIONES HOME
 ------------------------------------------------------*/
 
 #intro {
-    background: $main-bg;
-    padding: 0rem 0 7rem;
-
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        padding: 2rem 0 10rem;
-    }
-    
-
-    .intro-dots {
-        background: url("/assets/img/dot-pattern.svg");
-        height: 16rem;
-        width:24%;
-        background-size: 12px 12px;
-        background-repeat: repeat;
-        position: absolute;
-        opacity: .1;
-        top: 10rem;
-        display: none;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .intro-text {
-        max-width: 100%;
-        height: 230px;
-        top: 0rem;
-        position: relative;
-        z-index: 99;
-
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             max-width: 60%;
-            top: 1.5rem;
         }
 
         h1 {
             font-family: $f-base;
             font-size: 2rem;
-            margin: 2rem 0 2rem;
+            margin: 0 0 2rem;
             font-weight: 400;
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                font-size: 3rem;;
+                font-size: 3rem;
             }
         }
 
@@ -235,124 +194,9 @@ SECCIONES HOME
             color: $c-grey;
         }
     }
-
-    .intro-img {
-        position: absolute;
-        width: 33%;
-        right: 0;
-        top: 10rem;
-        margin: auto;
-        display: none;
-
-        @media (min-width: $mq-desktop) {
-            display: block;
-        }
-
-        img {
-            width: 100%;
-            height:100%;
-        }
-
-        .contact {
-            background: $c-hero;
-            width:10rem;
-            height: 10rem;
-            position: absolute;
-            z-index: 999;
-            left: -3rem;
-            bottom: -3rem;
-            padding: 1rem;
-            color: $main-bg;
-            font-weight: 500;
-
-            img {
-                max-width: 10%;
-                position: absolute;
-                bottom: 1.2rem;
-                right: 1.2rem;
-                height: auto;
-            }
-        }
-    }
-
-    .intro-scroll {
-        border-left: 1px solid $c-base;
-        height: 7rem;
-        width: 1px;
-        position: absolute;
-        bottom: 0;
-        display: none;
-
-        .scroll-text {
-            transform: rotate(-90deg);
-            position: absolute;
-            font-weight: 500;
-            bottom: 3rem;
-            width: 5rem;
-            left: 0;
-            text-transform: uppercase;
-            text-align: right;
-            font-size: $f-size-small;
-        }
-    }
-
-}
-
-#hero {
-    padding: 5rem 0 6rem;
-    background: $c-light;
-    display: none;
-
-    p {
-        color: $c-grey;
-        font-size: $f-size-small;
-    }
-
-    .swiper-container {
-        width: 100%;
-        height: auto;
-    }
-
-    .swiper-slide {
-
-        img {
-            max-width: 300px;
-            position: absolute;
-            right: 0;
-        }
-
-        h3 {
-            font-size: 3rem;
-            margin: 0;
-            width: 65%;
-            font-weight: 300;
-            margin-bottom: 2rem;
-        }
-
-        a {
-            &:hover {
-                text-decoration: none;
-                color: $c-hero;
-            }
-        }
-
-        p {
-            font-size: 2rem;
-            color: #7B7B7B;
-            display: block;
-            font-weight: 300;
-            max-width: 60%;
-            margin-bottom: 3rem;
-        }
-
-        span {
-            display: none;
-        }
-    }
 }
 
 #last-posts, #blog-list {
-    padding-top: 5rem;
 
     ul {
         margin:2rem 0;
@@ -385,36 +229,14 @@ SECCIONES HOME
 
             .info-post {
                 width: 70%;
-                position: relative;
 
                 h3 {
-                    font-size: $f-size-big;
-
+                    font-size: $f-size-normal;
                     a {
-                        font-weight: 500;
-
                         &:hover {
                             color:$c-hero;
                             text-decoration: none;
                         }
-                    }
-                }
-
-                span {
-                    font-size: .8rem;
-                    color: $c-grey;
-                    font-weight: 500;
-                    border-radius: 50rem;
-                    padding: .5rem 1rem;
-                    border: 2px solid $c-base;
-                    left: 0;
-                    display: none;
-
-                    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                        display: block;
-                        margin: 0.3rem 0;
-                        position: absolute;
-                        bottom: 3rem;
                     }
                 }
 
@@ -523,21 +345,19 @@ SECCIONES BLOG
         display: -ms-grid;
         display: grid;
         grid-gap: 2rem;
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+        -ms-grid-columns: auto;
+        grid-template-columns: auto;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            -ms-grid-columns: auto auto;
+            grid-template-columns: auto auto; 
+        }
     }
 
     p { 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             display:block;
             color: $c-grey;
-        }
-    }
-
-    span {
-
-        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            display: block !important;
         }
     }
 }
@@ -548,10 +368,6 @@ SECCIONES POST
 
 #post-page {
     margin-top:3rem;
-
-    #title {
-
-    }
     
     .content-post {
         img {

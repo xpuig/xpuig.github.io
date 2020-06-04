@@ -12,7 +12,7 @@ Malus sieversii, is still found today. Apples have been grown for thousands of
 years in Asia and Europe, and were brought to North America by European
 colonists.
 
-<img src="/assets/img/posts/basicos-sass.png"/>
+<img src="/assets/img/posts/default.png"/>
 
  diré que siempre me parecido un buen ejemplo de...
 

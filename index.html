@@ -4,75 +4,16 @@ title: Home
 ---
 
 
-<section id="intro">
-    <div class="container-fluid">
-        <div class="intro-dots"></div>
-        <div class="container">
-            <div class="intro-text">
-                <h1>{{ "Insights caseros sobre UX y Desarrollo web" }}</h1>
-                <p> It has a fibrous, dull greenish-brown skin and bright green or golden flesh with rows of tiny,
-                    black, edible seeds. The fruit has a soft texture, with a sweet and unique flavor.</p>
-                <span><a href="{{ post.url }}" class="cta-primary" style="margin-right: .3rem;">Saber más</a> <a
-                        href="/blog" class="cta-secondary">Todo el blog</a></span>
-            </div>
+    <section id="intro">
+        <div class="intro-text">
+            <h1>{{ "👨‍🚀 <br>Insights caseros sobre UX y Desarrollo web" }}</h1>
+            <p>Insights caseros sobre UX y Desarrollo web bright green or golden flesh with rows of tiny,
+                black, edible seeds. The fruit has a soft texture, with a sweet and unique flavor.</p>
         </div>
-        <div class="intro-img">
-            <div class="contact">
-                Get in touch
-                <img src="assets/img/arrow-right.svg" />
-            </div>
-            <img src="assets/img/image.jpg" />
-        </div>
-        <div class="container">
-            <div class="intro-scroll">
-                <div class="scroll-text">
-                    Scroll
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="hero" class="container">
-    <div class="container">
-        <!-- Swiper -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                {% for post in site.categories.featured limit: 6 %}
-                <div class="swiper-slide">
-                    <div class="image-post">
-                        {% assign foundImage = 0 %}
-                        {% assign images = post.content | split:"<img " %}
-                        {% for image in images %}
-                        {% if image contains 'src' %}
-                        {% if foundImage == 0 %}
-                        {% assign html = image | split:"/>" | first %}
-                        <a href="{{ post.url }}"><img {{ html }} /></a>
-                        {% assign foundImage = 1 %}
-                        {% endif %}
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                    <h3>
-                        <a href="{{ post.url }}">{{ post.title | truncatewords: 6, "..." }}</a>
-                    </h3>
-                    <span>{{ post.categories | join: ', ' }}</span>
-                    {{ post.excerpt }}
-                    <a href="{{ post.url }}" class="cta-primary">Saber más</a> <a href="/blog"
-                        class="cta-secondary">Todo el blog</a>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <!-- End Swiper -->
-    </div>
-</section>
-
-<div id="home-posts" class="container">
+    </section>
 
     <section id="last-posts">
-        <span class="small-titles">{{ "los insights más recientes" | upcase }}</span>
+        <span class="small-titles">{{ "✍️ los más recientes" | upcase }}</span>
         <ul>
             {% for post in site.posts limit: 6 %}
             <li>
@@ -82,19 +23,3 @@ title: Home
         </ul>
         <a href="/blog" class="btn cta-primary">Ver más insights</a>
     </section>
-
-</div>
-
-<section id="home-about" class="container-fluid">
-    <div class="container about-text">
-        <h3 style="width: 50%">About me</h3>
-        <p style="width: 50%">It is a long established fact that a reader will be distracted by the readable content of
-            a page when looking
-            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-            as opposed</p>
-    </div>
-    <div class="container about-pics">
-        <img src="assets/img/default.png" />
-        <img src="assets/img/default.png" />
-    </div>
-</section>

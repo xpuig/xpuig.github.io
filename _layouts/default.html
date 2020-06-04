@@ -17,21 +17,17 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container">
-        {% include navigation.html %}
-      </div>
-    </header>
+    <div class="container">
+      <header>
+          {% include navigation.html %}
+      </header>
 
-    <div class="container-fluid">
-      {{ content }}
+        {{ content }}
+    
+      <footer>
+          {% include footer.html %}
+      </footer>
     </div>
-
-    <footer>
-      <div class="container">
-        {% include footer.html %}
-      </div>
-    </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="

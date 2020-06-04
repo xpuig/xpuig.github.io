@@ -203,8 +203,8 @@ SECCIONES HOME
   #related-posts ul {
     -ms-grid-columns: auto;
     grid-template-columns: auto; }
-    #related-posts ul li span {
-      display: none; }
+    #related-posts ul li p {
+      display: block !important; }
 
 #home-about {
   margin-top: 6rem;
@@ -263,6 +263,14 @@ SECCIONES POST
 ------------------------------------------------------*/
 #post-page {
   margin-top: 3rem; }
+  @media (min-width: 768px) {
+    #post-page {
+      margin: auto;
+      max-width: 80%; } }
+  @media (min-width: 1200px) {
+    #post-page {
+      margin: auto;
+      max-width: 60%; } }
   #post-page .content-post img {
     width: 100%; }
     @media (min-width: 768px), (min-width: 1200px) {

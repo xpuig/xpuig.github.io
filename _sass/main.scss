@@ -282,8 +282,8 @@ SECCIONES HOME
         grid-template-columns: auto;
     
         li {
-            span {
-                display: none;
+            p {
+                display: block !important;
             }
         }
     
@@ -368,7 +368,17 @@ SECCIONES POST
 
 #post-page {
     margin-top:3rem;
-    
+
+    @media (min-width: $mq-tablet) {
+        margin:auto;
+        max-width: 80%;
+    }
+
+    @media (min-width: $mq-desktop) {
+        margin:auto;
+        max-width: 60%;
+    }
+
     .content-post {
         img {
             width: 100%;

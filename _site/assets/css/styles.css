@@ -42,7 +42,7 @@ header {
   header a {
     margin: 0 0 0 1.5rem;
     color: #000;
-    font-weight: 600; }
+    font-weight: 400; }
     header a:hover {
       text-decoration: none;
       color: #CC0000; }
@@ -54,6 +54,7 @@ header {
 a {
   text-decoration: none;
   color: #000;
+  font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }
 

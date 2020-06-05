@@ -44,7 +44,7 @@ header {
     a {
         margin: 0 0 0 1.5rem;
         color: $c-base;
-        font-weight: 600;
+        font-weight: 400;
 
         &:hover {
             text-decoration: none;
@@ -62,6 +62,7 @@ header {
 a {
     text-decoration: none;
     color: $c-base;
+    font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
 }

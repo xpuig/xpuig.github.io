@@ -85,6 +85,7 @@ img {
 .cta-primary {
     font-size: $f-size-smallest;
     background: $c-base;
+    border: 2px solid $c-base;
     color: $main-bg;
     font-weight: 500;
     width: 100%;
@@ -102,13 +103,15 @@ img {
         color: $main-bg;
         background: $c-base;
         text-decoration: none;
+        opacity: .8;
     }
 }
 
 .cta-secondary {
     @extend .cta-primary;
-    background: $c-base;
-    color: $c-light;
+    background: $main-bg;
+    color: $c-base;
+    border: 2px solid $c-base;
 }
 
 .small-titles {
@@ -275,7 +278,9 @@ SECCIONES HOME
 
 #related-posts {
     @extend #last-posts;
-    padding:0;
+    border-top: 1px solid $c-light;
+    padding-top:2rem;
+    margin-top: 5rem;
 
     ul {
         -ms-grid-columns: auto;
@@ -285,33 +290,12 @@ SECCIONES HOME
             p {
                 display: block !important;
             }
+
+            .image-post {
+                margin: 0rem 2.5rem 0rem 0;
+            }
         }
     
-    }
-}
-
-#home-about {
-    margin-top: 6rem;
-    background: $c-base;
-    color: $main-bg;
-    padding: 5rem 0 6rem;
-    display: none;
-
-    .about-text {
-        display: flex;
-        margin-bottom: 3rem;
-    }
-
-    .about-pics {
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 2rem;
-        -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-
-        img {
-            width: 100%;
-        }
     }
 }
 
@@ -379,7 +363,11 @@ SECCIONES POST
         max-width: 60%;
     }
 
-    .content-post {
+    .post-title {
+        margin: 2rem 0;
+    }
+
+    .post-content {
         img {
             width: 100%;
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
@@ -406,8 +394,19 @@ SECCIONES POST
 SECCIONES ABOUT
 ------------------------------------------------------*/
 
-.about {
+#about {
     margin: 2rem 0;
+
+    @media (min-width: $mq-tablet) {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    @media (min-width: $mq-desktop) {
+        max-width: 60%;
+        margin: auto;
+    }
+
     li {
         list-style-type: disc;
         margin-left: 1.2rem;

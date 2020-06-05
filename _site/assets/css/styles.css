@@ -72,6 +72,7 @@ img {
 .cta-primary, .cta-secondary {
   font-size: 0.8rem;
   background: #000;
+  border: 2px solid #000;
   color: #ffffff;
   font-weight: 500;
   width: 100%;
@@ -86,11 +87,13 @@ img {
   .cta-primary:hover, .cta-secondary:hover {
     color: #ffffff;
     background: #000;
-    text-decoration: none; }
+    text-decoration: none;
+    opacity: .8; }
 
 .cta-secondary {
-  background: #000;
-  color: #E8ECEB; }
+  background: #ffffff;
+  color: #000;
+  border: 2px solid #000; }
 
 .small-titles {
   font-size: 0.9rem;
@@ -199,30 +202,16 @@ SECCIONES HOME
         right: 0; }
 
 #related-posts {
-  padding: 0; }
+  border-top: 1px solid #E8ECEB;
+  padding-top: 2rem;
+  margin-top: 5rem; }
   #related-posts ul {
     -ms-grid-columns: auto;
     grid-template-columns: auto; }
     #related-posts ul li p {
       display: block !important; }
-
-#home-about {
-  margin-top: 6rem;
-  background: #000;
-  color: #ffffff;
-  padding: 5rem 0 6rem;
-  display: none; }
-  #home-about .about-text {
-    display: flex;
-    margin-bottom: 3rem; }
-  #home-about .about-pics {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 2rem;
-    -ms-grid-columns: auto auto auto;
-    grid-template-columns: auto auto auto; }
-    #home-about .about-pics img {
-      width: 100%; }
+    #related-posts ul li .image-post {
+      margin: 0rem 2.5rem 0rem 0; }
 
 /*------------------------------------------------------
 SECCIONES BLOG
@@ -271,10 +260,12 @@ SECCIONES POST
     #post-page {
       margin: auto;
       max-width: 60%; } }
-  #post-page .content-post img {
+  #post-page .post-title {
+    margin: 2rem 0; }
+  #post-page .post-content img {
     width: 100%; }
     @media (min-width: 768px), (min-width: 1200px) {
-      #post-page .content-post img {
+      #post-page .post-content img {
         max-width: 400px; } }
   #post-page .about-widget {
     background: #E8ECEB;
@@ -289,15 +280,23 @@ SECCIONES POST
 /*------------------------------------------------------
 SECCIONES ABOUT
 ------------------------------------------------------*/
-.about {
+#about {
   margin: 2rem 0; }
-  .about li {
+  @media (min-width: 768px) {
+    #about {
+      max-width: 80%;
+      margin: auto; } }
+  @media (min-width: 1200px) {
+    #about {
+      max-width: 60%;
+      margin: auto; } }
+  #about li {
     list-style-type: disc;
     margin-left: 1.2rem; }
-  .about img {
+  #about img {
     width: 100%;
     margin-bottom: 2rem;
     border-radius: .6rem; }
     @media (min-width: 768px), (min-width: 1200px) {
-      .about img {
+      #about img {
         max-width: 600px; } }

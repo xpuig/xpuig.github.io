@@ -41,7 +41,8 @@ header {
     flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
-    color: #000; }
+    color: #000;
+    font-weight: 600; }
     header a:hover {
       text-decoration: none;
       color: #CC0000; }

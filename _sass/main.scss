@@ -19,7 +19,7 @@ BÁSICOS
 body {
     background: $main-bg;
     font-family: $f-base;
-    font-size: $f-size-normal;
+    font-size: $f-size-l;
     color: $c-base;
 }
 
@@ -85,7 +85,7 @@ img {
 }
 
 .cta-primary {
-    font-size: $f-size-smallest;
+    font-size: $f-size-s;
     background: $c-base;
     border: 2px solid $c-base;
     color: $main-bg;
@@ -117,7 +117,7 @@ img {
 }
 
 .small-titles {
-    font-size: $f-size-small;
+    font-size: $f-size-m;
     font-weight: 500;
 }
 
@@ -125,7 +125,7 @@ footer {
     border-top: 1px solid $c-light;
     padding: 4rem 0;
     margin-top: 5rem;
-    font-size: $f-size-small;
+    font-size: $f-size-m;
 
     a {
         font-weight: 500;
@@ -138,7 +138,7 @@ footer {
 
     .newsletter {
         background: $c-4;
-        font-size: $f-size-big;
+        font-size: $f-size-xl;
         padding: 2rem;
         border-radius: .5rem;
         margin-bottom: 3rem;
@@ -169,7 +169,7 @@ footer {
 }
 
 /*------------------------------------------------------
-SECCIONES HOME
+SECCIONES INDEX
 ------------------------------------------------------*/
 
 #intro {
@@ -178,19 +178,19 @@ SECCIONES HOME
         padding-bottom: 3rem;
     }
 
-    .intro-text {
+    .intro__text {
         @media (min-width: $mq-desktop) {
             max-width: 60%;
         }
 
         h1 {
             font-family: $f-base;
-            font-size: 2rem;
+            font-size: $f-size-xxl;
             margin: 0 0 2rem;
             font-weight: 400;
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                font-size: 3rem;
+                font-size: $f-size-xxxl;
             }
         }
 
@@ -201,7 +201,7 @@ SECCIONES HOME
     }
 }
 
-#last-posts, #blog-list {
+#last-posts {
 
     ul {
         margin:2rem 0;
@@ -236,7 +236,7 @@ SECCIONES HOME
                 width: 70%;
 
                 h3 {
-                    font-size: $f-size-normal;
+                    font-size: $f-size-l;
                     a {
                         &:hover {
                             color:$c-hero;
@@ -249,7 +249,7 @@ SECCIONES HOME
                     display: none;
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                         display:block;
-                        font-size: $f-size-small;
+                        font-size: $f-size-m;
                         color: $c-grey;
                     }
                 }
@@ -313,7 +313,7 @@ SECCIONES BLOG
     li {
         display: inline-block;
         background-color: $c-light;
-        font-size: $f-size-smallest;
+        font-size: $f-size-s;
         font-weight: 500;
         border-radius: 1rem;
         padding: .3rem .6rem;
@@ -326,6 +326,8 @@ SECCIONES BLOG
 }
 
 #blog-list {
+    @extend #last-posts;
+
     ul {
         margin: 0 0 2rem;
         display: -ms-grid;
@@ -353,28 +355,34 @@ SECCIONES POST
 ------------------------------------------------------*/
 
 #post-page {
-    margin-top:3rem;
+    margin-top: 0;
 
     @media (min-width: $mq-tablet) {
         margin:auto;
         max-width: 80%;
+        margin-top: 3rem;
     }
 
     @media (min-width: $mq-desktop) {
         margin:auto;
         max-width: 60%;
+        margin-top: 3rem;
     }
 
     .post-title {
-        margin: 2rem 0;
+        margin: 0 0 2rem;
+        font-size: $f-size-xxl;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            margin: 2rem 0 3rem;
+            font-size: $f-size-xxxl;
+        }
     }
 
     .post-content {
         img {
             width: 100%;
-            @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                max-width: 400px;
-            }
+            margin: 1rem 0;
         }
     }
 
@@ -385,7 +393,7 @@ SECCIONES POST
         margin-bottom: 2.5rem;
 
         p {
-            font-size: $f-size-small;
+            font-size: $f-size-m;
             margin-top: .5rem;
             margin-bottom: 0;
         }
@@ -422,4 +430,10 @@ SECCIONES ABOUT
             max-width: 600px;
         }
     }
+}
+
+iframe {
+    border-radius: .5rem;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,.06);
+    margin: 2rem 0;
 }

@@ -133,24 +133,24 @@ footer {
       margin-bottom: 1rem; } }
 
 /*------------------------------------------------------
-SECCIONES HOME
+SECCIONES INDEX
 ------------------------------------------------------*/
 @media (min-width: 768px), (min-width: 1200px) {
   #intro {
     padding-top: 3rem;
     padding-bottom: 3rem; } }
 @media (min-width: 1200px) {
-  #intro .intro-text {
+  #intro .intro__text {
     max-width: 60%; } }
-#intro .intro-text h1 {
+#intro .intro__text h1 {
   font-family: "Space Mono", monospace;
   font-size: 2rem;
   margin: 0 0 2rem;
   font-weight: 400; }
   @media (min-width: 768px), (min-width: 1200px) {
-    #intro .intro-text h1 {
+    #intro .intro__text h1 {
       font-size: 3rem; } }
-#intro .intro-text p {
+#intro .intro__text p {
   margin-bottom: 3rem;
   color: rgba(0, 0, 0, 0.4); }
 
@@ -253,22 +253,27 @@ SECCIONES BLOG
 SECCIONES POST
 ------------------------------------------------------*/
 #post-page {
-  margin-top: 3rem; }
+  margin-top: 0; }
   @media (min-width: 768px) {
     #post-page {
       margin: auto;
-      max-width: 80%; } }
+      max-width: 80%;
+      margin-top: 3rem; } }
   @media (min-width: 1200px) {
     #post-page {
       margin: auto;
-      max-width: 60%; } }
+      max-width: 60%;
+      margin-top: 3rem; } }
   #post-page .post-title {
-    margin: 2rem 0; }
-  #post-page .post-content img {
-    width: 100%; }
+    margin: 0 0 2rem;
+    font-size: 2rem; }
     @media (min-width: 768px), (min-width: 1200px) {
-      #post-page .post-content img {
-        max-width: 400px; } }
+      #post-page .post-title {
+        margin: 2rem 0 3rem;
+        font-size: 3rem; } }
+  #post-page .post-content img {
+    width: 100%;
+    margin: 1rem 0; }
   #post-page .about-widget {
     background: #E8ECEB;
     padding: 1rem;
@@ -302,3 +307,8 @@ SECCIONES ABOUT
     @media (min-width: 768px), (min-width: 1200px) {
       #about img {
         max-width: 600px; } }
+
+iframe {
+  border-radius: .5rem;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.06);
+  margin: 2rem 0; }

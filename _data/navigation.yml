@@ -1,4 +1,8 @@
 - name: Insights
+  link: #
+- name: Blog
   link: /blog
 - name: Sobre mí
   link: /about
+- name: Contacto
+  link: #

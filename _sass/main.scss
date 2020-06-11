@@ -36,6 +36,10 @@ header {
         font-weight: 400;
     }
 
+    .navbar-toggler {
+        border: none;
+    }
+
     .navbar-nav {
         -ms-flex-direction: row;
         flex-direction: row;
@@ -50,12 +54,6 @@ header {
             text-decoration: none;
             color: $c-hero;
         }
-    }
-
-    .current {
-        color: $c-base;
-        border-bottom: 2px solid $c-base;
-        padding-bottom: .3rem;
     }
 }
 
@@ -187,7 +185,7 @@ SECCIONES INDEX
             font-family: $f-base;
             font-size: $f-size-xxl;
             margin: 0 0 2rem;
-            font-weight: 400;
+            font-weight: 700;
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                 font-size: $f-size-xxxl;

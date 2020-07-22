@@ -10,6 +10,11 @@ defaults:
       layout: "author"
   - scope:
       path: ""
+      type: "experience"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"

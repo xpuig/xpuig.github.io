@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="184px" viewBox="0 0 184 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mask</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M92,0 C142.810197,-9.33368177e-15 184,41.189803 184,92 C184,142.810197 142.810197,184 92,184 C41.189803,184 6.22245451e-15,142.810197 0,92 C-6.22245451e-15,41.189803 41.189803,9.33368177e-15 92,0 Z" id="Mask" fill="#EEF1F3"></path>
+    </g>
+</svg>

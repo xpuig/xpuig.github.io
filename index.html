@@ -4,22 +4,62 @@ title: Home
 ---
 
 
-    <section id="intro">
-        <div class="intro__text">
-            <h1>{{ "Insights caseros sobre UX y Desarrollo web" }}</h1>
-            <p>Insights caseros sobre UX y Desarrollo web bright green or golden flesh with rows of tiny,
-                black, edible seeds. The fruit has soft texture, with a sweet and unique flavor.</p>
-        </div>
-    </section>
-
-    <section id="last-posts">
-        <span class="small-titles">{{ "los más recientes" | upcase }}</span>
+<section id="intro">
+    <div class="intro__text">
+        <img src="assets/img/profile-pic.svg" class="profile-pic" alt="Profile pic Xavi Puig Hernandez">
+        <h1>{{ "I'm focused on Visual Design & the humanization of the User Experience" }}</h1>
+        <p>Insights caseros sobre UX y Desarrollo web bright green or golden flesh with rows of tiny, black, edible
+            seeds. The fruit has soft texture, with a sweet and unique flavor.</p>
         <ul>
-            {% for post in site.posts limit: 6 %}
             <li>
-                {% include post-item.html %}
+                <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>
             </li>
-            {% endfor %}
+            <li>
+                <a href="https://www.behance.net/xavipuig" target="_blank">Behance</a>
+            </li>
+            <li>
+                <a href="https://dribbble.com/xavipuig" target="_blank">Dribbble</a>
+            </li>
         </ul>
-        <a href="/blog" class="btn cta-primary">Ver más insights</a>
-    </section>
+    </div>
+</section>
+
+<section id="intro-gallery">
+    <ul>
+        <li><img src="assets/img/gallery-item.png" alt="" style="width: 100%;"></li>
+        <li><img src="assets/img/gallery-item.png" alt="" style="width: 100%;"></li>
+        <li><img src="assets/img/gallery-item.png" alt="" style="width: 100%;"></li>
+        <li><img src="assets/img/gallery-item.png" alt="" style="width: 100%;"></li>
+    </ul>
+</section>
+
+<section id="work-experience">
+    <div>
+        <ul class="work-education">
+            <li>
+                <h3>{{ "Experience" | upcase }}</h3>
+                <ul class="list-items-experience">
+                    {% include experience.html %}
+                </ul>
+            </li>
+            <li>
+                <h3>{{ "Education" | upcase }}</h3>
+                <ul class="list-items-experience">
+                    {% include education.html %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="last-posts">
+    <span class="small-titles">{{ "blog" | upcase }}</span>
+    <ul>
+        {% for post in site.posts limit: 6 %}
+        <li>
+            {% include post-item.html %}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/blog" class="btn cta-primary">Ver más entradas</a>
+</section>

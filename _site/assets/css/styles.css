@@ -17,6 +17,9 @@ TIPOGRAFÍA
 /*------------------------------------------------------
 BÁSICOS
 ------------------------------------------------------*/
+.wrapper {
+  overflow: hidden; }
+
 .container {
   padding: 0 30px; }
 
@@ -104,7 +107,6 @@ img {
 footer {
   border-top: 1px solid #E8ECEB;
   padding: 4rem 0;
-  margin-top: 5rem;
   font-size: 0.9rem; }
   footer a {
     font-weight: 500; }
@@ -124,6 +126,9 @@ footer {
   footer li {
     display: inline-block;
     margin: 0 .5rem; }
+    @media (min-width: 1200px), (min-width: 768px) {
+      footer li {
+        margin: 0 1rem 0 0; } }
   footer .row {
     margin: 0; }
   @media (max-width: 768px) {
@@ -140,13 +145,13 @@ SECCIONES INDEX
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       padding-top: 3rem;
-      padding-bottom: 5rem; } }
+      padding-bottom: 8rem; } }
   #intro .intro__text {
     position: relative; }
     #intro .intro__text .profile-pic {
       margin-bottom: 1.5rem;
-      width: 20%; }
-      @media (min-width: 1200px) {
+      width: 30%; }
+      @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text .profile-pic {
           position: absolute;
           right: 0;
@@ -170,6 +175,11 @@ SECCIONES INDEX
       display: inline-block;
       margin: 0 1.5rem 0 0; }
 
+@media (min-width: 768px), (min-width: 1200px) {
+  #intro-gallery {
+    margin-left: -33.33%;
+    margin-right: -33.33%;
+    overflow: hidden; } }
 #intro-gallery ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

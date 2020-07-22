@@ -31,8 +31,44 @@ TIPOGRAFÍA
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('/assets/fonts/StratosLCWeb-Regular.woff2') format('woff2'),
+        url('/assets/fonts/StratosLCWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('/assets/fonts/StratosLCWeb-Bold.woff2') format('woff2'),
+        url('/assets/fonts/StratosLCWeb-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('/assets/fonts/StratosLCWeb-Medium.woff2') format('woff2'),
+        url('/assets/fonts/StratosLCWeb-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('/assets/fonts/StratosLCWeb-Light.woff2') format('woff2'),
+        url('/assets/fonts/StratosLCWeb-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 $f-heading: 'Rubik',serif;
-$f-base: 'Inter', sans-serif;
+$f-base: 'Stratos LC Web', sans-serif;
 
 $f-size-s: .8rem;
 $f-size-m: .9rem;

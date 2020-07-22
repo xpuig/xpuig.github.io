@@ -26,7 +26,7 @@ BÁSICOS
 }
 
 body {
-    background: var(--color);
+    background: $main-bg;
     font-family: $f-base;
     font-size: $f-size-l;
     color: $c-base;
@@ -52,7 +52,6 @@ header {
     .navbar-nav {
         -ms-flex-direction: row;
         flex-direction: row;
-        display: none;
     }
 
     a {
@@ -180,6 +179,7 @@ footer {
 /*------------------------------------------------------
 SECCIONES INDEX
 ------------------------------------------------------*/
+
 
 #intro {
     padding-bottom: 4rem;

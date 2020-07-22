@@ -31,7 +31,7 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: var(--color);
+  background: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #000; }
@@ -48,8 +48,7 @@ header {
     border: none; }
   header .navbar-nav {
     -ms-flex-direction: row;
-    flex-direction: row;
-    display: none; }
+    flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
     color: #000;

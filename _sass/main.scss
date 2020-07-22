@@ -1,3 +1,8 @@
+:root {
+    --color: white;
+    --opacidad-nav: 0;
+}
+
 /*------------------------------------------------------
 IMPORTS
 ------------------------------------------------------*/
@@ -21,7 +26,7 @@ BÁSICOS
 }
 
 body {
-    background: $main-bg;
+    background: var(--color);
     font-family: $f-base;
     font-size: $f-size-l;
     color: $c-base;
@@ -130,7 +135,6 @@ footer {
     font-size: $f-size-m;
 
     a {
-        font-weight: 500;
 
         &:hover {
             color:$c-hero;
@@ -223,6 +227,14 @@ SECCIONES INDEX
         li {
             display: inline-block;
             margin: 0 1.5rem 0 0;
+
+            a {
+        
+                &:hover {
+                    color:$c-hero;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -249,6 +261,8 @@ SECCIONES INDEX
 }
 
 #work-experience {
+
+    opacity: var(--opacidad-nav);
 
     ul.work-education {
         display: grid;

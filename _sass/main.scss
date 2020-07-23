@@ -18,7 +18,9 @@ BÁSICOS
 
 .container {
     padding: 0 30px;
-    max-width: 90% !important;
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        max-width: 90% !important;
+    }   
 }
 
 .container-fluid {

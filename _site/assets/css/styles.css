@@ -54,10 +54,10 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: #ffffff;
+  background: #1F2337;
   font-family: "Stratos LC Web", sans-serif;
   font-size: 1rem;
-  color: #000; }
+  color: #ffffff; }
 
 header {
   width: 100%;
@@ -67,6 +67,14 @@ header {
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
+    header .navbar-brand img {
+      max-width: 5%; }
+  header .navbar-light .navbar-brand {
+    color: #ffffff;
+    font-weight: 400; }
+    header .navbar-light .navbar-brand:hover {
+      text-decoration: none;
+      color: #ffffff; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -74,18 +82,21 @@ header {
     flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
-    color: #000;
+    color: #1F2337;
     font-weight: 400; }
     header a:hover {
       text-decoration: none;
-      color: #CC0000; }
+      color: #ffffff; }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #FFC576;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }
+  a:hover {
+    text-decoration: none;
+    color: #ffffff; }
 
 h3 {
   font-family: "Stratos LC Web", sans-serif; }
@@ -102,8 +113,8 @@ img {
 
 .cta-primary, .cta-secondary {
   font-size: 0.8rem;
-  background: #000;
-  border: 2px solid #000;
+  background: #1F2337;
+  border: 2px solid #1F2337;
   color: #ffffff;
   font-weight: 500;
   width: 100%;
@@ -117,24 +128,26 @@ img {
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
     color: #ffffff;
-    background: #000;
+    background: #1F2337;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
   background: #ffffff;
-  color: #000;
-  border: 2px solid #000; }
+  color: #1F2337;
+  border: 2px solid #1F2337; }
 
 .small-titles {
   font-size: 0.9rem;
   font-weight: 500; }
 
 footer {
-  border-top: 1px solid #E8ECEB;
   padding: 4rem 0; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    footer {
+      margin: 2rem 0; } }
   footer a:hover {
-    color: #CC0000;
+    color: #ffffff;
     text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
@@ -190,7 +203,7 @@ SECCIONES INDEX
           max-width: 60%; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
-      color: rgba(0, 0, 0, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text p {
           max-width: 60%; } }
@@ -198,23 +211,40 @@ SECCIONES INDEX
       display: inline-block;
       margin: 0 1.5rem 0 0; }
       #intro .intro__text li a:hover {
-        color: #CC0000;
+        color: #ffffff;
         text-decoration: none; }
 
-@media (min-width: 768px), (min-width: 1200px) {
-  #intro-gallery {
-    margin-left: -33.33%;
-    margin-right: -33.33%;
-    overflow: hidden; } }
-#intro-gallery ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  padding-bottom: 4rem; }
-  @media (min-width: 768px), (min-width: 1200px) {
-    #intro-gallery ul {
-      grid-template-columns: repeat(4, 1fr);
-      padding-bottom: 3rem; } }
+#intro-gallery {
+  /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+      margin-left: -33.33%;
+      margin-right: -33.33%;
+      overflow: hidden;
+  } */ }
+  #intro-gallery ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 4rem; }
+    @media (min-width: 768px), (min-width: 1200px) {
+      #intro-gallery ul {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 3rem; } }
+    #intro-gallery ul li.check-work {
+      display: flex;
+      align-items: center;
+      background: #1F2337;
+      border-radius: .4rem;
+      padding: 0 3rem; }
+      #intro-gallery ul li.check-work a {
+        color: #ffffff;
+        margin: auto;
+        text-align: center; }
+        #intro-gallery ul li.check-work a:hover {
+          color: #ffffff;
+          text-decoration: none; }
+        @media (min-width: 1200px) {
+          #intro-gallery ul li.check-work a {
+            font-size: 2rem; } }
 
 #work-experience {
   opacity: var(--opacidad-nav); }
@@ -232,7 +262,7 @@ SECCIONES INDEX
     #work-experience ul.work-education li h5 {
       font-size: 1.2rem; }
     #work-experience ul.work-education li p {
-      color: rgba(0, 0, 0, 0.4); }
+      color: rgba(255, 255, 255, 0.4); }
     #work-experience ul.work-education h5 {
       font-weight: 800; }
   #work-experience ul.list-items-experience {
@@ -240,6 +270,22 @@ SECCIONES INDEX
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
     padding-bottom: 4rem; }
+
+#about-me {
+  background: #FFE1B2;
+  border: 3px solid #1F2337;
+  border-radius: 1rem;
+  padding: 1rem 2rem 0rem 2rem;
+  display: none; }
+  #about-me ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem; }
+    #about-me ul li {
+      margin: 1rem 0; }
+      #about-me ul li h4 {
+        font-weight: 800;
+        margin-bottom: 2rem; }
 
 #last-posts, #related-posts, #blog-list {
   display: none; }
@@ -269,7 +315,7 @@ SECCIONES INDEX
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
           font-size: 1rem; }
           #last-posts ul li .info-post h3 a:hover, #related-posts ul li .info-post h3 a:hover, #blog-list ul li .info-post h3 a:hover {
-            color: #CC0000;
+            color: #FFC576;
             text-decoration: none; }
         #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
           display: none; }
@@ -277,7 +323,7 @@ SECCIONES INDEX
             #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
               display: block;
               font-size: 0.9rem;
-              color: rgba(0, 0, 0, 0.4); } }
+              color: rgba(255, 255, 255, 0.4); } }
         @media (min-width: 1200px) {
           #last-posts ul li .info-post h6, #related-posts ul li .info-post h6, #blog-list ul li .info-post h6 {
             display: none; } }
@@ -319,7 +365,7 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #000;
+  background-color: #1F2337;
   color: #ffffff; }
 
 #blog-list ul {
@@ -336,7 +382,7 @@ SECCIONES BLOG
 @media (min-width: 768px), (min-width: 1200px) {
   #blog-list p {
     display: block;
-    color: rgba(0, 0, 0, 0.4); } }
+    color: rgba(255, 255, 255, 0.4); } }
 
 /*------------------------------------------------------
 SECCIONES POST

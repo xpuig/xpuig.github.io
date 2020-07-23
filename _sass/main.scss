@@ -25,10 +25,10 @@ BÁSICOS
 }
 
 body {
-    background: $main-bg;
+    background: $c-base;
     font-family: $f-base;
     font-size: $f-size-l;
-    color: $c-base;
+    color: $main-bg;
 }
 
 header {
@@ -42,6 +42,19 @@ header {
     .navbar-brand {
         margin: 0;
         font-weight: 400;
+
+        img {
+            max-width: 5%;
+        }
+    }
+
+    .navbar-light .navbar-brand {
+        color: $main-bg;
+        font-weight: 400;
+        &:hover {
+            text-decoration: none;
+            color: $main-bg;
+        }
     }
 
     .navbar-toggler {
@@ -60,17 +73,21 @@ header {
 
         &:hover {
             text-decoration: none;
-            color: $c-hero;
+            color: $main-bg;
         }
     }
 }
 
 a {
     text-decoration: none;
-    color: $c-base;
+    color: $c-hero;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
+    &:hover {
+        text-decoration: none;
+        color: $main-bg;
+    }
 }
 
 h3 {
@@ -128,13 +145,16 @@ img {
 }
 
 footer {
-    border-top: 1px solid $c-light;
     padding: 4rem 0;
+
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        margin: 2rem 0;
+    }
 
     a {
 
         &:hover {
-            color:$c-hero;
+            color: $main-bg;
             text-decoration: none;
         }
     }
@@ -229,7 +249,7 @@ SECCIONES INDEX
             a {
         
                 &:hover {
-                    color:$c-hero;
+                    color:$main-bg;
                     text-decoration: none;
                 }
             }
@@ -239,11 +259,11 @@ SECCIONES INDEX
 
 #intro-gallery{
 
-    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+    /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin-left: -33.33%;
         margin-right: -33.33%;
         overflow: hidden;
-    }
+    } */
 
     ul {
         display: grid;
@@ -252,8 +272,30 @@ SECCIONES INDEX
         padding-bottom: 4rem;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             padding-bottom: 3rem;
+        }
+
+        li.check-work {
+            display: flex;
+            align-items: center;
+            background: $c-base;
+            border-radius: .4rem;
+            padding: 0 3rem;
+            a {
+                color: $main-bg;
+                margin: auto;
+                text-align: center;
+
+                &:hover {
+                    color:$main-bg;
+                    text-decoration: none;
+                }
+
+                @media (min-width: $mq-desktop) {
+                    font-size: $f-size-xxl;
+                }
+            }
         }
     }
 }
@@ -296,9 +338,29 @@ SECCIONES INDEX
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
         padding-bottom: 4rem;
-    }
+    }   
+}
 
+#about-me {
+    background: $c-2;
+    border: 3px solid $c-base;
+    border-radius: 1rem;
+    padding: 1rem 2rem 0rem 2rem; 
+    display: none;
     
+    ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    
+        li {
+            margin: 1rem 0;
+            h4 {
+                font-weight: 800;
+                margin-bottom: 2rem;
+            }
+        }
+    }
 }
 
 #last-posts {

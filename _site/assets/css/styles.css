@@ -48,7 +48,8 @@ BÁSICOS
   overflow: hidden; }
 
 .container {
-  padding: 0 30px; }
+  padding: 0 30px;
+  max-width: 90% !important; }
 
 .container-fluid {
   padding: 0; }
@@ -147,7 +148,7 @@ footer {
     footer {
       margin: 2rem 0; } }
   footer a:hover {
-    color: #ffffff;
+    color: #1F2337;
     text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
@@ -192,6 +193,9 @@ SECCIONES INDEX
           position: absolute;
           right: 0;
           width: 25%; } }
+      @media (min-width: 1600px) {
+        #intro .intro__text .profile-pic {
+          width: 15%; } }
     #intro .intro__text h1 {
       font-family: "Stratos LC Web", sans-serif;
       font-size: 2rem;
@@ -211,7 +215,7 @@ SECCIONES INDEX
       display: inline-block;
       margin: 0 1.5rem 0 0; }
       #intro .intro__text li a:hover {
-        color: #ffffff;
+        color: #1F2337;
         text-decoration: none; }
 
 #intro-gallery {
@@ -240,7 +244,7 @@ SECCIONES INDEX
         margin: auto;
         text-align: center; }
         #intro-gallery ul li.check-work a:hover {
-          color: #ffffff;
+          color: #1F2337;
           text-decoration: none; }
         @media (min-width: 1200px) {
           #intro-gallery ul li.check-work a {

@@ -54,10 +54,10 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: #1F2337;
+  background: #ffffff;
   font-family: "Stratos LC Web", sans-serif;
   font-size: 1rem;
-  color: #ffffff; }
+  color: #1F2337; }
 
 header {
   width: 100%;
@@ -70,11 +70,11 @@ header {
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #ffffff;
+    color: #1F2337;
     font-weight: 400; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #ffffff; }
+      color: #1F2337; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -82,15 +82,15 @@ header {
     flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
-    color: #1F2337;
+    color: #FF385C;
     font-weight: 400; }
     header a:hover {
       text-decoration: none;
-      color: #ffffff; }
+      color: #1F2337; }
 
 a {
   text-decoration: none;
-  color: #FFC576;
+  color: #FF385C;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }
@@ -203,7 +203,7 @@ SECCIONES INDEX
           max-width: 60%; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
-      color: rgba(255, 255, 255, 0.4); }
+      color: rgba(0, 0, 0, 0.4); }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text p {
           max-width: 60%; } }
@@ -262,7 +262,7 @@ SECCIONES INDEX
     #work-experience ul.work-education li h5 {
       font-size: 1.2rem; }
     #work-experience ul.work-education li p {
-      color: rgba(255, 255, 255, 0.4); }
+      color: rgba(0, 0, 0, 0.4); }
     #work-experience ul.work-education h5 {
       font-weight: 800; }
   #work-experience ul.list-items-experience {
@@ -315,7 +315,7 @@ SECCIONES INDEX
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
           font-size: 1rem; }
           #last-posts ul li .info-post h3 a:hover, #related-posts ul li .info-post h3 a:hover, #blog-list ul li .info-post h3 a:hover {
-            color: #FFC576;
+            color: #FF385C;
             text-decoration: none; }
         #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
           display: none; }
@@ -323,7 +323,7 @@ SECCIONES INDEX
             #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
               display: block;
               font-size: 0.9rem;
-              color: rgba(255, 255, 255, 0.4); } }
+              color: rgba(0, 0, 0, 0.4); } }
         @media (min-width: 1200px) {
           #last-posts ul li .info-post h6, #related-posts ul li .info-post h6, #blog-list ul li .info-post h6 {
             display: none; } }
@@ -382,7 +382,7 @@ SECCIONES BLOG
 @media (min-width: 768px), (min-width: 1200px) {
   #blog-list p {
     display: block;
-    color: rgba(255, 255, 255, 0.4); } }
+    color: rgba(0, 0, 0, 0.4); } }
 
 /*------------------------------------------------------
 SECCIONES POST

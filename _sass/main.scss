@@ -25,10 +25,10 @@ BÁSICOS
 }
 
 body {
-    background: $c-base;
+    background: $main-bg;
     font-family: $f-base;
     font-size: $f-size-l;
-    color: $main-bg;
+    color: $c-base;
 }
 
 header {
@@ -49,11 +49,11 @@ header {
     }
 
     .navbar-light .navbar-brand {
-        color: $main-bg;
+        color: $c-base;
         font-weight: 400;
         &:hover {
             text-decoration: none;
-            color: $main-bg;
+            color: $c-base;
         }
     }
 
@@ -68,12 +68,12 @@ header {
 
     a {
         margin: 0 0 0 1.5rem;
-        color: $c-base;
+        color: $c-hero;
         font-weight: 400;
 
         &:hover {
             text-decoration: none;
-            color: $main-bg;
+            color: $c-base;
         }
     }
 }

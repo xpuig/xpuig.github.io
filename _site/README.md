@@ -1,5 +1,7 @@
 # Hi! I'm Xavi. Product Designer.
 
+<img src="/assets/img/screenshot.png" alt="Screenshot">
+
 ## Who am I and what I do?
 
 My name is **Xavi Puig Hernandez**, and I am a Product Designer and Visual Developer based in Barcelona. </p><p>I combine research, user flows, wireframing, prototyping, storytelling, and visual design & development to transform tricky problems into engaging solutions. With a background in Front-End Development, I understand the constraints of the web and am able to design and build around them effectively.

@@ -267,8 +267,14 @@ SECCIONES INDEX
       font-size: 0.9rem; }
     #work-experience ul.work-education li h5 {
       font-size: 1.2rem; }
+      @media (min-width: 768px), (min-width: 1200px) {
+        #work-experience ul.work-education li h5 {
+          font-size: 1.4rem; } }
     #work-experience ul.work-education li p {
       color: rgba(0, 0, 0, 0.4); }
+      @media (min-width: 768px), (min-width: 1200px) {
+        #work-experience ul.work-education li p {
+          max-width: 80%; } }
     #work-experience ul.work-education h5 {
       font-weight: 800; }
   #work-experience ul.list-items-experience {

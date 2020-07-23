@@ -329,9 +329,15 @@ SECCIONES INDEX
         li {
             h5 {
                 font-size: $f-size-xl;
+                @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                    font-size: 1.4rem;
+                }
             }
             p {
                 color: $c-grey;
+                @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                    max-width: 80%;
+                }
             }
         }
 

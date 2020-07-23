@@ -12,6 +12,14 @@ IMPORTS
 BÁSICOS
 ------------------------------------------------------*/
 
+#red-bg {
+    background-color: #FF385C;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 .wrapper {
     overflow: hidden;
 }

@@ -92,7 +92,7 @@ header {
     flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
-    color: #FF385C;
+    color: #1F2337;
     font-weight: 400; }
     header a:hover {
       text-decoration: none;
@@ -152,13 +152,16 @@ img {
   font-weight: 500; }
 
 footer {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  font-size: 1.3rem; }
   @media (min-width: 1200px), (min-width: 768px) {
     footer {
       margin: 2rem 0; } }
-  footer a:hover {
-    color: #1F2337;
-    text-decoration: none; }
+  footer a {
+    color: #1F2337; }
+    footer a:hover {
+      color: #FF385C;
+      text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
     font-size: 1.2rem;
@@ -216,16 +219,22 @@ SECCIONES INDEX
           max-width: 60%; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
-      color: rgba(0, 0, 0, 0.4); }
+      font-size: 1.3rem;
+      font-weight: 300; }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text p {
           max-width: 60%; } }
     #intro .intro__text li {
       display: inline-block;
       margin: 0 1.5rem 0 0; }
-      #intro .intro__text li a:hover {
-        color: #1F2337;
-        text-decoration: none; }
+      #intro .intro__text li a {
+        color: #1F2337; }
+        @media (min-width: 768px), (min-width: 1200px) {
+          #intro .intro__text li a {
+            font-size: 1.3rem; } }
+        #intro .intro__text li a:hover {
+          color: #FF385C;
+          text-decoration: none; }
 
 #intro-gallery {
   /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
@@ -278,7 +287,7 @@ SECCIONES INDEX
         #work-experience ul.work-education li h5 {
           font-size: 1.4rem; } }
     #work-experience ul.work-education li p {
-      color: rgba(0, 0, 0, 0.4); }
+      font-weight: 300; }
       @media (min-width: 768px), (min-width: 1200px) {
         #work-experience ul.work-education li p {
           max-width: 80%; } }

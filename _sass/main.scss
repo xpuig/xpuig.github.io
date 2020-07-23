@@ -79,7 +79,7 @@ header {
 
     a {
         margin: 0 0 0 1.5rem;
-        color: $c-hero;
+        color: $c-base;
         font-weight: 400;
 
         &:hover {
@@ -157,15 +157,17 @@ img {
 
 footer {
     padding: 4rem 0;
+    font-size: 1.3rem;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin: 2rem 0;
     }
 
     a {
+        color: $c-base;
 
         &:hover {
-            color: $c-base;
+            color: $c-hero;
             text-decoration: none;
         }
     }
@@ -250,7 +252,8 @@ SECCIONES INDEX
 
         p {
             margin-bottom: 3rem;
-            color: $c-grey;
+            font-size: 1.3rem;
+            font-weight: 300;
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                 max-width: 60%;
@@ -262,9 +265,14 @@ SECCIONES INDEX
             margin: 0 1.5rem 0 0;
 
             a {
-        
+                color: $c-base;
+
+                @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+                    font-size: 1.3rem;
+                }
+
                 &:hover {
-                    color:$c-base;
+                    color:$c-hero;
                     text-decoration: none;
                 }
             }
@@ -342,7 +350,8 @@ SECCIONES INDEX
                 }
             }
             p {
-                color: $c-grey;
+                font-weight: 300;
+
                 @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                     max-width: 80%;
                 }

@@ -215,6 +215,9 @@ SECCIONES INDEX
 
 #intro {
     padding-bottom: 4rem;
+    height: 80vh;
+    display: flex;
+    align-items: center;
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         padding-top: 3rem;
@@ -234,7 +237,7 @@ SECCIONES INDEX
                 width: 25%;
             }
 
-            @media (min-width: 1600px) {
+            @media (min-width: 1800px) {
                 width: 15%;
             }
         }
@@ -319,6 +322,28 @@ SECCIONES INDEX
                 @media (min-width: $mq-desktop) {
                     font-size: $f-size-xxl;
                 }
+            }
+        }
+
+        li {
+            overflow: hidden;
+            border-radius: .4rem;
+        }
+
+        .item-gallery {
+            position: relative;
+        }
+
+        .image-gallery {
+            display: block;
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            transition: .5s;
+            overflow: hidden;
+
+            &:hover {
+                transform: scale(1.05);
             }
         }
     }

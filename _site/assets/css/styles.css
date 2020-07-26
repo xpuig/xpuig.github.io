@@ -191,7 +191,10 @@ footer {
 SECCIONES INDEX
 ------------------------------------------------------*/
 #intro {
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  height: 80vh;
+  display: flex;
+  align-items: center; }
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       padding-top: 3rem;
@@ -206,7 +209,7 @@ SECCIONES INDEX
           position: absolute;
           right: 0;
           width: 25%; } }
-      @media (min-width: 1600px) {
+      @media (min-width: 1800px) {
         #intro .intro__text .profile-pic {
           width: 15%; } }
     #intro .intro__text h1 {
@@ -268,6 +271,20 @@ SECCIONES INDEX
         @media (min-width: 1200px) {
           #intro-gallery ul li.check-work a {
             font-size: 2rem; } }
+    #intro-gallery ul li {
+      overflow: hidden;
+      border-radius: .4rem; }
+    #intro-gallery ul .item-gallery {
+      position: relative; }
+    #intro-gallery ul .image-gallery {
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      transition: .5s;
+      overflow: hidden; }
+      #intro-gallery ul .image-gallery:hover {
+        transform: scale(1.05); }
 
 #work-experience {
   opacity: var(--opacidad-nav); }

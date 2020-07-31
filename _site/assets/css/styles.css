@@ -64,27 +64,32 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: #ffffff;
+  background: #1A1A1A;
   font-family: "Stratos LC Web", sans-serif;
   font-size: 1rem;
-  color: #1F2337; }
+  color: #FFF; }
 
 header {
   width: 100%;
   padding: 2rem 0; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    header {
+      position: fixed; } }
   header .navbar {
     padding: 0; }
+  header #logo {
+    opacity: var(--opacidad-logo); }
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #1F2337;
+    color: #FFF;
     font-weight: 400; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #1F2337; }
+      color: #FFF; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -92,21 +97,21 @@ header {
     flex-direction: row; }
   header a {
     margin: 0 0 0 1.5rem;
-    color: #1F2337;
+    color: #FFF;
     font-weight: 400; }
     header a:hover {
       text-decoration: none;
-      color: #1F2337; }
+      color: #FFF; }
 
 a {
   text-decoration: none;
-  color: #FF385C;
+  color: yellow;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }
   a:hover {
     text-decoration: none;
-    color: #ffffff; }
+    color: #1A1A1A; }
 
 h3 {
   font-family: "Stratos LC Web", sans-serif; }
@@ -123,9 +128,9 @@ img {
 
 .cta-primary, .cta-secondary {
   font-size: 0.8rem;
-  background: #1F2337;
-  border: 2px solid #1F2337;
-  color: #ffffff;
+  background: #FFF;
+  border: 2px solid #FFF;
+  color: #1A1A1A;
   font-weight: 500;
   width: 100%;
   padding: .8rem 1rem;
@@ -137,15 +142,15 @@ img {
       width: auto;
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
-    color: #ffffff;
-    background: #1F2337;
+    color: #1A1A1A;
+    background: #FFF;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
-  background: #ffffff;
-  color: #1F2337;
-  border: 2px solid #1F2337; }
+  background: #1A1A1A;
+  color: #FFF;
+  border: 2px solid #FFF; }
 
 .small-titles {
   font-size: 0.9rem;
@@ -153,15 +158,17 @@ img {
 
 footer {
   padding: 4rem 0;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  opacity: var(--opacidad-nav);
+  transform: translateY(var(--translateY)); }
   @media (min-width: 1200px), (min-width: 768px) {
     footer {
       margin: 2rem 0; } }
   footer a {
-    color: #1F2337;
+    color: #FFF;
     font-size: 1.2rem; }
     footer a:hover {
-      color: #FF385C;
+      color: yellow;
       text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
@@ -193,7 +200,8 @@ SECCIONES INDEX
 #intro {
   padding-bottom: 4rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 100vh; }
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       padding-top: 3rem;
@@ -215,31 +223,42 @@ SECCIONES INDEX
       font-family: "Stratos LC Web", sans-serif;
       font-size: 2rem;
       margin: 0 0 2rem;
-      font-weight: 700; }
-      @media (min-width: 768px), (min-width: 1200px) {
+      font-weight: 400;
+      /* background: $theme-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block; */ }
+      @media (min-width: 1200px) {
         #intro .intro__text h1 {
-          font-size: 3rem;
-          max-width: 60%; } }
+          font-size: 4rem;
+          max-width: 60%;
+          margin-left: 15%; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
       font-size: 1.3rem;
       font-weight: 300; }
-      @media (min-width: 768px), (min-width: 1200px) {
+      @media (min-width: 1200px) {
         #intro .intro__text p {
-          max-width: 60%; } }
+          max-width: 60%;
+          margin-left: 15%; } }
+    @media (min-width: 1200px) {
+      #intro .intro__text ul {
+        margin-left: 15%; } }
     #intro .intro__text li {
       display: inline-block;
       margin: 0 1.5rem 0 0; }
       #intro .intro__text li a {
-        color: #1F2337; }
+        color: #FFF; }
         @media (min-width: 768px), (min-width: 1200px) {
           #intro .intro__text li a {
             font-size: 1.3rem; } }
         #intro .intro__text li a:hover {
-          color: #FF385C;
+          color: yellow;
           text-decoration: none; }
 
 #intro-gallery {
+  opacity: var(--opacidad-gal);
+  transform: translateY(var(--translateY));
   /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
       margin-left: -33.33%;
       margin-right: -33.33%;
@@ -257,15 +276,15 @@ SECCIONES INDEX
     #intro-gallery ul li.check-work {
       display: flex;
       align-items: center;
-      background: #1F2337;
+      background: #FFF;
       border-radius: .4rem;
       padding: 0 3rem; }
       #intro-gallery ul li.check-work a {
-        color: #ffffff;
+        color: #1A1A1A;
         margin: auto;
         text-align: center; }
         #intro-gallery ul li.check-work a:hover {
-          color: #1F2337;
+          color: #FFF;
           text-decoration: none; }
         @media (min-width: 1200px) {
           #intro-gallery ul li.check-work a {
@@ -286,7 +305,8 @@ SECCIONES INDEX
         transform: scale(1.05); }
 
 #work-experience {
-  opacity: var(--opacidad-nav); }
+  opacity: var(--opacidad-nav);
+  transform: translateY(var(--translateY)); }
   #work-experience ul.work-education {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -318,7 +338,7 @@ SECCIONES INDEX
 
 #about-me {
   background: #FFE1B2;
-  border: 3px solid #1F2337;
+  border: 3px solid #FFF;
   border-radius: 1rem;
   padding: 1rem 2rem 0rem 2rem;
   display: none; }
@@ -360,7 +380,7 @@ SECCIONES INDEX
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
           font-size: 1rem; }
           #last-posts ul li .info-post h3 a:hover, #related-posts ul li .info-post h3 a:hover, #blog-list ul li .info-post h3 a:hover {
-            color: #FF385C;
+            color: yellow;
             text-decoration: none; }
         #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
           display: none; }
@@ -410,8 +430,8 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #1F2337;
-  color: #ffffff; }
+  background-color: #FFF;
+  color: #1A1A1A; }
 
 #blog-list ul {
   margin: 0 0 2rem;

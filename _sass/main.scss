@@ -46,8 +46,16 @@ header {
     width: 100%;
     padding: 2rem 0;
 
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        position:fixed;
+    }
+
     .navbar {
         padding: 0;
+    }
+
+    #logo {
+        opacity: var(--opacidad-logo);
     }
 
     .navbar-brand {
@@ -159,6 +167,9 @@ footer {
     padding: 4rem 0;
     font-size: 1.3rem;
 
+    opacity: var(--opacidad-nav);
+    transform: translateY(var(--translateY));
+
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin: 2rem 0;
     }
@@ -217,6 +228,7 @@ SECCIONES INDEX
     padding-bottom: 4rem;
     display: flex;
     align-items: center;
+    height:100vh;
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         padding-top: 3rem;
@@ -245,11 +257,16 @@ SECCIONES INDEX
             font-family: $f-base;
             font-size: $f-size-xxl;
             margin: 0 0 2rem;
-            font-weight: 700;
+            font-weight: 400;
+            /* background: $theme-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block; */
 
-            @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                font-size: $f-size-xxxl;
+            @media (min-width: $mq-desktop) {
+                font-size: $f-size-xxxl + 1rem;
                 max-width: 60%;
+                margin-left: 15%;
             }
         }
 
@@ -258,8 +275,15 @@ SECCIONES INDEX
             font-size: 1.3rem;
             font-weight: 300;
 
-            @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            @media (min-width: $mq-desktop) {
                 max-width: 60%;
+                margin-left: 15%;
+            }
+        }
+
+        ul {
+            @media (min-width: $mq-desktop) {
+                margin-left: 15%;
             }
         }
 
@@ -284,6 +308,9 @@ SECCIONES INDEX
 }
 
 #intro-gallery{
+
+    opacity: var(--opacidad-gal);
+    transform: translateY(var(--translateY));
 
     /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin-left: -33.33%;
@@ -351,6 +378,7 @@ SECCIONES INDEX
 #work-experience {
 
     opacity: var(--opacidad-nav);
+    transform: translateY(var(--translateY));
 
     ul.work-education {
         display: grid;

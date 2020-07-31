@@ -192,7 +192,6 @@ SECCIONES INDEX
 ------------------------------------------------------*/
 #intro {
   padding-bottom: 4rem;
-  height: 80vh;
   display: flex;
   align-items: center; }
   @media (min-width: 768px), (min-width: 1200px) {
@@ -201,16 +200,16 @@ SECCIONES INDEX
       padding-bottom: 8rem; } }
   #intro .intro__text {
     position: relative; }
-    #intro .intro__text .profile-pic {
+    #intro .intro__text .intro__profile-pic {
       margin-bottom: 1.5rem;
       width: 30%; }
       @media (min-width: 768px), (min-width: 1200px) {
-        #intro .intro__text .profile-pic {
+        #intro .intro__text .intro__profile-pic {
           position: absolute;
           right: 0;
           width: 25%; } }
       @media (min-width: 1800px) {
-        #intro .intro__text .profile-pic {
+        #intro .intro__text .intro__profile-pic {
           width: 15%; } }
     #intro .intro__text h1 {
       font-family: "Stratos LC Web", sans-serif;

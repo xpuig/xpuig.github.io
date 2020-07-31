@@ -215,7 +215,6 @@ SECCIONES INDEX
 
 #intro {
     padding-bottom: 4rem;
-    height: 80vh;
     display: flex;
     align-items: center;
 
@@ -227,7 +226,7 @@ SECCIONES INDEX
     .intro__text {
         position: relative;
 
-        .profile-pic {
+        .intro__profile-pic {
             margin-bottom: 1.5rem;
             width: 30%;
 

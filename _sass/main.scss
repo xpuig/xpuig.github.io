@@ -46,6 +46,8 @@ header {
     width: 100%;
     padding: 2rem 0;
 
+    opacity: var(--opacidad-logo);
+
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         position:fixed;
     }
@@ -55,7 +57,13 @@ header {
     }
 
     #logo {
-        opacity: var(--opacidad-logo);
+        top: 3rem;
+        left: 5rem;
+        font-size: $f-size-l;
+
+        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+            position:fixed;
+        }
     }
 
     .navbar-brand {
@@ -83,10 +91,14 @@ header {
     .navbar-nav {
         -ms-flex-direction: row;
         flex-direction: row;
+        right: 5rem;
+        top: 3rem;
+        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+            position:fixed;
+        }
     }
 
     a {
-        margin: 0 0 0 1.5rem;
         color: $c-base;
         font-weight: 400;
 
@@ -127,9 +139,9 @@ img {
 }
 
 .cta-primary {
-    font-size: $f-size-s;
-    background: $c-base;
-    border: 2px solid $c-base;
+    font-size: $f-size-xl !important;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
     color: $main-bg;
     font-weight: 500;
     width: 100%;
@@ -137,6 +149,8 @@ img {
     border-radius: 0;
     transition: 0.3s ease-out;
     border-radius: 50rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         width: auto;
@@ -165,18 +179,20 @@ img {
 
 footer {
     padding: 4rem 0;
-    font-size: 1.3rem;
 
-    opacity: var(--opacidad-nav);
-    transform: translateY(var(--translateY));
+    /* opacity: var(--opacidad-nav);
+    transform: translateY(var(--translateY)); */
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin: 2rem 0;
+        position: fixed;
+        opacity: var(--opacidad-logo);
     }
 
     a {
         color: $c-base;
-        font-size: 1.2rem;
+        font-size: $f-size-l;
+        font-weight: 400;
 
         &:hover {
             color: $c-hero;
@@ -210,6 +226,24 @@ footer {
         margin:0;
     }
 
+    .social-networks {
+        bottom: 3rem;
+        left: 5rem;
+        
+        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+            position:fixed;
+        }
+    }
+
+    .resume {
+        bottom: 3rem;
+        right: 5rem;
+
+        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+            position:fixed;
+        }
+    }
+
     @media (max-width: $mq-tablet) {
         .item_footer {
             text-align: center;
@@ -230,10 +264,7 @@ SECCIONES INDEX
     align-items: center;
     height:100vh;
 
-    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        padding-top: 3rem;
-        padding-bottom: 8rem;
-    }
+   
 
     .intro__text {
         position: relative;
@@ -309,6 +340,7 @@ SECCIONES INDEX
 
 #intro-gallery{
 
+
     opacity: var(--opacidad-gal);
     transform: translateY(var(--translateY));
 
@@ -367,6 +399,7 @@ SECCIONES INDEX
             opacity: 1;
             transition: .5s;
             overflow: hidden;
+            filter: grayscale(1);
 
             &:hover {
                 transform: scale(1.05);
@@ -376,6 +409,8 @@ SECCIONES INDEX
 }
 
 #work-experience {
+
+    display: none;
 
     opacity: var(--opacidad-nav);
     transform: translateY(var(--translateY));

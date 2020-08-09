@@ -1,5 +1,5 @@
 var logo = basicScroll.create({
-  elem: document.querySelector('#logo'),
+  elem: document.querySelector('header, footer'),
   from: '0',
   to: '200',
   props: {

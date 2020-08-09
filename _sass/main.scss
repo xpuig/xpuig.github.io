@@ -399,7 +399,7 @@ SECCIONES INDEX
             opacity: 1;
             transition: .5s;
             overflow: hidden;
-            filter: grayscale(1);
+            /* filter: grayscale(1); */
 
             &:hover {
                 transform: scale(1.05);

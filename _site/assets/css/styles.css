@@ -45,14 +45,18 @@ TIPOGRAFÍA
 BÁSICOS
 ------------------------------------------------------*/
 #red-bg {
-  background: url("/assets/img/intro-bg2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #000;
-  height: 100vh;
-  width: 100%;
-  position: absolute;
-  z-index: -1; }
+  display: none; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    #red-bg {
+      background: url("/assets/img/intro-bg2.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: #000;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      display: block; } }
 
 .wrapper {
   overflow: hidden; }
@@ -67,10 +71,15 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: #000;
+  background: url("/assets/img/intro-bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Stratos LC Web", sans-serif;
   font-size: 1rem;
   color: #fff; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    body {
+      background: none; } }
 
 header {
   width: 100%;

@@ -13,8 +13,11 @@ BÁSICOS
 ------------------------------------------------------*/
 
 #red-bg {
-    background-color: #FF385C;
-    height: 90vh;
+    background: url('/assets/img/intro-bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $main-bg;
+    height: 100vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -340,15 +343,21 @@ SECCIONES INDEX
 
 #intro-gallery{
 
+display: none;
+    .about-text {
+        opacity: var(--opacidad-about);
+        transform: translateY(var(--translateY));
+    }
+  
 
-    opacity: var(--opacidad-gal);
-    transform: translateY(var(--translateY));
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        margin: auto;
+        max-width: 50%;
+        height: 100vh;
+        padding-top: 10rem;
+    }
 
-    /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        margin-left: -33.33%;
-        margin-right: -33.33%;
-        overflow: hidden;
-    } */
+    text-align: center;
 
     ul {
         display: grid;
@@ -357,7 +366,7 @@ SECCIONES INDEX
         padding-bottom: 4rem;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             padding-bottom: 3rem;
         }
 
@@ -384,26 +393,30 @@ SECCIONES INDEX
         }
 
         li {
-            overflow: hidden;
             border-radius: .4rem;
         }
 
         .item-gallery {
             position: relative;
+
+            
         }
 
         .image-gallery {
             display: block;
             width: 100%;
-            height: auto;
+            height: 400px;
             opacity: 1;
             transition: .5s;
             overflow: hidden;
             /* filter: grayscale(1); */
+            opacity: var(--opacidad-gal);
+            transform: translateY(var(--translateY));
+	        will-change: transform;
 
-            &:hover {
+            /* &:hover {
                 transform: scale(1.05);
-            }
+            } */
         }
     }
 }

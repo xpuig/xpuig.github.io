@@ -26,8 +26,24 @@ var cabecera = basicScroll.create({
     }
 });
 
-var showingGallery = basicScroll.create({
-  elem: document.querySelector('#intro-gallery'),
+var textAbout = basicScroll.create({
+  elem: document.querySelector('.about-text'),
+  from: '650',
+  to: '750',
+  props: {
+    '--opacidad-about': {
+      from: 0,
+      to: 1
+    },
+    '--translateY': {
+      from: `${ 100 }px`,
+      to: 0
+    }
+  }
+});
+
+/* var showingGallery = basicScroll.create({
+  elem: document.querySelectorAll('.image-gallery'),
   from: '300',
   to: '500',
   props: {
@@ -41,8 +57,32 @@ var showingGallery = basicScroll.create({
     }
     
   }
-});
+}); */
 
 cabecera.start();
-showingGallery.start();
+textAbout.start();
+/* showingGallery.start(); */
 logo.start();
+
+document.querySelectorAll('.image-gallery').forEach((elem) => {
+	
+	const modifier = elem.getAttribute('data-modifier')
+	
+	basicScroll.create({
+		elem: elem,
+		from: 200,
+		to: 500,
+		direct: true,
+		props: {
+      '--opacidad-gal': {
+        from: 0,
+        to: 1
+      },
+			'--translateY': {
+				from: `${ 14 * modifier }px`,
+				to: `${ -5 * modifier }px`
+			}
+		}
+	}).start()
+		
+})

@@ -45,8 +45,11 @@ TIPOGRAFÍA
 BÁSICOS
 ------------------------------------------------------*/
 #red-bg {
-  background-color: #FF385C;
-  height: 90vh;
+  background: url("/assets/img/intro-bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000;
+  height: 100vh;
   width: 100%;
   position: absolute;
   z-index: -1; }
@@ -64,10 +67,10 @@ BÁSICOS
   padding: 0; }
 
 body {
-  background: #023DA5;
+  background: #000;
   font-family: "Stratos LC Web", sans-serif;
   font-size: 1rem;
-  color: #FFF; }
+  color: #fff; }
 
 header {
   width: 100%;
@@ -91,11 +94,11 @@ header {
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #FFF;
+    color: #fff;
     font-weight: 400; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #FFF; }
+      color: #fff; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -107,21 +110,21 @@ header {
       header .navbar-nav {
         position: fixed; } }
   header a {
-    color: #FFF;
+    color: #fff;
     font-weight: 400; }
     header a:hover {
       text-decoration: none;
-      color: #FFF; }
+      color: #fff; }
 
 a {
   text-decoration: none;
-  color: yellow;
+  color: #D90A2C;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }
   a:hover {
     text-decoration: none;
-    color: #023DA5; }
+    color: #000; }
 
 h3 {
   font-family: "Stratos LC Web", sans-serif; }
@@ -140,7 +143,7 @@ img {
   font-size: 1.2rem !important;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  color: #023DA5;
+  color: #000;
   font-weight: 500;
   width: 100%;
   padding: .8rem 1rem;
@@ -154,15 +157,15 @@ img {
       width: auto;
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
-    color: #023DA5;
-    background: #FFF;
+    color: #000;
+    background: #fff;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
-  background: #023DA5;
-  color: #FFF;
-  border: 2px solid #FFF; }
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff; }
 
 .small-titles {
   font-size: 0.9rem;
@@ -178,11 +181,11 @@ footer {
       position: fixed;
       opacity: var(--opacidad-logo); } }
   footer a {
-    color: #FFF;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400; }
     footer a:hover {
-      color: yellow;
+      color: #D90A2C;
       text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
@@ -270,22 +273,26 @@ SECCIONES INDEX
       display: inline-block;
       margin: 0 1.5rem 0 0; }
       #intro .intro__text li a {
-        color: #FFF; }
+        color: #fff; }
         @media (min-width: 768px), (min-width: 1200px) {
           #intro .intro__text li a {
             font-size: 1.3rem; } }
         #intro .intro__text li a:hover {
-          color: yellow;
+          color: #D90A2C;
           text-decoration: none; }
 
 #intro-gallery {
-  opacity: var(--opacidad-gal);
-  transform: translateY(var(--translateY));
-  /* @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-      margin-left: -33.33%;
-      margin-right: -33.33%;
-      overflow: hidden;
-  } */ }
+  display: none;
+  text-align: center; }
+  #intro-gallery .about-text {
+    opacity: var(--opacidad-about);
+    transform: translateY(var(--translateY)); }
+  @media (min-width: 768px), (min-width: 1200px) {
+    #intro-gallery {
+      margin: auto;
+      max-width: 50%;
+      height: 100vh;
+      padding-top: 10rem; } }
   #intro-gallery ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -293,39 +300,42 @@ SECCIONES INDEX
     padding-bottom: 4rem; }
     @media (min-width: 768px), (min-width: 1200px) {
       #intro-gallery ul {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding-bottom: 3rem; } }
     #intro-gallery ul li.check-work {
       display: flex;
       align-items: center;
-      background: #FFF;
+      background: #fff;
       border-radius: .4rem;
       padding: 0 3rem; }
       #intro-gallery ul li.check-work a {
-        color: #023DA5;
+        color: #000;
         margin: auto;
         text-align: center; }
         #intro-gallery ul li.check-work a:hover {
-          color: #FFF;
+          color: #fff;
           text-decoration: none; }
         @media (min-width: 1200px) {
           #intro-gallery ul li.check-work a {
             font-size: 2rem; } }
     #intro-gallery ul li {
-      overflow: hidden;
       border-radius: .4rem; }
     #intro-gallery ul .item-gallery {
       position: relative; }
     #intro-gallery ul .image-gallery {
       display: block;
       width: 100%;
-      height: auto;
+      height: 400px;
       opacity: 1;
       transition: .5s;
       overflow: hidden;
-      /* filter: grayscale(1); */ }
-      #intro-gallery ul .image-gallery:hover {
-        transform: scale(1.05); }
+      /* filter: grayscale(1); */
+      opacity: var(--opacidad-gal);
+      transform: translateY(var(--translateY));
+      will-change: transform;
+      /* &:hover {
+          transform: scale(1.05);
+      } */ }
 
 #work-experience {
   display: none;
@@ -362,7 +372,7 @@ SECCIONES INDEX
 
 #about-me {
   background: #FFE1B2;
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
   border-radius: 1rem;
   padding: 1rem 2rem 0rem 2rem;
   display: none; }
@@ -404,7 +414,7 @@ SECCIONES INDEX
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
           font-size: 1rem; }
           #last-posts ul li .info-post h3 a:hover, #related-posts ul li .info-post h3 a:hover, #blog-list ul li .info-post h3 a:hover {
-            color: yellow;
+            color: #D90A2C;
             text-decoration: none; }
         #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
           display: none; }
@@ -454,8 +464,8 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #FFF;
-  color: #023DA5; }
+  background-color: #fff;
+  color: #000; }
 
 #blog-list ul {
   margin: 0 0 2rem;

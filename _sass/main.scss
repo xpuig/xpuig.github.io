@@ -74,7 +74,7 @@ header {
     #logo {
         top: 3rem;
         left: 5rem;
-        font-size: $f-size-l;
+        font-size: $f-size-xl;
 
         @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
             position:fixed;
@@ -193,7 +193,7 @@ img {
 }
 
 footer {
-    padding: 4rem 0;
+    padding: 0 0 4rem;
 
     /* opacity: var(--opacidad-nav);
     transform: translateY(var(--translateY)); */
@@ -231,10 +231,7 @@ footer {
 
     li {
         display: inline-block;
-        margin: 0 .5rem;
-        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-            margin: 0 1rem 0 0;
-        }
+        margin: 0 1rem 0 0;
     }
 
     .row {
@@ -261,7 +258,6 @@ footer {
 
     @media (max-width: $mq-tablet) {
         .item_footer {
-            text-align: center;
             width:100%;
             margin-bottom: 1rem;
         }
@@ -274,7 +270,6 @@ SECCIONES INDEX
 
 
 #intro {
-    padding-bottom: 4rem;
     display: flex;
     align-items: center;
     height:100vh;

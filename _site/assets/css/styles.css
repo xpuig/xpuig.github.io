@@ -93,7 +93,7 @@ header {
   header #logo {
     top: 3rem;
     left: 5rem;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
     @media (min-width: 1200px), (min-width: 768px) {
       header #logo {
         position: fixed; } }
@@ -181,7 +181,7 @@ img {
   font-weight: 500; }
 
 footer {
-  padding: 4rem 0;
+  padding: 0 0 4rem;
   /* opacity: var(--opacidad-nav);
   transform: translateY(var(--translateY)); */ }
   @media (min-width: 1200px), (min-width: 768px) {
@@ -208,10 +208,7 @@ footer {
       margin-bottom: 1.5rem; }
   footer li {
     display: inline-block;
-    margin: 0 .5rem; }
-    @media (min-width: 1200px), (min-width: 768px) {
-      footer li {
-        margin: 0 1rem 0 0; } }
+    margin: 0 1rem 0 0; }
   footer .row {
     margin: 0; }
   footer .social-networks {
@@ -228,7 +225,6 @@ footer {
         position: fixed; } }
   @media (max-width: 768px) {
     footer .item_footer {
-      text-align: center;
       width: 100%;
       margin-bottom: 1rem; } }
 
@@ -236,7 +232,6 @@ footer {
 SECCIONES INDEX
 ------------------------------------------------------*/
 #intro {
-  padding-bottom: 4rem;
   display: flex;
   align-items: center;
   height: 100vh; }

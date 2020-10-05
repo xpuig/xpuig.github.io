@@ -305,7 +305,7 @@ SECCIONES INDEX
             display: inline-block; */
 
             @media (min-width: $mq-desktop) {
-                font-size: $f-size-xxxl + 1rem;
+                font-size: $f-size-xxxl;
                 max-width: 60%;
                 margin-left: 15%;
             }

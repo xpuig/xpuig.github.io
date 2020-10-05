@@ -259,7 +259,7 @@ SECCIONES INDEX
       display: inline-block; */ }
       @media (min-width: 1200px) {
         #intro .intro__text h1 {
-          font-size: 4rem;
+          font-size: 3rem;
           max-width: 60%;
           margin-left: 15%; } }
     #intro .intro__text p {

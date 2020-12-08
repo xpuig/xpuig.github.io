@@ -90,17 +90,14 @@ a {
   transition: 0.3s; }
   a:hover {
     text-decoration: none;
-    color: #0047FF; }
+    color: #ff0000; }
 
 h3 {
   font-family: "Rubik", serif; }
 
 ul {
-  margin: 0;
+  margin: 2rem 1rem;
   padding: 0; }
-
-li {
-  list-style: none; }
 
 img {
   border-radius: .4rem; }
@@ -139,6 +136,8 @@ img {
 
 footer {
   padding: 0 0 4rem; }
+  footer ul {
+    margin: 0; }
   @media (min-width: 1200px), (min-width: 768px) {
     footer {
       margin-top: 10%; } }
@@ -147,7 +146,7 @@ footer {
     font-size: 1rem;
     font-weight: 400; }
     footer a:hover {
-      color: #0047FF;
+      color: #ff0000;
       text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
@@ -168,6 +167,15 @@ footer {
     footer .item_footer {
       width: 100%;
       margin-bottom: 1rem; } }
+
+blockquote {
+  border-left: 3px solid #000;
+  padding-left: 1rem;
+  font-style: italic; }
+
+h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
 
 /*------------------------------------------------------
 INDEX SECTIONS

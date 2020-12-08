@@ -118,12 +118,8 @@ h3 {
 }
 
 ul {
-    margin: 0;
+    margin: 2rem 1rem;
     padding: 0;
-}
-
-li {
-    list-style: none;
 }
 
 img {
@@ -172,6 +168,10 @@ img {
 footer {
     padding: 0 0 4rem;
 
+    ul {
+        margin: 0;
+    }
+
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin-top: 10%;
     }
@@ -216,6 +216,17 @@ footer {
             margin-bottom: 1rem;
         }
     }
+}
+
+blockquote {
+    border-left: 3px solid $c-base;
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 /*------------------------------------------------------

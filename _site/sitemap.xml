@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/authors/jill.html</loc>
-<lastmod>2020-12-08T08:28:17+01:00</lastmod>
+<lastmod>2020-12-08T19:16:15+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/ted.html</loc>
-<lastmod>2020-12-08T08:28:17+01:00</lastmod>
+<lastmod>2020-12-08T19:16:15+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/xavi.html</loc>
-<lastmod>2020-12-08T08:28:17+01:00</lastmod>
+<lastmod>2020-12-08T19:16:15+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/css/2018/08/20/the-fruit-is-variable-in-size.html</loc>
@@ -35,6 +35,10 @@
 <url>
 <loc>http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox.html</loc>
 <lastmod>2020-05-18T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html</loc>
+<lastmod>2020-12-08T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about.html</loc>

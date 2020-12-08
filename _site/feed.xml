@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-08T08:28:17+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Elemento Centrado En Eje Horizontal Y Vertical Con Flexbox</title><link href="http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox.html" rel="alternate" type="text/html" title="Elemento Centrado En Eje Horizontal Y Vertical Con Flexbox" /><published>2020-05-18T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><id>http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox</id><content type="html" xml:base="http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox.html">&lt;p&gt;Un dolor de cabeza que les sonará a muchos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-08T19:16:15+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Metodo Cartesiano Aplicado A La Ux</title><link href="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html" rel="alternate" type="text/html" title="Metodo Cartesiano Aplicado A La Ux" /><published>2020-12-08T00:00:00+01:00</published><updated>2020-12-08T00:00:00+01:00</updated><id>http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux</id><content type="html" xml:base="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html">&lt;p&gt;&lt;img src=&quot;/assets/img/posts/descartes.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pienso, luego existo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ahora bien, como diseñador UX estarás cansado de escuchar que las cosas se deben validar con usuarios reales. Que son ellos los que van a confirmar si algo funciona o no. Y aquí es donde entra la relación con el &lt;strong&gt;Método Cartesiano&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;El &lt;strong&gt;Método Cartesiano&lt;/strong&gt; consiste en el &lt;strong&gt;escepticismo metodológico&lt;/strong&gt;. Se duda de cada idea que puede ser dudada. Solo se puede decir que existe aquello que pueda ser probado.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En nuestras palabras. &lt;strong&gt;Sólo se puede decir que algo funciona si la hipótesis o suposición inicial está validada con el usuario&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A continuación vamos a ver en qué consiste el método de René Descartes. Consta de cuatro tareas básicas: &lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Verificar si existen evidencias reales e indudables acerca del fenómeno o cosa estudiada.&lt;/li&gt;
+  &lt;li&gt;Analizar y dividir al máximo las cosas, en sus unidades de composición, fundamentales, y estudiar esas cosas más simples que aparecen.&lt;/li&gt;
+  &lt;li&gt;Sintetizar y agrupar nuevamente las unidades estudiadas en su conjunto real.&lt;/li&gt;
+  &lt;li&gt;Enumerar todas las conclusiones y principios utilizados, a fin de mantener el orden del pensamiento.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;¿Se puede intuir ya la relación con nuestro trabajo en cada una de las etapas de diseño?&lt;/p&gt;
+
+&lt;p&gt;Yo creo que sí. Pero podemos verlo relacionando los principios con la UX:&lt;/p&gt;
+
+&lt;h4 id=&quot;1-principio-de-duda-o-evidencia-sistemática&quot;&gt;1. Principio de duda o evidencia sistemática&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;No aceptar como verdadero algo hasta que se compruebe con evidencia - clara y distintamente - aquello que es realmente verdadero. Con la duda sistemática, se evita la prevención y la precipitación, aceptándose como cierto lo que sea evidentemente cierto.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;relación-con-la-ux&quot;&gt;Relación con la UX&lt;/h5&gt;
+&lt;p&gt;Tenemos un hipotético problema de conversión en nuestro sitio web y la suposición es que los usuarios están teniendo un bloqueo en el circuito de checkout.&lt;/p&gt;
+
+&lt;p&gt;Apliquemos el &lt;em&gt;&lt;strong&gt;Principio de duda o evidencia sistemática&lt;/strong&gt; para comprobar&lt;/em&gt; que esto es &lt;em&gt;evidentemente cierto&lt;/em&gt; antes de &lt;em&gt;precipitarnos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ello, contamos con un buen puñado de herramientas para lograrlo. Anoto aquí un par de ejemplos para recoger diferentes tipos de datos, &lt;strong&gt;cualitativos&lt;/strong&gt; y &lt;strong&gt;cuantitativos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h6 id=&quot;google-analytics&quot;&gt;Google Analytics&lt;/h6&gt;
+&lt;p&gt;Configurar un funnel en el proceso de checkout sería una forma de recoger &lt;strong&gt;datos cuantitativos&lt;/strong&gt; y con ellos estrechar el cerco rápidamente.&lt;/p&gt;
+
+&lt;h6 id=&quot;hotjar&quot;&gt;Hotjar&lt;/h6&gt;
+&lt;p&gt;En el caso de tener ya configurado el funnel, monitorizar con grabaciones el paso concreto del circuito de checkout donde están cayendo los usuarios sería una forma muy óptima de obtener &lt;strong&gt;datos cualitativos&lt;/strong&gt; ya que estaríamos recogiendo evidencias de comportamiento.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-principio-del-análisis-o-descomposición&quot;&gt;2. Principio del análisis o descomposición&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Dividir y descomponer cada dificultad o problema en tantas partes como sea posible y necesarias para su comprensión y solución y resolverlas por separado.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;relación-con-la-ux-1&quot;&gt;Relación con la UX&lt;/h5&gt;
+&lt;p&gt;Siguiendo el ejemplo anterior y analizados los datos cualitativos y cuantitativos a fondo es momento de generar un informe con todos los problemas de usabilidad detectados.&lt;/p&gt;
+
+&lt;p&gt;En este caso, d&lt;em&gt;ividir y descomponer&lt;/em&gt; cada problema en diferentes problemas más pequeños nos ofrecerá la posibilidad de aportar valor mucho más rápido y evaluarlo unitariamente.&lt;/p&gt;
+
+&lt;p&gt;Así de simple. Divide y vencerás.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-principio-de-la-síntesis-o-la-composición&quot;&gt;3. Principio de la síntesis o la composición&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Conducir cuidadosamente los pensamientos y razonamientos, a partir de las formas más fáciles y simples de conocer para pasar gradualmente a los más difíciles, y así ir construyendo pensamientos para poder probar su funcionamiento.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;relación-con-la-ux-2&quot;&gt;Relación con la UX&lt;/h5&gt;
+&lt;p&gt;Puede darse la situación de que lo más fácil de solucionar no sea lo que consideremos que puede generar un mayor impacto de negocio. En este caso, no nos queda más remedio que aterrizar el concepto en forma de eje (dificultad - impacto).&lt;/p&gt;
+
+&lt;p&gt;Aún así, en ocasiones nos daremos cuenta de que la consecución de los problemas más fáciles nos pueden arrojar algo de luz sobre los de mayor dificultad por el aprendizaje que conlleva del modelo mental del propio usuario.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-principio-de-la-enumeración-o-de-la-verificación&quot;&gt;4. Principio de la enumeración o de la verificación&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;Hacer verificaciones, recuentos y revisiones para asegurarse de que nada fue omitido o pasado por alto, y poder comprobar si la evidencia es falsa o verdadera.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;relación-con-la-ux-3&quot;&gt;Relación con la UX&lt;/h5&gt;
+&lt;p&gt;Cuanto antes pongamos a nuestros usuarios frente a la interfaz podremos mitigar más riesgos y optimizar así nuestros tiempos y esfuerzos. La recomendación es que se empiecen las sesiones de testing al más bajo nivel para verificar y revisar que el producto resuelve el objetivo o evidencia.&lt;/p&gt;
+
+&lt;p&gt;Es nuestra obligación seguir midiendo y comprobando dicha evidencia para iterar sobre ella.&lt;/p&gt;</content><author><name>xavi</name></author><summary type="html"></summary></entry><entry><title type="html">Elemento Centrado En Eje Horizontal Y Vertical Con Flexbox</title><link href="http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox.html" rel="alternate" type="text/html" title="Elemento Centrado En Eje Horizontal Y Vertical Con Flexbox" /><published>2020-05-18T00:00:00+02:00</published><updated>2020-05-18T00:00:00+02:00</updated><id>http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox</id><content type="html" xml:base="http://localhost:4000/css/2020/05/18/elemento-centrado-en-eje-horizontal-y-vertical-con-flexbox.html">&lt;p&gt;Un dolor de cabeza que les sonará a muchos.&lt;/p&gt;
 
 &lt;p&gt;Aunque no posee actualmente fuentes para justificar sus hipótesis, el profesor de filología clásica.&lt;/p&gt;
 

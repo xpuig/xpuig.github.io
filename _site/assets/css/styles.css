@@ -251,7 +251,8 @@ INDEX SECTIONS
 #related-posts {
   border-top: 1px solid #E8ECEB;
   padding-top: 2rem;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  max-width: 100%; }
   #related-posts ul {
     -ms-grid-columns: auto;
     grid-template-columns: auto; }

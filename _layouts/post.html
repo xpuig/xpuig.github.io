@@ -14,29 +14,15 @@ layout: default
     {% capture pageCategories %}{{ page.categories }}{% endcapture %}
     {% unless site.categories[pageCategories].size == 1 %}
 
-    <span class="small-titles">{{ "Insights relacionados" | upcase }}</span>
+    <span class="small-titles">{{ "Posts relacionados" | upcase }}</span>
     <ul>
       {% for post in site.categories[pageCategories] limit:3 %}
       {% unless post.title == page.title %}
       <li>
-        <div class="image-post">
-          {% assign foundImage = 0 %}
-          {% assign images = post.content | split:"<img " %}
-          {% for image in images %}
-          {% if image contains 'src' %}
-          {% if foundImage == 0 %}
-          {% assign html = image | split:"/>" | first %}
-          <a href="{{ post.url }}"><img {{ html }} /></a>
-          {% assign foundImage = 1 %}
-          {% endif %}
-          {% endif %}
-          {% endfor %}
-        </div>
         <div class="info-post">
           <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h3>
-          {{ post.excerpt }}
         </div>
       </li>
       {% endunless %}

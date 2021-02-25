@@ -4,13 +4,13 @@ author: xavi
 categories: ux
 ---
 
-<img src="/assets/img/posts/descartes.jpg"/>
-
 René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:
 
 > Pienso, luego existo.
 
 Ahora bien, como diseñador UX estarás cansado de escuchar que las cosas se deben validar con usuarios reales. Que son ellos los que van a confirmar si algo funciona o no. Y aquí es donde entra la relación con el **Método Cartesiano**.
+
+<img src="/assets/img/posts/descartes.jpg"/>
 
 El **Método Cartesiano** consiste en el **escepticismo metodológico**. Se duda de cada idea que puede ser dudada. Solo se puede decir que existe aquello que pueda ser probado.
 

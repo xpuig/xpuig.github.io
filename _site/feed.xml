@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-25T11:55:05+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Metodo Cartesiano Aplicado A La Ux</title><link href="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html" rel="alternate" type="text/html" title="Metodo Cartesiano Aplicado A La Ux" /><published>2020-12-08T00:00:00+01:00</published><updated>2020-12-08T00:00:00+01:00</updated><id>http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux</id><content type="html" xml:base="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html">&lt;p&gt;&lt;img src=&quot;/assets/img/posts/descartes.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-25T15:54:46+01:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Metodo Cartesiano Aplicado A La Ux</title><link href="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html" rel="alternate" type="text/html" title="Metodo Cartesiano Aplicado A La Ux" /><published>2020-12-08T00:00:00+01:00</published><updated>2020-12-08T00:00:00+01:00</updated><id>http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux</id><content type="html" xml:base="http://localhost:4000/ux/2020/12/08/metodo-cartesiano-aplicado-a-la-ux.html">&lt;p&gt;René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Pienso, luego existo.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Ahora bien, como diseñador UX estarás cansado de escuchar que las cosas se deben validar con usuarios reales. Que son ellos los que van a confirmar si algo funciona o no. Y aquí es donde entra la relación con el &lt;strong&gt;Método Cartesiano&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/descartes.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;El &lt;strong&gt;Método Cartesiano&lt;/strong&gt; consiste en el &lt;strong&gt;escepticismo metodológico&lt;/strong&gt;. Se duda de cada idea que puede ser dudada. Solo se puede decir que existe aquello que pueda ser probado.&lt;/p&gt;
 
@@ -68,4 +68,4 @@
 &lt;h5 id=&quot;relación-con-la-ux-3&quot;&gt;Relación con la UX&lt;/h5&gt;
 &lt;p&gt;Cuanto antes pongamos a nuestros usuarios frente a la interfaz podremos mitigar más riesgos y optimizar así nuestros tiempos y esfuerzos. La recomendación es que se empiecen las sesiones de testing al más bajo nivel para verificar y revisar que el producto resuelve el objetivo o evidencia.&lt;/p&gt;
 
-&lt;p&gt;Es nuestra obligación seguir midiendo y comprobando dicha evidencia para iterar sobre ella.&lt;/p&gt;</content><author><name>xavi</name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;Es nuestra obligación seguir midiendo y comprobando dicha evidencia para iterar sobre ella.&lt;/p&gt;</content><author><name>xavi</name></author><summary type="html">René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:</summary></entry></feed>

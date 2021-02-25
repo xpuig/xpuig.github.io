@@ -159,6 +159,7 @@ img {
 
 footer {
     padding: 0 0 4rem;
+    font-size: $f-size-m;
 
     ul {
         margin: 0;
@@ -412,21 +413,9 @@ SECCIONES POST
 #post-page {
     margin-top: 0;
 
-    @media (min-width: $mq-tablet) {
-        margin:auto;
-        max-width: 80%;
-        margin-top: 3rem;
-    }
-
-    @media (min-width: $mq-desktop) {
-        margin:auto;
-        max-width: 60%;
-        margin-top: 3rem;
-    }
-
     .post-title {
         margin: 0 0 2rem;
-        font-size: $f-size-xxl;
+        font-size: $f-size-xxxl;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             margin: 2rem 0 3rem;

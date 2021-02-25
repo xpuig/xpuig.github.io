@@ -131,7 +131,8 @@ img {
   font-weight: 500; }
 
 footer {
-  padding: 0 0 4rem; }
+  padding: 0 0 4rem;
+  font-size: 0.9rem; }
   footer ul {
     margin: 0; }
   @media (min-width: 1200px), (min-width: 768px) {
@@ -296,19 +297,9 @@ SECCIONES POST
 ------------------------------------------------------*/
 #post-page {
   margin-top: 0; }
-  @media (min-width: 768px) {
-    #post-page {
-      margin: auto;
-      max-width: 80%;
-      margin-top: 3rem; } }
-  @media (min-width: 1200px) {
-    #post-page {
-      margin: auto;
-      max-width: 60%;
-      margin-top: 3rem; } }
   #post-page .post-title {
     margin: 0 0 2rem;
-    font-size: 1.6rem; }
+    font-size: 3rem; }
     @media (min-width: 768px), (min-width: 1200px) {
       #post-page .post-title {
         margin: 2rem 0 3rem;

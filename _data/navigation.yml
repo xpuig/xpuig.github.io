@@ -1,8 +1,2 @@
-- name: Inicio
-  link: /
-- name: Blog
-  link: /blog
-- name: Sobre mí
-  link: /about
-- name: Contacto
-  link: #
+- name: Download my resume
+  link: /assets/resume_xavipuig.pdf

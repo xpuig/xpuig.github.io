@@ -240,12 +240,12 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: $f-size-xxl;
+            font-size: $f-size-xxxl;
             margin: 0 0 2rem;
-            /* background: $theme-gradient;
+            background: $theme-gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: inline-block; */
+            display: inline-block;
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                 font-size: $f-size-huge;

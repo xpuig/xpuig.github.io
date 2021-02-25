@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 30px; }
   @media (min-width: 1200px), (min-width: 768px) {
     .container {
-      max-width: 90% !important; } }
+      max-width: 60% !important; } }
 
 .container-fluid {
   padding: 0; }
@@ -86,7 +86,10 @@ a {
   transition: 0.3s; }
   a:hover {
     text-decoration: none;
-    color: #ff0000; }
+    background: linear-gradient(145deg, #FF512F, #DD2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
 
 h3 {
   font-family: "Inter", sans-serif; }
@@ -181,13 +184,12 @@ INDEX SECTIONS
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       margin: auto;
-      max-width: 60%;
       margin-top: 3rem; } }
   #intro .intro__text {
     position: relative; }
     #intro .intro__text h1 {
       font-family: "Inter", sans-serif;
-      font-size: 3rem;
+      font-size: 2.6rem;
       margin: 0 0 2rem;
       background: linear-gradient(145deg, #FF512F, #DD2476);
       -webkit-background-clip: text;
@@ -203,7 +205,6 @@ INDEX SECTIONS
 @media (min-width: 768px), (min-width: 1200px) {
   #last-posts, #related-posts, #blog-list {
     margin: auto;
-    max-width: 60%;
     margin-top: 3rem; } }
 #last-posts ul, #related-posts ul, #blog-list ul {
   margin: 2rem 0;

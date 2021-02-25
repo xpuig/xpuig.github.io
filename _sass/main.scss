@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     padding: 0 30px;
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-        max-width: 90% !important;
+        max-width: 60% !important;
     }   
 }
 
@@ -101,7 +101,10 @@ a {
     transition: 0.3s;
     &:hover {
         text-decoration: none;
-        color: $c-hero;
+        background: $theme-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
     }
 }
 
@@ -231,7 +234,6 @@ INDEX SECTIONS
     
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
-        max-width: 60%;
         margin-top: 3rem;
     }
 
@@ -240,7 +242,7 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: $f-size-xxxl;
+            font-size: 2.6rem;
             margin: 0 0 2rem;
             background: $theme-gradient;
             -webkit-background-clip: text;
@@ -263,7 +265,6 @@ INDEX SECTIONS
     
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
-        max-width: 60%;
         margin-top: 3rem;
     }
 

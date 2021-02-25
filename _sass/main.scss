@@ -55,10 +55,6 @@ header {
         top: 3rem;
         left: 5rem;
         font-size: $f-size-xl;
-
-        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-            position:fixed;
-        }
     }
 
     .navbar-brand {

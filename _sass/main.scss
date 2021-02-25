@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     padding: 0 30px;
-    @media (min-width: $mq-desktop) {
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         max-width: 60% !important;
     }   
 }
@@ -42,10 +42,6 @@ header {
     padding: 2rem 0;
 
     opacity: var(--opacidad-logo);
-
-    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-        margin-bottom: 10%;
-    }
 
     .navbar {
         padding: 0;
@@ -170,8 +166,12 @@ img {
 }
 
 .small-titles {
-    font-size: $f-size-m;
-    font-weight: 500;
+    font-size: $f-size-xl;
+    font-weight: 800;
+    background: $theme-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
 }
 
 footer {
@@ -266,7 +266,7 @@ INDEX SECTIONS
     
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .intro__text {
@@ -445,7 +445,7 @@ SECCIONES POST
 ------------------------------------------------------*/
 
 #post-page {
-    margin-top: 0;
+    margin-top: 3rem;
 
     .post-title {
         margin: 0 0 2rem;

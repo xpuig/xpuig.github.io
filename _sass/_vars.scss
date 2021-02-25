@@ -7,6 +7,7 @@ $c-base: #000;
 $c-grey: rgba(0,0,0,.4);
 $c-light: #E8ECEB;
 $c-hero: #ff0000;
+$c-link: #0B26B3;
 $theme-gradient: linear-gradient(145deg,#FF512F,#DD2476);
 
 $c-1: #FFD0BD;
@@ -31,8 +32,10 @@ TIPOGRAFÍA
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700;800&display=swap');
 
-$f-base: 'Rubik',serif;
+$f-base: 'Inter',sans-serif;
 
 $f-size-s: .8rem;
 $f-size-m: .9rem;
@@ -40,3 +43,4 @@ $f-size-l: 1rem;
 $f-size-xl: 1.2rem;
 $f-size-xxl: 1.6rem;
 $f-size-xxxl: 3rem;
+$f-size-huge: 4rem;

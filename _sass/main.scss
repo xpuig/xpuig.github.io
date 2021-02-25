@@ -101,10 +101,7 @@ a {
     transition: 0.3s;
     &:hover {
         text-decoration: none;
-        background: $theme-gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: inline-block;
+        color: $c-hero;
     }
 }
 

@@ -55,6 +55,7 @@ header {
         top: 3rem;
         left: 5rem;
         font-size: $f-size-xl;
+        color: $c-base;
     }
 
     .navbar-brand {
@@ -111,7 +112,7 @@ header {
 
 a {
     text-decoration: none;
-    color: $c-base;
+    color: $c-link;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: 0.3s;

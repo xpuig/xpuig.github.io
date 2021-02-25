@@ -54,7 +54,8 @@ header {
   header #logo {
     top: 3rem;
     left: 5rem;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    color: #000; }
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
@@ -89,7 +90,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #002F8D;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s; }

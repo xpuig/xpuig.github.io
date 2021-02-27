@@ -34,13 +34,15 @@ TIPOGRAFÍA
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
 
 $f-base: 'Inter',sans-serif;
+$f-hero: 'Bevan',sans-serif;
 
 $f-size-s: .8rem;
 $f-size-m: .9rem;
 $f-size-l: 1rem;
 $f-size-xl: 1.2rem;
-$f-size-xxl: 1.6rem;
+$f-size-xxl: 2.6rem;
 $f-size-xxxl: 3rem;
-$f-size-huge: 4rem;
+$f-size-huge: 7rem;

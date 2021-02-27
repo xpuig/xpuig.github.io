@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
 :root {
   --opacidad-nav: 0; }
 
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 30px; }
   @media (min-width: 1200px), (min-width: 768px) {
     .container {
-      max-width: 60% !important; } }
+      max-width: 95% !important; } }
 
 .container-fluid {
   padding: 0; }
@@ -52,7 +53,8 @@ header {
     top: 3rem;
     left: 5rem;
     font-size: 1.2rem;
-    color: #000; }
+    color: #000;
+    border: none; }
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
@@ -87,10 +89,11 @@ header {
 
 a {
   text-decoration: none;
-  color: #002F8D;
-  font-weight: 600;
+  color: #000;
+  font-weight: 700;
   border-bottom: 2px solid transparent;
-  transition: 0.3s; }
+  transition: 0.3s;
+  border-bottom: 2px dotted #000; }
   a:hover {
     text-decoration: none;
     color: #ff0000; }
@@ -104,6 +107,12 @@ ul {
 
 img {
   border-radius: .4rem; }
+
+hr {
+  border-top: 2px solid #000; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    hr {
+      margin-top: 5rem; } }
 
 .cta-primary, .cta-secondary {
   font-size: 1.2rem !important;
@@ -142,8 +151,7 @@ img {
   display: inline-block; }
 
 footer {
-  padding: 0 0 4rem;
-  font-size: 0.9rem; }
+  padding: 0 0 4rem; }
   footer ul {
     margin: 0; }
   footer .resume a {
@@ -162,8 +170,7 @@ footer {
       footer .resume {
         display: none; } }
   footer a {
-    color: #000;
-    font-size: 0.9rem; }
+    color: #000; }
     footer a:hover {
       color: #ff0000;
       text-decoration: none; }
@@ -211,13 +218,14 @@ INDEX SECTIONS
       font-family: "Inter", sans-serif;
       font-size: 2.6rem;
       margin: 0 0 2rem;
-      background: linear-gradient(145deg, #FF512F, #DD2476);
+      /*background: $theme-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      display: inline-block; }
+      display: inline-block;*/ }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text h1 {
-          font-size: 4rem; } }
+          font-size: 7rem;
+          letter-spacing: -.3rem; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
       font-size: 1.3rem; }
@@ -247,7 +255,7 @@ INDEX SECTIONS
       font-size: 1.2rem; }
       @media (min-width: 768px), (min-width: 1200px) {
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-          font-size: 1.6rem; } }
+          font-size: 2.6rem; } }
     @media (min-width: 768px), (min-width: 1200px) {
       #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
         display: block;
@@ -317,27 +325,25 @@ SECCIONES BLOG
 /*------------------------------------------------------
 SECCIONES POST
 ------------------------------------------------------*/
-#post-page {
-  margin-top: 3rem; }
-  #post-page .post-title {
-    margin: 0 0 2rem;
-    font-size: 3rem; }
-    @media (min-width: 768px), (min-width: 1200px) {
-      #post-page .post-title {
-        margin: 2rem 0 3rem;
-        font-size: 3rem; } }
-  #post-page .post-content img {
-    width: 100%;
-    margin: 1rem 0; }
-  #post-page .about-widget {
-    background: #E8ECEB;
-    padding: 1rem;
-    border-radius: .3rem;
-    margin-bottom: 2.5rem; }
-    #post-page .about-widget p {
-      font-size: 0.9rem;
-      margin-top: .5rem;
-      margin-bottom: 0; }
+#post-page .post-title {
+  margin: 2rem 0 1rem;
+  font-size: 2.6rem; }
+  @media (min-width: 768px), (min-width: 1200px) {
+    #post-page .post-title {
+      margin: 2rem 0 3rem;
+      font-size: 3rem; } }
+#post-page .post-content img {
+  width: 100%;
+  margin: 1rem 0; }
+#post-page .about-widget {
+  background: #E8ECEB;
+  padding: 1rem;
+  border-radius: .3rem;
+  margin-bottom: 2.5rem; }
+  #post-page .about-widget p {
+    font-size: 0.9rem;
+    margin-top: .5rem;
+    margin-bottom: 0; }
 
 /*------------------------------------------------------
 SECCIONES ABOUT

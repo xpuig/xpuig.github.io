@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     padding: 0 30px;
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-        max-width: 60% !important;
+        max-width: 95% !important;
     }   
 }
 
@@ -52,6 +52,7 @@ header {
         left: 5rem;
         font-size: $f-size-xl;
         color: $c-base;
+        border: none;
     }
 
     .navbar-brand {
@@ -108,10 +109,11 @@ header {
 
 a {
     text-decoration: none;
-    color: $c-link;
-    font-weight: 600;
+    color: $c-base;
+    font-weight: 700;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
+    border-bottom: 2px dotted $c-base;
     &:hover {
         text-decoration: none;
         color: $c-hero;
@@ -129,6 +131,14 @@ ul {
 
 img {
     border-radius: .4rem;
+}
+
+hr {
+    border-top: 2px solid $c-base;
+
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        margin-top: 5rem;
+    }
 }
 
 .cta-primary {
@@ -176,7 +186,6 @@ img {
 
 footer {
     padding: 0 0 4rem;
-    font-size: $f-size-m;
 
     ul {
         margin: 0;
@@ -206,7 +215,6 @@ footer {
    
     a {
         color: $c-base;
-        font-size: $f-size-m;
 
         &:hover {
             color: $c-hero;
@@ -276,13 +284,14 @@ INDEX SECTIONS
             font-family: $f-base;
             font-size: 2.6rem;
             margin: 0 0 2rem;
-            background: $theme-gradient;
+            /*background: $theme-gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: inline-block;
+            display: inline-block;*/
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                 font-size: $f-size-huge;
+                letter-spacing: -.3rem;
             }
         }
 
@@ -445,11 +454,10 @@ SECCIONES POST
 ------------------------------------------------------*/
 
 #post-page {
-    margin-top: 3rem;
 
     .post-title {
-        margin: 0 0 2rem;
-        font-size: $f-size-xxxl;
+        margin: 2rem 0 1rem;
+        font-size: $f-size-xxl;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             margin: 2rem 0 3rem;

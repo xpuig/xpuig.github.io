@@ -24,7 +24,7 @@ TIPOGRAFÍA
 BASICS
 ------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 800; }
+  font-weight: 900; }
 
 .wrapper {
   overflow: hidden; }
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   color: #000; }
 
@@ -79,13 +79,16 @@ header {
         display: block;
         margin-left: 1rem; }
         header .navbar-nav li a {
-          color: #ff0000;
+          background-color: #ff0000;
+          color: white;
           padding: .6rem 1rem .7rem;
-          border: 1px solid rgba(255, 0, 0, 0.1);
-          border-radius: .5rem;
+          border: 2px solid #ff0000;
+          border-radius: 25rem;
           font-size: 1rem; }
           header .navbar-nav li a:hover {
-            background: rgba(255, 0, 0, 0.05); } }
+            background: white;
+            border: 2px solid #ff0000;
+            color: #ff0000; } }
 
 a {
   text-decoration: none;
@@ -96,10 +99,11 @@ a {
   border-bottom: 2px dotted #000; }
   a:hover {
     text-decoration: none;
-    color: #ff0000; }
+    color: #ff0000;
+    border-bottom: 2px dotted #ff0000; }
 
 h3 {
-  font-family: "Inter", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 ul {
   margin: 2rem 1rem;
@@ -109,7 +113,7 @@ img {
   border-radius: .4rem; }
 
 hr {
-  border-top: 2px solid #000; }
+  border-top: 3px solid #000; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
       margin-top: 5rem; } }
@@ -145,10 +149,7 @@ hr {
 .small-titles {
   font-size: 1.2rem;
   font-weight: 800;
-  background: linear-gradient(145deg, #FF512F, #DD2476);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block; }
+  color: #ff0000; }
 
 footer {
   padding: 0 0 4rem; }
@@ -215,7 +216,7 @@ INDEX SECTIONS
   #intro .intro__text {
     position: relative; }
     #intro .intro__text h1 {
-      font-family: "Inter", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 2.6rem;
       margin: 0 0 2rem;
       /*background: $theme-gradient;
@@ -224,7 +225,7 @@ INDEX SECTIONS
       display: inline-block;*/ }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text h1 {
-          font-size: 7rem;
+          font-size: 8rem;
           letter-spacing: -.3rem; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
@@ -253,6 +254,8 @@ INDEX SECTIONS
         width: 100%; }
     #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
       font-size: 1.2rem; }
+      #last-posts ul li .info-post h3 a, #related-posts ul li .info-post h3 a, #blog-list ul li .info-post h3 a {
+        font-weight: 900; }
       @media (min-width: 768px), (min-width: 1200px) {
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
           font-size: 2.6rem; } }
@@ -325,6 +328,11 @@ SECCIONES BLOG
 /*------------------------------------------------------
 SECCIONES POST
 ------------------------------------------------------*/
+@media (min-width: 768px), (min-width: 1200px) {
+  #post-page {
+    margin: auto;
+    max-width: 70%;
+    margin-top: 3rem; } }
 #post-page .post-title {
   margin: 2rem 0 1rem;
   font-size: 2.6rem; }

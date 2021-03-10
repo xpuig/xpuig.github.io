@@ -220,7 +220,7 @@ INDEX SECTIONS
     #intro .intro__text h1 {
       font-family: "Poppins", sans-serif;
       font-size: max(5vw, 30px);
-      margin: 0 0 4rem;
+      margin: 0 0 2rem;
       /*background: $theme-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

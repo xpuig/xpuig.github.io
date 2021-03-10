@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
 :root {
   --opacidad-nav: 0; }
 
@@ -24,7 +25,8 @@ TIPOGRAFÍA
 BASICS
 ------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900; }
+  font-weight: 900;
+  line-height: normal; }
 
 .wrapper {
   overflow: hidden; }
@@ -33,15 +35,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 30px; }
   @media (min-width: 1200px), (min-width: 768px) {
     .container {
-      max-width: 95% !important; } }
+      max-width: 75% !important; } }
 
 .container-fluid {
   padding: 0; }
 
 body {
+  background-color: #101014;
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  color: #000; }
+  color: #F4F1D0; }
 
 header {
   width: 100%;
@@ -53,7 +56,7 @@ header {
     top: 3rem;
     left: 5rem;
     font-size: 1.2rem;
-    color: #000;
+    color: #F4F1D0;
     border: none; }
   header .navbar-brand {
     margin: 0;
@@ -61,11 +64,11 @@ header {
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #000;
+    color: #F4F1D0;
     font-weight: 400; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #000; }
+      color: #F4F1D0; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -79,24 +82,23 @@ header {
         display: block;
         margin-left: 1rem; }
         header .navbar-nav li a {
-          background-color: #ff0000;
-          color: white;
+          color: #F4F1D0;
           padding: .6rem 1rem .7rem;
-          border: 2px solid #ff0000;
+          border: 2px solid #F4F1D0;
           border-radius: 25rem;
           font-size: 1rem; }
           header .navbar-nav li a:hover {
-            background: white;
-            border: 2px solid #ff0000;
-            color: #ff0000; } }
+            background: #F4F1D0;
+            border: 2px solid #F4F1D0;
+            color: #101014; } }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #F4F1D0;
   font-weight: 700;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
-  border-bottom: 2px dotted #000; }
+  border-bottom: 2px dotted #F4F1D0; }
   a:hover {
     text-decoration: none;
     color: #ff0000;
@@ -113,7 +115,7 @@ img {
   border-radius: .4rem; }
 
 hr {
-  border-top: 3px solid #000; }
+  border-top: 3px solid #F4F1D0; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
       margin-top: 5rem; } }
@@ -122,7 +124,7 @@ hr {
   font-size: 1.2rem !important;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: #101014;
   font-weight: 500;
   width: 100%;
   padding: .8rem 1rem;
@@ -136,29 +138,29 @@ hr {
       width: auto;
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
-    color: #fff;
-    background: #000;
+    color: #101014;
+    background: #F4F1D0;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
-  background: #fff;
-  color: #000;
-  border: 2px solid #000; }
+  background: #101014;
+  color: #F4F1D0;
+  border: 2px solid #F4F1D0; }
 
 .small-titles {
   font-size: 1.2rem;
-  font-weight: 800;
-  color: #ff0000; }
+  font-weight: 600;
+  color: #F4F1D0; }
 
 footer {
   padding: 0 0 4rem; }
   footer ul {
     margin: 0; }
   footer .resume a {
-    color: #ff0000;
-    background: rgba(255, 0, 0, 0.05);
+    color: #F4F1D0;
     padding: .6rem 1rem;
+    border: 2px solid #F4F1D0;
     border-radius: .5rem;
     font-size: 1rem; }
     footer .resume a:hover {
@@ -171,7 +173,7 @@ footer {
       footer .resume {
         display: none; } }
   footer a {
-    color: #000; }
+    color: #F4F1D0; }
     footer a:hover {
       color: #ff0000;
       text-decoration: none; }
@@ -192,10 +194,10 @@ footer {
     margin: 0; }
   @media (max-width: 768px) {
     footer .item_footer {
-      margin-bottom: 1rem; } }
+      margin-bottom: 2rem; } }
 
 blockquote {
-  border-left: 3px solid #000;
+  border-left: 3px solid #F4F1D0;
   padding-left: 1rem;
   font-style: italic; }
 
@@ -217,19 +219,18 @@ INDEX SECTIONS
     position: relative; }
     #intro .intro__text h1 {
       font-family: "Poppins", sans-serif;
-      font-size: 2.6rem;
-      margin: 0 0 2rem;
+      font-size: max(5vw, 30px);
+      margin: 0 0 4rem;
       /*background: $theme-gradient;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline-block;*/ }
       @media (min-width: 768px), (min-width: 1200px) {
         #intro .intro__text h1 {
-          font-size: 8rem;
-          letter-spacing: -.3rem; } }
+          letter-spacing: -0.1 0.5rem; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
-      font-size: 1.3rem; }
+      font-size: 1.6rem; }
 
 @media (min-width: 768px), (min-width: 1200px) {
   #last-posts, #related-posts, #blog-list {
@@ -306,8 +307,8 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #000;
-  color: #fff; }
+  background-color: #F4F1D0;
+  color: #101014; }
 
 #blog-list ul {
   margin: 0 0 2rem;

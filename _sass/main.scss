@@ -94,12 +94,12 @@ header {
                     a {
                         color: $c-base;
                         padding: .6rem 1rem .7rem;
-                        border: 2px solid $c-base;
+                        border: 2px solid $c-hero;
                         border-radius: 25rem;
                         font-size: $f-size-l;
                         &:hover {
-                            background: $c-base;
-                            border: 2px solid $c-base;
+                            background: $c-hero;
+                            border: 2px solid $c-hero;
                             color: $main-bg;
                         }
                     }

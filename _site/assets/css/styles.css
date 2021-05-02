@@ -115,7 +115,8 @@ img {
   border-radius: .4rem; }
 
 hr {
-  border-top: 3px solid #F4F1D0; }
+  border-top: 3px solid #F4F1D0;
+  opacity: .1; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
       margin-top: 5rem; } }
@@ -219,7 +220,7 @@ INDEX SECTIONS
     position: relative; }
     #intro .intro__text h1 {
       font-family: "Poppins", sans-serif;
-      font-size: max(5vw, 30px);
+      font-size: max(4vw, 30px);
       margin: 0 0 2rem;
       /*background: $theme-gradient;
       -webkit-background-clip: text;

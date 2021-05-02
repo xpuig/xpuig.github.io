@@ -139,6 +139,7 @@ img {
 
 hr {
     border-top: 3px solid $c-base;
+    opacity: .1;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin-top: 5rem;
@@ -283,7 +284,7 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: max(5vw, 30px);
+            font-size: max(4vw, 30px);
             margin: 0 0 2rem;
             /*background: $theme-gradient;
             -webkit-background-clip: text;

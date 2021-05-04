@@ -502,20 +502,11 @@ SECCIONES ABOUT
 #about {
     margin: 2rem 0;
 
-    @media (min-width: $mq-tablet) {
-        max-width: 80%;
+    @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+        max-width: 70%;
         margin: auto;
     }
 
-    @media (min-width: $mq-desktop) {
-        max-width: 60%;
-        margin: auto;
-    }
-
-    li {
-        list-style-type: disc;
-        margin-left: 1.2rem;
-    }
     img {
         width: 100%;
         margin-bottom: 2rem;
@@ -525,6 +516,14 @@ SECCIONES ABOUT
             max-width: 600px;
         }
     }
+
+    #experience {
+        margin: 3rem 0;
+    }
+
+    #education {
+        margin: 3rem 0;
+    }
 }
 
 iframe {
@@ -533,11 +532,18 @@ iframe {
     margin: 2rem 0;
 }
 
-#experience {
-    display:flex;
+.list-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
+    gap: 30px;
+
+    @media (min-width: $mq-desktop) { 
+        grid-template-columns: 33% 33% 33%;
+    }
 
     li {
-        list-style: none;
-        flex-grow: 1;
+        list-style: none;      
     }
 }

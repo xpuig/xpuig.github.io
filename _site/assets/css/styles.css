@@ -360,17 +360,10 @@ SECCIONES ABOUT
 ------------------------------------------------------*/
 #about {
   margin: 2rem 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 768px), (min-width: 1200px) {
     #about {
-      max-width: 80%;
+      max-width: 70%;
       margin: auto; } }
-  @media (min-width: 1200px) {
-    #about {
-      max-width: 60%;
-      margin: auto; } }
-  #about li {
-    list-style-type: disc;
-    margin-left: 1.2rem; }
   #about img {
     width: 100%;
     margin-bottom: 2rem;
@@ -378,14 +371,24 @@ SECCIONES ABOUT
     @media (min-width: 768px), (min-width: 1200px) {
       #about img {
         max-width: 600px; } }
+  #about #experience {
+    margin: 3rem 0; }
+  #about #education {
+    margin: 3rem 0; }
 
 iframe {
   border-radius: .5rem;
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.06);
   margin: 2rem 0; }
 
-#experience {
-  display: flex; }
-  #experience li {
-    list-style: none;
-    flex-grow: 1; }
+.list-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 30px;
+  gap: 30px; }
+  @media (min-width: 1200px) {
+    .list-grid {
+      grid-template-columns: 33% 33% 33%; } }
+  .list-grid li {
+    list-style: none; }

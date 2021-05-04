@@ -84,13 +84,14 @@ header {
         header .navbar-nav li a {
           color: #F4F1D0;
           padding: .6rem 1rem .7rem;
-          border: 2px solid #FFD66B;
-          border-radius: 25rem;
-          font-size: 1rem; }
+          /* border: 2px solid $c-hero; */
+          /* border-radius: 25rem; */
+          font-size: 1rem;
+          border-bottom: none; }
           header .navbar-nav li a:hover {
-            background: #FFD66B;
-            border: 2px solid #FFD66B;
-            color: #101014; } }
+            /* background: $c-hero;
+            border: 2px solid $c-hero; */
+            color: #FFD66B; } }
 
 a {
   text-decoration: none;
@@ -360,10 +361,13 @@ SECCIONES ABOUT
 ------------------------------------------------------*/
 #about {
   margin: 2rem 0; }
+  #about h1 {
+    font-size: max(4vw, 30px); }
   @media (min-width: 768px), (min-width: 1200px) {
     #about {
       max-width: 70%;
-      margin: auto; } }
+      margin: auto;
+      margin-top: 5rem; } }
   #about img {
     width: 100%;
     margin-bottom: 2rem;

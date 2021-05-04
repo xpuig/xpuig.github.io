@@ -94,13 +94,14 @@ header {
                     a {
                         color: $c-base;
                         padding: .6rem 1rem .7rem;
-                        border: 2px solid $c-hero;
-                        border-radius: 25rem;
+                        /* border: 2px solid $c-hero; */
+                        /* border-radius: 25rem; */
                         font-size: $f-size-l;
+                        border-bottom: none;
                         &:hover {
-                            background: $c-hero;
-                            border: 2px solid $c-hero;
-                            color: $main-bg;
+                            /* background: $c-hero;
+                            border: 2px solid $c-hero; */
+                            color: $c-hero;
                         }
                     }
                 }
@@ -502,9 +503,14 @@ SECCIONES ABOUT
 #about {
     margin: 2rem 0;
 
+    h1 {
+        font-size: max(4vw, 30px);
+    }
+
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         max-width: 70%;
         margin: auto;
+        margin-top: 5rem;
     }
 
     img {

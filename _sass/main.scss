@@ -13,7 +13,7 @@ BASICS
 ------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
+    font-weight: 600;
     line-height: normal;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     padding: 0 30px;
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-        max-width: 75% !important;
+        max-width: 1150px !important;
     }   
 }
 
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: $main-bg;
     font-family: $f-base;
-    font-size: $f-size-xl;
+    font-size: $f-size-l;
     color: $c-base;
 }
 
@@ -101,7 +101,7 @@ header {
                         &:hover {
                             /* background: $c-hero;
                             border: 2px solid $c-hero; */
-                            color: $c-hero;
+                            color: $c-link;
                         }
                     }
                 }
@@ -113,15 +113,13 @@ header {
 
 a {
     text-decoration: none;
-    color: $c-base;
-    font-weight: 700;
+    color: $c-link;
+    font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
-    border-bottom: 2px dotted $c-base;
+    border-bottom: 2px dotted $c-link;
     &:hover {
         text-decoration: none;
-        color: $c-hero;
-        border-bottom: 2px dotted $c-hero;
     }
 }
 
@@ -285,21 +283,22 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: max(4vw, 30px);
+            font-size: max(3vw, 30px);
             margin: 0 0 2rem;
-            /*background: $theme-gradient;
+            letter-spacing: -.09rem;
+            /* background: $theme-gradient;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: inline-block;*/
+            display: inline-block; */
 
             @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                letter-spacing: -.1.5rem;
+                letter-spacing: -.15rem;
             }
         }
 
         p {
             margin-bottom: 3rem;
-            font-size: 1.6rem;
+            font-size: $f-size-xl;
         }
     }
 }
@@ -339,11 +338,9 @@ INDEX SECTIONS
 
                 h3 {
                     font-size: $f-size-xl;
-                    a {
-                        font-weight: 900;
-                    }
+                    
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                        font-size: $f-size-xxl;
+                        font-size: $f-size-xl;
                     }
                 }
 
@@ -508,8 +505,8 @@ SECCIONES ABOUT
     }
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        max-width: 70%;
-        margin: auto;
+        /* max-width: 70%;
+        margin: auto; */
         margin-top: 5rem;
     }
 

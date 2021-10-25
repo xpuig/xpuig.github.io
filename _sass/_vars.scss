@@ -3,11 +3,11 @@ COLORES
 ------------------------------------------------------*/
 
 $main-bg:#FFFFFF;
-$c-base: #000;
+$c-base: #191545;
 $c-grey: rgba(255,255,255,.4);
 $c-light: #E8ECEB;
 $c-hero: #FFD66B;
-$c-link: #002F8D;
+$c-link: #4433ff;
 $theme-gradient: linear-gradient(145deg,#FF512F,#DD2476);
 
 $c-1: #FFD0BD;
@@ -29,19 +29,14 @@ $mq-desktop: 1200px;
 TIPOGRAFÍA
 ------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-$f-base: 'Inter',sans-serif;
-$f-hero: 'Krona One', serif;
+$f-base: 'Karla',sans-serif;
 
 $f-size-s: .8rem;
 $f-size-m: .9rem;
-$f-size-l: 1rem;
-$f-size-xl: 1.4rem;
+$f-size-l: 1.4rem;
+$f-size-xl: 1.6rem;
 $f-size-xxl: 2.6rem;
 $f-size-xxxl: 3rem;
 $f-size-huge: 8rem;

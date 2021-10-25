@@ -1,9 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root {
   --opacidad-nav: 0; }
 
@@ -40,9 +36,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #FFFFFF;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  color: #000; }
+  font-family: "Karla", sans-serif;
+  font-size: 1.4rem;
+  color: #191545; }
 
 header {
   width: 100%;
@@ -53,8 +49,8 @@ header {
   header #logo {
     top: 3rem;
     left: 5rem;
-    font-size: 1.4rem;
-    color: #000;
+    font-size: 1.6rem;
+    color: #191545;
     border: none; }
   header .navbar-brand {
     margin: 0;
@@ -62,11 +58,11 @@ header {
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #000;
-    font-weight: 400; }
+    color: #191545;
+    font-weight: 600; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #000; }
+      color: #191545; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -80,29 +76,29 @@ header {
         display: block;
         margin-left: 1rem; }
         header .navbar-nav li a {
-          color: #000;
+          color: #191545;
           padding: .6rem 1rem .7rem;
           /* border: 2px solid $c-hero; */
           /* border-radius: 25rem; */
-          font-size: 1rem;
+          font-size: 1.6rem;
           border-bottom: none; }
           header .navbar-nav li a:hover {
             /* background: $c-hero;
             border: 2px solid $c-hero; */
-            color: #002F8D; } }
+            color: #4433ff; } }
 
 a {
   text-decoration: none;
-  color: #002F8D;
+  color: #4433ff;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
-  border-bottom: 2px dotted #002F8D; }
+  border-bottom: 2px dotted #4433ff; }
   a:hover {
     text-decoration: none; }
 
 h3 {
-  font-family: "Inter", sans-serif; }
+  font-family: "Karla", sans-serif; }
 
 ul {
   margin: 2rem 1rem;
@@ -112,14 +108,14 @@ img {
   border-radius: .4rem; }
 
 hr {
-  border-top: 3px solid #000;
+  border-top: 3px solid #191545;
   opacity: .1; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
       margin-top: 5rem; } }
 
 .cta-primary, .cta-secondary {
-  font-size: 1.4rem !important;
+  font-size: 1.6rem !important;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
@@ -137,30 +133,30 @@ hr {
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
     color: #FFFFFF;
-    background: #000;
+    background: #191545;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
   background: #FFFFFF;
-  color: #000;
-  border: 2px solid #000; }
+  color: #191545;
+  border: 2px solid #191545; }
 
 .small-titles {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: #000; }
+  color: #191545; }
 
 footer {
   padding: 0 0 4rem; }
   footer ul {
     margin: 0; }
   footer .resume a {
-    color: #000;
+    color: #191545;
     padding: .6rem 1rem;
-    border: 2px solid #000;
+    border: 2px solid #191545;
     border-radius: .5rem;
-    font-size: 1rem; }
+    font-size: 1.4rem; }
     footer .resume a:hover {
       background: white;
       box-shadow: 5px 10px 18px rgba(255, 0, 0, 0.1);
@@ -171,13 +167,13 @@ footer {
       footer .resume {
         display: none; } }
   footer a {
-    color: #000; }
+    color: #191545; }
     footer a:hover {
       color: #FFD66B;
       text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 2rem;
     border-radius: .5rem;
     margin-bottom: 3rem;
@@ -195,7 +191,7 @@ footer {
       margin-bottom: 2rem; } }
 
 blockquote {
-  border-left: 3px solid #000;
+  border-left: 3px solid #191545;
   padding-left: 1rem;
   font-style: italic; }
 
@@ -216,8 +212,8 @@ INDEX SECTIONS
   #intro .intro__text {
     position: relative; }
     #intro .intro__text h1 {
-      font-family: "Inter", sans-serif;
-      font-size: max(3vw, 30px);
+      font-family: "Karla", sans-serif;
+      font-size: max(5vw, 50px);
       margin: 0 0 2rem;
       letter-spacing: -.09rem;
       /* background: $theme-gradient;
@@ -229,7 +225,7 @@ INDEX SECTIONS
           letter-spacing: -.15rem; } }
     #intro .intro__text p {
       margin-bottom: 3rem;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
 
 @media (min-width: 768px), (min-width: 1200px) {
   #last-posts, #related-posts, #blog-list {
@@ -253,10 +249,10 @@ INDEX SECTIONS
       #last-posts ul li .image-post img, #related-posts ul li .image-post img, #blog-list ul li .image-post img {
         width: 100%; }
     #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
       @media (min-width: 768px), (min-width: 1200px) {
         #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-          font-size: 1.4rem; } }
+          font-size: 1.6rem; } }
     @media (min-width: 768px), (min-width: 1200px) {
       #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
         display: block;
@@ -304,7 +300,7 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #000;
+  background-color: #191545;
   color: #FFFFFF; }
 
 #blog-list ul {

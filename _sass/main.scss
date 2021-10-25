@@ -68,7 +68,7 @@ header {
 
     .navbar-light .navbar-brand {
         color: $c-base;
-        font-weight: 400;
+        font-weight: 600;
         &:hover {
             text-decoration: none;
             color: $c-base;
@@ -96,7 +96,7 @@ header {
                         padding: .6rem 1rem .7rem;
                         /* border: 2px solid $c-hero; */
                         /* border-radius: 25rem; */
-                        font-size: $f-size-l;
+                        font-size: $f-size-xl;
                         border-bottom: none;
                         &:hover {
                             /* background: $c-hero;
@@ -283,7 +283,7 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: max(3vw, 30px);
+            font-size: max(5vw, 50px);
             margin: 0 0 2rem;
             letter-spacing: -.09rem;
             /* background: $theme-gradient;

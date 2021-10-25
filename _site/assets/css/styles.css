@@ -329,7 +329,7 @@ SECCIONES POST
 @media (min-width: 768px), (min-width: 1200px) {
   #post-page {
     margin: auto;
-    max-width: 70%;
+    /*max-width: 70%;*/
     margin-top: 3rem; } }
 #post-page .post-title {
   margin: 2rem 0 1rem;

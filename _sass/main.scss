@@ -96,7 +96,7 @@ header {
                         padding: .6rem 1rem .7rem;
                         /* border: 2px solid $c-hero; */
                         /* border-radius: 25rem; */
-                        font-size: $f-size-xl;
+                        font-size: $f-size-l;
                         border-bottom: none;
                         &:hover {
                             /* background: $c-hero;
@@ -116,10 +116,12 @@ a {
     color: $c-link;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: 0.3s;
+    transition: 0.1s;
     border-bottom: 2px dotted $c-link;
     &:hover {
         text-decoration: none;
+        border-bottom: 0px dotted $c-link;
+        color: $c-link;
     }
 }
 
@@ -211,15 +213,6 @@ footer {
         margin-top: 10%;
         .resume {
             display: none;
-        }
-    }
-   
-    a {
-        color: $c-base;
-
-        &:hover {
-            color: $c-hero;
-            text-decoration: none;
         }
     }
 
@@ -315,11 +308,17 @@ INDEX SECTIONS
         display: -ms-grid;
         display: grid;
         grid-gap: 2rem;
-        -ms-grid-columns: auto;
-        grid-template-columns: auto;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
 
         li {
-            display: flex;
+            display: block;
+            background-color: rgb(183, 220, 255);
 
             .image-post {
                 width: 30%;

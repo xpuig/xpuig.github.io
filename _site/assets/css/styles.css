@@ -80,7 +80,7 @@ header {
           padding: .6rem 1rem .7rem;
           /* border: 2px solid $c-hero; */
           /* border-radius: 25rem; */
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           border-bottom: none; }
           header .navbar-nav li a:hover {
             /* background: $c-hero;
@@ -92,10 +92,12 @@ a {
   color: #4433ff;
   font-weight: 600;
   border-bottom: 2px solid transparent;
-  transition: 0.3s;
+  transition: 0.1s;
   border-bottom: 2px dotted #4433ff; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 0px dotted #4433ff;
+    color: #4433ff; }
 
 h3 {
   font-family: "Karla", sans-serif; }
@@ -166,11 +168,6 @@ footer {
       margin-top: 10%; }
       footer .resume {
         display: none; } }
-  footer a {
-    color: #191545; }
-    footer a:hover {
-      color: #FFD66B;
-      text-decoration: none; }
   footer .newsletter {
     background: #DFEDF2;
     font-size: 1.6rem;
@@ -236,10 +233,15 @@ INDEX SECTIONS
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
-  -ms-grid-columns: auto;
-  grid-template-columns: auto; }
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr; }
+  @media (min-width: 768px), (min-width: 1200px) {
+    #last-posts ul, #related-posts ul, #blog-list ul {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; } }
   #last-posts ul li, #related-posts ul li, #blog-list ul li {
-    display: flex; }
+    display: block;
+    background-color: #b7dcff; }
     #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {
       width: 30%;
       margin: 0rem 1rem 1rem 0; }

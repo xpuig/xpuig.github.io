@@ -2,9 +2,10 @@
 layout: post
 author: xavi
 categories: ux
-permalink: /post/metodo_cartesiano/
+permalink: /post/creaenergia/
 thumbnail: "/assets/img/thumb.jpg"
 ---
+Es una comercializadora de luz, gas y autoconsumo con un modelo de negocio transparente y orientado a fomentar la sostenibilidad con energía 100% verde.
 
 René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:
 

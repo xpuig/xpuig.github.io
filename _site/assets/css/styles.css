@@ -38,7 +38,7 @@ body {
   background-color: #FFFFFF;
   font-family: "Karla", sans-serif;
   font-size: 1.4rem;
-  color: #191545; }
+  color: #222F3E; }
 
 header {
   width: 100%;
@@ -50,7 +50,7 @@ header {
     top: 3rem;
     left: 5rem;
     font-size: 1.6rem;
-    color: #191545;
+    color: #222F3E;
     border: none; }
   header .navbar-brand {
     margin: 0;
@@ -58,11 +58,11 @@ header {
     header .navbar-brand img {
       max-width: 5%; }
   header .navbar-light .navbar-brand {
-    color: #191545;
+    color: #222F3E;
     font-weight: 600; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #191545; }
+      color: #222F3E; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -76,7 +76,7 @@ header {
         display: block;
         margin-left: 1rem; }
         header .navbar-nav li a {
-          color: #191545;
+          color: #222F3E;
           padding: .6rem 1rem .7rem;
           /* border: 2px solid $c-hero; */
           /* border-radius: 25rem; */
@@ -110,7 +110,7 @@ img {
   border-radius: .4rem; }
 
 hr {
-  border-top: 3px solid #191545;
+  border-top: 3px solid #222F3E;
   opacity: .1; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
@@ -135,28 +135,28 @@ hr {
       padding: .8rem 2rem; } }
   .cta-primary:hover, .cta-secondary:hover {
     color: #FFFFFF;
-    background: #191545;
+    background: #222F3E;
     text-decoration: none;
     opacity: .8; }
 
 .cta-secondary {
   background: #FFFFFF;
-  color: #191545;
-  border: 2px solid #191545; }
+  color: #222F3E;
+  border: 2px solid #222F3E; }
 
 .small-titles {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #191545; }
+  color: #222F3E; }
 
 footer {
   padding: 0 0 4rem; }
   footer ul {
     margin: 0; }
   footer .resume a {
-    color: #191545;
+    color: #222F3E;
     padding: .6rem 1rem;
-    border: 2px solid #191545;
+    border: 2px solid #222F3E;
     border-radius: .5rem;
     font-size: 1.4rem; }
     footer .resume a:hover {
@@ -188,7 +188,7 @@ footer {
       margin-bottom: 2rem; } }
 
 blockquote {
-  border-left: 3px solid #191545;
+  border-left: 3px solid #222F3E;
   padding-left: 1rem;
   font-style: italic; }
 
@@ -302,7 +302,7 @@ SECCIONES BLOG
   padding: .3rem .6rem;
   text-transform: uppercase; }
 #categories .current {
-  background-color: #191545;
+  background-color: #222F3E;
   color: #FFFFFF; }
 
 #blog-list ul {

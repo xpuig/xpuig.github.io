@@ -117,10 +117,12 @@ img {
 
 hr {
   border-top: 3px solid #222F3E;
-  opacity: .1; }
+  opacity: .1;
+  margin-bottom: 2rem; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
-      margin-top: 5rem; } }
+      margin-top: 5rem;
+      margin-bottom: 1rem; } }
 
 .cta-primary, .cta-secondary {
   font-size: 1.6rem !important;

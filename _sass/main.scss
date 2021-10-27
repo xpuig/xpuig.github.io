@@ -148,9 +148,11 @@ img {
 hr {
     border-top: 3px solid $c-base;
     opacity: .1;
+    margin-bottom: 2rem;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin-top: 5rem;
+        margin-bottom: 1rem;
     }
 }
 

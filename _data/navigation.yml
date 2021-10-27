@@ -1,4 +1,8 @@
 - name: Inicio
   link: /
+- name: Casos de estudio
+  link: /
 - name: Sobre mí
   link: about.html
+- name: Contacto
+  link: /

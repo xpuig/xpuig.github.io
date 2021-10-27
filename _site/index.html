@@ -20,6 +20,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
   <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Xavi Puig Portfolio</title>
@@ -36,9 +37,9 @@
 
 <body>
   <div class="wrapper">
-    <div class="container">
-      <header>
-          <nav class="navbar navbar-light justify-content-between">
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-light justify-content-between">
   <a id="logo" href="/">
     Hi! I'm Xavi Puig 👋
   </a>
@@ -52,23 +53,36 @@
         </li>
       
         <li class="nav-item">
+          <a href="/" class="current">
+            Casos de estudio
+          </a>
+        </li>
+      
+        <li class="nav-item">
           <a href="about.html" >
             Sobre mí
+          </a>
+        </li>
+      
+        <li class="nav-item">
+          <a href="/" class="current">
+            Contacto
           </a>
         </li>
       
    </ul>
   </div>
 </nav>
-      </header>
-
-        <section id="intro">
+      </div>
+    </header>
+    <div class="container">
+      <section id="intro">
     <div class="intro__text">
-        <h1>Product Designer</h1>
-        <p>He tendido el placer de trabajar para empresas con diferentes modelos de negocio orientados sobretodo al sector servicios. Entre otros: hotelero, financiero, salud y energético.</p>
-        <p>Actualmente, estoy en Factorenergia como Product Designer y mi día a día se basa en <strong>analizar datos, generar hipótesis, y validarlas con técnicas de investigación cuantitativas y cualitativas.</strong></p>
+        <h1>Analizo datos. <br>Genero hipótesis. <br>Las valido.</h1>
+        <p>Durante 18 años, he tendido el placer de trabajar para empresas con diferentes modelos de negocio orientados sobretodo al sector servicios. Entre otros: hotelero, financiero, salud y energético.</p>
+        <p>Actualmente, estoy en Factorenergia como Product Designer y mi día a día se basa en <strong>analizar datos, generar hipótesis, y validarlas con usuarios</strong> mediante técnicas de investigación cuantitativas y cualitativas.</p>
         <p>Con formación en diseño gráfico y <strong>certificado como UX Designer</strong> por la UOC, UXER School y la uxalliance (UX-PM1).</p>
-        <p><a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a> / <a href="https://www.behance.net/xavipuig" target="_blank">Behance</a> / <a href="https://dribbble.com/xavipuig" target="_blank">Dribbble</a></p>
+        <p style="font-size: 1.2rem;"><a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a> / <a href="https://www.behance.net/xavipuig" target="_blank">Behance</a> / <a href="https://dribbble.com/xavipuig" target="_blank">Dribbble</a></p>
         <hr>
     </div>
 </section>
@@ -117,9 +131,10 @@
         
     </ul>
 </section>
-    
-      <footer>
-          <div class="row d-flex justify-content-between">
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-between">
 
     <div class="item_footer social-networks">
       <ul>
@@ -143,8 +158,8 @@
     </div>
 
 </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </div>
   
   <script src="/assets/js/basicScroll.min.js"></script>

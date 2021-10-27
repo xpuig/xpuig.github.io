@@ -29,7 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-fluid {
-    padding: 0;
+    padding: 0 30px;
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+        padding: 0 50px;
+    }  
 }
 
 body {
@@ -37,6 +40,10 @@ body {
     font-family: $f-base;
     font-size: $f-size-l;
     color: $c-base;
+    background-image: url("/assets/img/rock-bg-2-1.png");
+    background-repeat: no-repeat;
+    background-position-y: 10rem;
+    
 }
 
 header {
@@ -188,7 +195,8 @@ hr {
 }
 
 footer {
-    padding: 0 0 4rem;
+    padding: 4rem 0;
+    background: $c-light;
 
     ul {
         margin: 0;
@@ -209,12 +217,7 @@ footer {
         }
     }
 
-    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
-        margin-top: 10%;
-        .resume {
-            display: none;
-        }
-    }
+   
 
     .newsletter {
         background: $c-4;

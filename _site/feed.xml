@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-27T23:18:57+02:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Creaenergia</title><link href="http://localhost:4000/post/creaenergia/" rel="alternate" type="text/html" title="Creaenergia" /><published>2021-10-01T00:00:00+02:00</published><updated>2021-10-01T00:00:00+02:00</updated><id>http://localhost:4000/post/creaenergia</id><content type="html" xml:base="http://localhost:4000/post/creaenergia/">&lt;p&gt;Es una comercializadora de luz, gas y autoconsumo con un modelo de negocio transparente y orientado a fomentar la sostenibilidad con energía 100% verde.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-28T00:41:51+02:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Energía 100% Verde</title><link href="http://localhost:4000/post/creaenergia/" rel="alternate" type="text/html" title="Energía 100% Verde" /><published>2021-10-01T00:00:00+02:00</published><updated>2021-10-01T00:00:00+02:00</updated><id>http://localhost:4000/post/Energ%C3%ADa-100%25-verde</id><content type="html" xml:base="http://localhost:4000/post/creaenergia/">&lt;p&gt;CreaEnergia es una comercializadora de luz, gas y autoconsumo con un modelo de negocio transparente y orientado a fomentar la sostenibilidad con energía 100% verde.&lt;/p&gt;
 
-&lt;p&gt;René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Pienso, luego existo.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div style=&quot;background-color: #f8ffd9; padding: 30px; display: inline-block; margin: 1.5rem 0 2rem&quot;&gt;
+    &lt;h2&gt;Escenario inicial&lt;/h2&gt;
+    &lt;ul style=&quot;padding: 1rem; margin: 0 1rem;&quot;&gt;
+        &lt;li&gt;Inversión en tráfico de pago con una tasa de rebote alta&lt;/li&gt;
+        &lt;li&gt;Aplicación web técnicamente incapaz de generar tráfico orgánico&lt;/li&gt;
+        &lt;li&gt;Contrataciones estancadas&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Ahora bien, como diseñador UX estarás cansado de escuchar que las cosas se deben validar con usuarios reales. Que son ellos los que van a confirmar si algo funciona o no. Y aquí es donde entra la relación con el &lt;strong&gt;Método Cartesiano&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/posts/descartes.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/projects/creaenergia/hero.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;El &lt;strong&gt;Método Cartesiano&lt;/strong&gt; consiste en el &lt;strong&gt;escepticismo metodológico&lt;/strong&gt;. Se duda de cada idea que puede ser dudada. Solo se puede decir que existe aquello que pueda ser probado.&lt;/p&gt;
 
@@ -70,7 +73,7 @@
 &lt;h5 id=&quot;relación-con-la-ux-3&quot;&gt;Relación con la UX&lt;/h5&gt;
 &lt;p&gt;Cuanto antes pongamos a nuestros usuarios frente a la interfaz podremos mitigar más riesgos y optimizar así nuestros tiempos y esfuerzos. La recomendación es que se empiecen las sesiones de testing al más bajo nivel para verificar y revisar que el producto resuelve el objetivo o evidencia.&lt;/p&gt;
 
-&lt;p&gt;Es nuestra obligación seguir midiendo y comprobando dicha evidencia para iterar sobre ella.&lt;/p&gt;</content><author><name>xavi</name></author><summary type="html">Es una comercializadora de luz, gas y autoconsumo con un modelo de negocio transparente y orientado a fomentar la sostenibilidad con energía 100% verde.</summary></entry><entry><title type="html">Megaman</title><link href="http://localhost:4000/post/metodo_cartesiano/" rel="alternate" type="text/html" title="Megaman" /><published>2020-12-09T00:00:00+01:00</published><updated>2020-12-09T00:00:00+01:00</updated><id>http://localhost:4000/post/megaman</id><content type="html" xml:base="http://localhost:4000/post/metodo_cartesiano/">&lt;p&gt;Megaman fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
+&lt;p&gt;Es nuestra obligación seguir midiendo y comprobando dicha evidencia para iterar sobre ella.&lt;/p&gt;</content><author><name>xavi</name></author><summary type="html">CreaEnergia es una comercializadora de luz, gas y autoconsumo con un modelo de negocio transparente y orientado a fomentar la sostenibilidad con energía 100% verde.</summary></entry><entry><title type="html">Megaman</title><link href="http://localhost:4000/post/metodo_cartesiano/" rel="alternate" type="text/html" title="Megaman" /><published>2020-12-09T00:00:00+01:00</published><updated>2020-12-09T00:00:00+01:00</updated><id>http://localhost:4000/post/megaman</id><content type="html" xml:base="http://localhost:4000/post/metodo_cartesiano/">&lt;p&gt;Megaman fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Pienso, luego existo.&lt;/p&gt;

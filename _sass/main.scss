@@ -57,9 +57,13 @@ header {
     #logo {
         top: 3rem;
         left: 5rem;
-        font-size: $f-size-xl;
+        font-size: 1.3rem;
         color: $c-base;
         border: none;
+
+        @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+            font-size: $f-size-xl;
+        }  
     }
 
     .navbar-brand {
@@ -76,7 +80,7 @@ header {
         font-weight: 600;
         &:hover {
             text-decoration: none;
-            color: $c-base;
+            color: $c-link;
         }
     }
 
@@ -106,7 +110,7 @@ header {
                         &:hover {
                             /* background: $c-hero;
                             border: 2px solid $c-hero; */
-                            color: $c-hero;
+                            color: $c-link;
                         }
                     }
                 }
@@ -119,7 +123,26 @@ header {
 .btn-primary {
     background-color: $c-link;
     border:none;
-    border-radius: 100px;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    transition: 0.3s;
+   
+    &:after {
+        transition: 0.3s;
+        margin-left: 0rem;
+        content: " ";
+    }
+
+    &:hover { 
+        background-color:#fff; 
+        color: $c-link;
+        font-weight: 600;
+        &:after {
+            margin-left: 1rem;
+            content: "→";
+        }
+    }
 }
 
 a {
@@ -143,10 +166,6 @@ h3 {
 ul {
     margin: 2rem 1rem;
     padding: 0;
-}
-
-img {
-    border-radius: .4rem;
 }
 
 hr {
@@ -468,9 +487,7 @@ SECCIONES POST
 #post-page {
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-        margin: auto;
-        /*max-width: 70%;*/
-        margin-top: 3rem;
+        padding-top: 2rem;
     }
 
     .post-title {
@@ -524,7 +541,6 @@ SECCIONES ABOUT
     img {
         width: 100%;
         margin-bottom: 2rem;
-        border-radius: .6rem;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             max-width: 600px;

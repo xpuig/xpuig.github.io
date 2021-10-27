@@ -1,7 +1,7 @@
 ---
 layout: post
 author: xavi
-categories: ux
+categories: Pensamiento
 permalink: /post/metodo_cartesiano/
 thumbnail: "/assets/img/thumb.jpg"
 ---

@@ -54,9 +54,12 @@ header {
   header #logo {
     top: 3rem;
     left: 5rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #222F3E;
     border: none; }
+    @media (min-width: 1200px), (min-width: 768px) {
+      header #logo {
+        font-size: 1.6rem; } }
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
@@ -67,7 +70,7 @@ header {
     font-weight: 600; }
     header .navbar-light .navbar-brand:hover {
       text-decoration: none;
-      color: #222F3E; }
+      color: #4433ff; }
   header .navbar-toggler {
     border: none; }
   header .navbar-nav {
@@ -90,12 +93,26 @@ header {
           header .navbar-nav li a:hover {
             /* background: $c-hero;
             border: 2px solid $c-hero; */
-            color: #FFD66B; } }
+            color: #4433ff; } }
 
 .btn-primary {
   background-color: #4433ff;
   border: none;
-  border-radius: 100px; }
+  border-radius: 0;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: 0.3s; }
+  .btn-primary:after {
+    transition: 0.3s;
+    margin-left: 0rem;
+    content: " "; }
+  .btn-primary:hover {
+    background-color: #fff;
+    color: #4433ff;
+    font-weight: 600; }
+    .btn-primary:hover:after {
+      margin-left: 1rem;
+      content: "→"; }
 
 a {
   text-decoration: none;
@@ -115,9 +132,6 @@ h3 {
 ul {
   margin: 2rem 1rem;
   padding: 0; }
-
-img {
-  border-radius: .4rem; }
 
 hr {
   border-top: 3px solid #222F3E;
@@ -336,9 +350,7 @@ SECCIONES POST
 ------------------------------------------------------*/
 @media (min-width: 768px), (min-width: 1200px) {
   #post-page {
-    margin: auto;
-    /*max-width: 70%;*/
-    margin-top: 3rem; } }
+    padding-top: 2rem; } }
 #post-page .post-title {
   margin: 2rem 0 1rem;
   font-size: 2.6rem; }
@@ -373,8 +385,7 @@ SECCIONES ABOUT
       margin-top: 5rem; } }
   #about img {
     width: 100%;
-    margin-bottom: 2rem;
-    border-radius: .6rem; }
+    margin-bottom: 2rem; }
     @media (min-width: 768px), (min-width: 1200px) {
       #about img {
         max-width: 600px; } }

@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<div style="background: url('{{ page.thumbnail }}') no-repeat; height: 300px;margin-top: 6rem;background-size: cover;background-position: center;"></div>
+<div class="fade-in" style="background: url('{{ page.thumbnail }}') no-repeat; height: 300px;margin-top: 6rem;background-size: cover;background-position: center;"></div>
 <div class="container-fluid">
-  <div id="post-page">
+  <div id="post-page" class="slide-up">
     <h1 class="post-title">{{ page.title | capitalize }}</h1>
     <div class="post-content">
       {{ content }}

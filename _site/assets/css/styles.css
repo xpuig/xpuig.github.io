@@ -410,3 +410,31 @@ iframe {
       grid-template-columns: 33% 33% 33%; } }
   .list-grid li {
     list-style: none; }
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s; }
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.slide-up {
+  padding-top: 0;
+  opacity: 1;
+  animation-name: slideUp;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s; }
+
+@keyframes slideUp {
+  0% {
+    padding-top: 3rem;
+    opacity: 0; }
+  100% {
+    padding-top: 0;
+    opacity: 1; } }

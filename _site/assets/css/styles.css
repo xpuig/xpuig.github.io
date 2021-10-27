@@ -38,26 +38,24 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0 50px; } }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #E8ECEB;
   font-family: "Karla", sans-serif;
   font-size: 1.4rem;
-  color: #222F3E;
-  background-image: url("/assets/img/rock-bg-2-1.png");
-  background-repeat: no-repeat;
-  background-position-y: 10rem; }
+  color: #222F3E; }
 
 header {
   width: 100%;
   padding: 2rem 0;
-  background-color: #291cb8;
-  opacity: var(--opacidad-logo); }
+  background-color: #FFFFFF;
+  opacity: var(--opacidad-logo);
+  position: fixed; }
   header .navbar {
     padding: 0; }
   header #logo {
     top: 3rem;
     left: 5rem;
     font-size: 1.6rem;
-    color: #FFFFFF;
+    color: #222F3E;
     border: none; }
   header .navbar-brand {
     margin: 0;
@@ -83,7 +81,7 @@ header {
         display: block;
         margin-left: 1rem; }
         header .navbar-nav li a {
-          color: #FFFFFF;
+          color: #222F3E;
           padding: .6rem 1rem .7rem;
           /* border: 2px solid $c-hero; */
           /* border-radius: 25rem; */
@@ -93,6 +91,11 @@ header {
             /* background: $c-hero;
             border: 2px solid $c-hero; */
             color: #FFD66B; } }
+
+.btn-primary {
+  background-color: #4433ff;
+  border: none;
+  border-radius: 100px; }
 
 a {
   text-decoration: none;
@@ -119,7 +122,7 @@ img {
 hr {
   border-top: 3px solid #222F3E;
   opacity: .1;
-  margin-bottom: 2rem; }
+  margin: 3rem 0 2rem; }
   @media (min-width: 1200px), (min-width: 768px) {
     hr {
       margin-top: 5rem;
@@ -207,16 +210,17 @@ INDEX SECTIONS
 #intro {
   display: flex;
   align-items: center;
-  margin-top: 2rem; }
+  padding-top: 8rem;
+  color: #222F3E; }
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       margin: auto;
-      margin-top: 5rem; } }
+      padding-top: 12rem; } }
   #intro .intro__text {
     position: relative; }
     #intro .intro__text h1 {
       font-family: "Karla", sans-serif;
-      font-size: max(5vw, 50px);
+      font-size: max(4vw, 50px);
       margin: 0 0 2rem;
       letter-spacing: -.09rem;
       /* background: $theme-gradient;
@@ -231,7 +235,7 @@ INDEX SECTIONS
       font-size: 1.6rem; }
 
 #last-posts h2, #related-posts h2, #blog-list h2 {
-  font-size: 1.6rem; }
+  font-size: 2.6rem; }
 @media (min-width: 768px), (min-width: 1200px) {
   #last-posts, #related-posts, #blog-list {
     margin: auto;
@@ -245,8 +249,8 @@ INDEX SECTIONS
   grid-template-columns: 1fr; }
   @media (min-width: 768px), (min-width: 1200px) {
     #last-posts ul, #related-posts ul, #blog-list ul {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr; } }
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; } }
   #last-posts ul li, #related-posts ul li, #blog-list ul li {
     display: block; }
     #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {

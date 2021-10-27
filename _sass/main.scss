@@ -36,21 +36,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: $main-bg;
+    background-color: $c-light;
     font-family: $f-base;
     font-size: $f-size-l;
     color: $c-base;
-    background-image: url("/assets/img/rock-bg-2-1.png");
-    background-repeat: no-repeat;
-    background-position-y: 10rem;
     
 }
 
 header {
     width: 100%;
     padding: 2rem 0;
-    background-color: #291cb8;
+    background-color: $main-bg;
     opacity: var(--opacidad-logo);
+    position: fixed;
 
     .navbar {
         padding: 0;
@@ -60,7 +58,7 @@ header {
         top: 3rem;
         left: 5rem;
         font-size: $f-size-xl;
-        color: $main-bg;
+        color: $c-base;
         border: none;
     }
 
@@ -99,7 +97,7 @@ header {
                     margin-left: 1rem;
                     
                     a {
-                        color: $main-bg;
+                        color: $c-base;
                         padding: .6rem 1rem .7rem;
                         /* border: 2px solid $c-hero; */
                         /* border-radius: 25rem; */
@@ -116,6 +114,12 @@ header {
     }
 
   
+}
+
+.btn-primary {
+    background-color: $c-link;
+    border:none;
+    border-radius: 100px;
 }
 
 a {
@@ -148,7 +152,7 @@ img {
 hr {
     border-top: 3px solid $c-base;
     opacity: .1;
-    margin-bottom: 2rem;
+    margin: 3rem 0 2rem;
 
     @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
         margin-top: 5rem;
@@ -266,15 +270,15 @@ h4 {
 INDEX SECTIONS
 ------------------------------------------------------*/
 
-
 #intro {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
+    padding-top: 8rem;
+    color: $c-base;
     
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
-        margin-top: 5rem;
+        padding-top: 12rem;
     }
 
     .intro__text {
@@ -282,7 +286,7 @@ INDEX SECTIONS
 
         h1 {
             font-family: $f-base;
-            font-size: max(5vw, 50px);
+            font-size: max(4vw, 50px);
             margin: 0 0 2rem;
             letter-spacing: -.09rem;
             /* background: $theme-gradient;
@@ -305,7 +309,7 @@ INDEX SECTIONS
 #last-posts {
     
     h2 {
-        font-size: $f-size-xl;
+        font-size: $f-size-xxl;
     }
 
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
@@ -322,8 +326,8 @@ INDEX SECTIONS
         grid-template-columns: 1fr;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr;
+            -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         li {

@@ -49,7 +49,7 @@ body {
 header {
     width: 100%;
     padding: 2rem 0;
-
+    background-color: #291cb8;
     opacity: var(--opacidad-logo);
 
     .navbar {
@@ -60,7 +60,7 @@ header {
         top: 3rem;
         left: 5rem;
         font-size: $f-size-xl;
-        color: $c-base;
+        color: $main-bg;
         border: none;
     }
 
@@ -99,7 +99,7 @@ header {
                     margin-left: 1rem;
                     
                     a {
-                        color: $c-base;
+                        color: $main-bg;
                         padding: .6rem 1rem .7rem;
                         /* border: 2px solid $c-hero; */
                         /* border-radius: 25rem; */
@@ -108,7 +108,7 @@ header {
                         &:hover {
                             /* background: $c-hero;
                             border: 2px solid $c-hero; */
-                            color: $c-link;
+                            color: $c-hero;
                         }
                     }
                 }
@@ -270,6 +270,7 @@ INDEX SECTIONS
 #intro {
     display: flex;
     align-items: center;
+    margin-top: 2rem;
     
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
@@ -303,6 +304,10 @@ INDEX SECTIONS
 
 #last-posts {
     
+    h2 {
+        font-size: $f-size-xl;
+    }
+
     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
         margin: auto;
         margin-top: 3rem;
@@ -317,13 +322,12 @@ INDEX SECTIONS
         grid-template-columns: 1fr;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-            -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
         }
 
         li {
             display: block;
-            background-color: rgb(183, 220, 255);
 
             .image-post {
                 width: 30%;
@@ -344,7 +348,7 @@ INDEX SECTIONS
                     font-size: $f-size-xl;
                     
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                        font-size: $f-size-xl;
+                        font-size: $f-size-xxl;
                     }
                 }
 
@@ -352,8 +356,7 @@ INDEX SECTIONS
                     
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
                         display:block;
-                        font-size: $f-size-m;
-                        color: $c-grey;
+                        font-size: $f-size-l;
                     }
                 }
 

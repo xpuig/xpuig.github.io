@@ -79,7 +79,7 @@ header {
     margin: 0; }
     header .navbar-nav li {
       display: none; }
-    @media (min-width: 1200px), (min-width: 768px) {
+    @media (min-width: 1200px) {
       header .navbar-nav li {
         display: block;
         margin-left: 1rem; }
@@ -101,7 +101,11 @@ header {
   border-radius: 0;
   padding: 1rem 2rem;
   font-weight: 600;
-  transition: 0.3s; }
+  transition: 0.3s;
+  width: 100%; }
+  @media (min-width: 1200px), (min-width: 768px) {
+    .btn-primary {
+      width: auto; } }
   .btn-primary:after {
     transition: 0.3s;
     margin-left: 0rem;
@@ -221,15 +225,20 @@ h4 {
 /*------------------------------------------------------
 INDEX SECTIONS
 ------------------------------------------------------*/
+.introbg {
+  background-color: #FFFFFF; }
+
 #intro {
   display: flex;
   align-items: center;
   padding-top: 8rem;
+  padding-bottom: 3rem;
   color: #222F3E; }
   @media (min-width: 768px), (min-width: 1200px) {
     #intro {
       margin: auto;
-      padding-top: 12rem; } }
+      padding-top: 12rem;
+      padding-bottom: 5rem; } }
   #intro .intro__text {
     position: relative; }
     #intro .intro__text h1 {
@@ -247,56 +256,64 @@ INDEX SECTIONS
     #intro .intro__text p {
       margin-bottom: 3rem;
       font-size: 1.6rem; }
-
-#last-posts h2, #related-posts h2, #blog-list h2 {
-  font-size: 2.6rem; }
-@media (min-width: 768px), (min-width: 1200px) {
-  #last-posts, #related-posts, #blog-list {
-    margin: auto;
-    margin-top: 3rem; } }
-#last-posts ul, #related-posts ul, #blog-list ul {
-  margin: 2rem 0;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2rem;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr; }
-  @media (min-width: 768px), (min-width: 1200px) {
-    #last-posts ul, #related-posts ul, #blog-list ul {
-      -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr; } }
-  #last-posts ul li, #related-posts ul li, #blog-list ul li {
-    display: block; }
-    #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {
-      width: 30%;
-      margin: 0rem 1rem 1rem 0; }
-      @media (min-width: 768px), (min-width: 1200px) {
-        #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {
-          margin: 0rem 2.5rem 2.5rem 0; } }
-      #last-posts ul li .image-post img, #related-posts ul li .image-post img, #blog-list ul li .image-post img {
-        width: 100%; }
-    #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-      font-size: 1.6rem; }
-      @media (min-width: 768px), (min-width: 1200px) {
-        #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-          font-size: 2.6rem; } }
-    @media (min-width: 768px), (min-width: 1200px) {
-      #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
-        display: block;
-        font-size: 1.4rem; } }
+  #intro .intro__image {
+    display: none; }
     @media (min-width: 1200px) {
-      #last-posts ul li .info-post h6, #related-posts ul li .info-post h6, #blog-list ul li .info-post h6 {
-        display: none; } }
-    #last-posts ul li .action-post, #related-posts ul li .action-post, #blog-list ul li .action-post {
-      display: none;
-      border-left: 1px solid #E8ECEB;
-      min-width: 200px;
-      position: relative; }
-      #last-posts ul li .action-post img, #related-posts ul li .action-post img, #blog-list ul li .action-post img {
-        height: 3rem;
-        position: absolute;
-        bottom: 3rem;
-        right: 0; }
+      #intro .intro__image {
+        display: block;
+        margin: 0 7rem; } }
+
+#last-posts, #related-posts, #blog-list {
+  margin-top: 3rem; }
+  #last-posts h2, #related-posts h2, #blog-list h2 {
+    font-size: 2.6rem; }
+  @media (min-width: 768px), (min-width: 1200px) {
+    #last-posts, #related-posts, #blog-list {
+      margin: auto;
+      margin-top: 3rem; } }
+  #last-posts ul, #related-posts ul, #blog-list ul {
+    margin: 2rem 0;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; }
+    @media (min-width: 768px), (min-width: 1200px) {
+      #last-posts ul, #related-posts ul, #blog-list ul {
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr; } }
+    #last-posts ul li, #related-posts ul li, #blog-list ul li {
+      display: block; }
+      #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {
+        width: 30%;
+        margin: 0rem 1rem 1rem 0; }
+        @media (min-width: 768px), (min-width: 1200px) {
+          #last-posts ul li .image-post, #related-posts ul li .image-post, #blog-list ul li .image-post {
+            margin: 0rem 2.5rem 2.5rem 0; } }
+        #last-posts ul li .image-post img, #related-posts ul li .image-post img, #blog-list ul li .image-post img {
+          width: 100%; }
+      #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
+        font-size: 1.6rem; }
+        @media (min-width: 768px), (min-width: 1200px) {
+          #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
+            font-size: 2.6rem; } }
+      @media (min-width: 768px), (min-width: 1200px) {
+        #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
+          display: block;
+          font-size: 1.4rem; } }
+      @media (min-width: 1200px) {
+        #last-posts ul li .info-post h6, #related-posts ul li .info-post h6, #blog-list ul li .info-post h6 {
+          display: none; } }
+      #last-posts ul li .action-post, #related-posts ul li .action-post, #blog-list ul li .action-post {
+        display: none;
+        border-left: 1px solid #E8ECEB;
+        min-width: 200px;
+        position: relative; }
+        #last-posts ul li .action-post img, #related-posts ul li .action-post img, #blog-list ul li .action-post img {
+          height: 3rem;
+          position: absolute;
+          bottom: 3rem;
+          right: 0; }
 
 #related-posts {
   border-top: 1px solid #E8ECEB;
@@ -422,19 +439,4 @@ iframe {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
-.slide-up {
-  padding-top: 0;
-  opacity: 1;
-  animation-name: slideUp;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s; }
-
-@keyframes slideUp {
-  0% {
-    padding-top: 3rem;
-    opacity: 0; }
-  100% {
-    padding-top: 0;
     opacity: 1; } }

@@ -111,8 +111,7 @@ header {
     margin-left: 0rem;
     content: " "; }
   .btn-primary:hover {
-    background-color: #fff;
-    color: #4433ff;
+    background-color: #3424e2;
     font-weight: 600; }
     .btn-primary:hover:after {
       margin-left: 1rem;
@@ -123,12 +122,11 @@ a {
   color: #4433ff;
   font-weight: 600;
   border-bottom: 2px solid transparent;
-  transition: 0.1s;
   border-bottom: 2px dotted #4433ff; }
   a:hover {
     text-decoration: none;
     border-bottom: 0px dotted #4433ff;
-    color: #4433ff; }
+    color: #3424e2; }
 
 h3 {
   font-family: "Karla", sans-serif; }
@@ -222,6 +220,9 @@ h4 {
   margin-top: 3rem;
   margin-bottom: 1rem; }
 
+.bg-primary {
+  background-color: #222F3E !important; }
+
 /*------------------------------------------------------
 INDEX SECTIONS
 ------------------------------------------------------*/
@@ -231,7 +232,7 @@ INDEX SECTIONS
 #intro {
   display: flex;
   align-items: center;
-  padding-top: 8rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   color: #222F3E; }
   @media (min-width: 768px), (min-width: 1200px) {
@@ -262,6 +263,11 @@ INDEX SECTIONS
       #intro .intro__image {
         display: block;
         margin: 0 7rem; } }
+  #intro .intro__image__mbl {
+    width: 100%; }
+    @media (min-width: 768px), (min-width: 1200px) {
+      #intro .intro__image__mbl {
+        display: none; } }
 
 #last-posts, #related-posts, #blog-list {
   margin-top: 3rem; }
@@ -293,10 +299,11 @@ INDEX SECTIONS
         #last-posts ul li .image-post img, #related-posts ul li .image-post img, #blog-list ul li .image-post img {
           width: 100%; }
       #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        margin-top: 1.5rem; }
         @media (min-width: 768px), (min-width: 1200px) {
           #last-posts ul li .info-post h3, #related-posts ul li .info-post h3, #blog-list ul li .info-post h3 {
-            font-size: 2.6rem; } }
+            font-size: 1.6rem; } }
       @media (min-width: 768px), (min-width: 1200px) {
         #last-posts ul li .info-post p, #related-posts ul li .info-post p, #blog-list ul li .info-post p {
           display: block;

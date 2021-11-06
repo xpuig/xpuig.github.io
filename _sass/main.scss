@@ -140,8 +140,7 @@ header {
     }
 
     &:hover { 
-        background-color:#fff; 
-        color: $c-link;
+        background-color: $c-link-hover; 
         font-weight: 600;
         &:after {
             margin-left: 1rem;
@@ -155,12 +154,11 @@ a {
     color: $c-link;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    transition: 0.1s;
     border-bottom: 2px dotted $c-link;
     &:hover {
         text-decoration: none;
         border-bottom: 0px dotted $c-link;
-        color: $c-link;
+        color: $c-link-hover;
     }
 }
 
@@ -290,6 +288,10 @@ h4 {
     margin-bottom: 1rem;
 }
 
+.bg-primary {
+    background-color: $c-base !important;
+}
+
 /*------------------------------------------------------
 INDEX SECTIONS
 ------------------------------------------------------*/
@@ -301,7 +303,7 @@ INDEX SECTIONS
 #intro {
     display: flex;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     color: $c-base;
     
@@ -340,6 +342,13 @@ INDEX SECTIONS
         @media (min-width: $mq-desktop) {
             display: block;
             margin: 0 7rem;
+        }
+    }
+
+    .intro__image__mbl {
+        width: 100%;
+        @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
+            display: none;
         }
     }
 }
@@ -389,9 +398,10 @@ INDEX SECTIONS
 
                 h3 {
                     font-size: $f-size-xl;
+                    margin-top: 1.5rem;
                     
                     @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
-                        font-size: $f-size-xxl;
+                        font-size: $f-size-xl;
                     }
                 }
 

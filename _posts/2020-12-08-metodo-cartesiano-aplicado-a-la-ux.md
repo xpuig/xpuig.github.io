@@ -3,7 +3,7 @@ layout: post
 author: xavi
 categories: Pensamiento
 permalink: /post/metodo_cartesiano/
-thumbnail: "/assets/img/thumb.jpg"
+thumbnail: "/assets/img/projects/creaenergia/hero.jpg"
 ---
 
 René Descartes fue un filósofo, matemático y físico francés, considerado como el padre de la filosofía moderna y concretamente del Racionalismo en el siglo XVII. Seguramente te sonará por la expresión:

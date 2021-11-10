@@ -20,9 +20,12 @@ TIPOGRAFÍA
 BASICS
 ------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 800;
   line-height: normal;
   color: #000000; }
+
+h2 {
+  font-size: 1rem; }
 
 .wrapper {
   overflow: hidden; }
@@ -58,10 +61,19 @@ header {
     font-size: 1rem;
     color: #000000;
     border: none;
-    font-weight: 800; }
+    font-weight: 800;
+    flex-basis: auto; }
     @media (min-width: 1200px), (min-width: 768px) {
       header #logo {
         font-size: 1rem; } }
+  @media (min-width: 1200px), (min-width: 768px) {
+    header .navbar-nav {
+      flex-basis: auto;
+      justify-content: flex-end; }
+    header #navbarText {
+      flex-basis: auto; }
+    header .navbar-toggler {
+      flex-basis: auto; } }
   header .navbar-brand {
     margin: 0;
     font-weight: 400; }
@@ -139,7 +151,7 @@ hr {
       margin-bottom: 1rem; } }
 
 .cta-primary, .cta-secondary {
-  font-size: 1.6rem !important;
+  font-size: 1.8rem !important;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
@@ -167,17 +179,20 @@ hr {
   border: 2px solid #000000; }
 
 .small-titles {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #000000; }
 
+button:focus {
+  outline: 0; }
+
 footer {
-  padding: 2rem 0; }
+  padding: 2rem 0 3rem; }
   footer ul {
     margin: 0; }
   footer .newsletter {
     background: #DFEDF2;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 2rem;
     border-radius: .5rem;
     margin-bottom: 3rem;
@@ -369,11 +384,11 @@ SECCIONES POST
       padding-top: 7rem; } }
   #post-page .post-title {
     margin: 2rem 0 1rem;
-    font-size: 2.6rem; }
+    font-size: 1.8rem; }
     @media (min-width: 768px), (min-width: 1200px) {
       #post-page .post-title {
         margin: 2rem 0 3rem;
-        font-size: 3rem; } }
+        font-size: 1.8rem; } }
   #post-page .post-content img {
     width: 100%;
     margin: 1rem 0; }

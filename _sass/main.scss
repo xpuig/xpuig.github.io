@@ -13,9 +13,13 @@ BASICS
 ------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     color: $c-base;
+}
+
+h2 {
+    font-size: $f-size-l;
 }
 
 .wrapper {
@@ -61,11 +65,29 @@ header {
         color: $c-base;
         border: none;
         font-weight: 800;
+        flex-basis: auto;
 
         @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
             font-size: $f-size-l;
         }  
     }
+
+    @media (min-width: $mq-desktop),(min-width: $mq-tablet) {
+
+        .navbar-nav {
+            flex-basis: auto;
+            justify-content: flex-end;
+        }
+    
+        #navbarText {
+            flex-basis: auto;
+        }
+    
+        .navbar-toggler {
+            flex-basis: auto;
+        }
+    }  
+    
 
     .navbar-brand {
         margin: 0;
@@ -216,8 +238,12 @@ hr {
     color: $c-base;
 }
 
+button:focus {
+    outline: 0;
+}
+
 footer {
-    padding: 2rem 0;
+    padding: 2rem 0 3rem;
 
     ul {
         margin: 0;
@@ -508,11 +534,11 @@ SECCIONES POST
 
     .post-title {
         margin: 2rem 0 1rem;
-        font-size: $f-size-xxl;
+        font-size: $f-size-xl;
 
         @media (min-width: $mq-tablet),(min-width: $mq-desktop) {
             margin: 2rem 0 3rem;
-            font-size: $f-size-xxxl;
+            font-size: $f-size-xl;
         }
     }
 

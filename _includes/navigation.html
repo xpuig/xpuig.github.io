@@ -1,8 +1,11 @@
 <nav class="navbar navbar-light justify-content-between">
   <a id="logo" href="/">
-    Xavi Puig - Product Designer 🚀
+    Xavi Puig
   </a>
-  <div >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav">
       {% for item in site.data.navigation %}
         <li class="nav-item">

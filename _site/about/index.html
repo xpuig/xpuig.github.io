@@ -20,17 +20,16 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/swiper.min.css">
-  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
   <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>About</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/about.html" />
-<meta property="og:url" content="http://localhost:4000/about.html" />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
 <script type="application/ld+json">
-{"headline":"About","url":"http://localhost:4000/about.html","@type":"WebPage","@context":"https://schema.org"}</script>
+{"headline":"About","url":"http://localhost:4000/about/","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -41,9 +40,12 @@
       <div class="container-fluid">
         <nav class="navbar navbar-light justify-content-between">
   <a id="logo" href="/">
-    Xavi Puig - Product Designer 🚀
+    Xavi Puig
   </a>
-  <div >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav">
       
         <li class="nav-item">
@@ -53,19 +55,19 @@
         </li>
       
         <li class="nav-item">
-          <a href="/" >
+          <a href="/casos-estudio/" >
             Casos de estudio
           </a>
         </li>
       
         <li class="nav-item">
-          <a href="about.html" >
+          <a href="/about/" class="current">
             Sobre mí
           </a>
         </li>
       
         <li class="nav-item">
-          <a href="/" >
+          <a href="/contacto/" >
             Contacto
           </a>
         </li>
@@ -76,11 +78,15 @@
       </div>
     </header>
     
-      <section id="about">
-    <h1>Hi there! 🤙</h1>
-    <p>I combine research, user flows, wireframing, prototyping, storytelling, and visual design & development to transform tricky problems into engaging solutions. With a background in Front-End Development, I understand the constraints of the web and am able to design and build around them effectively.</p>
+      <div class="container">
+    <section id="about">
+        <h1>Sobre mí</h1>
+        <p>Durante los últimos 18 años, he tenido el placer de trabajar para empresas con <strong>diferentes modelos de negocio</strong> orientados sobretodo al sector servicios.</p>
+        <p>Actualmente, estoy en Factorenergia como Product Designer y mi día a día se basa en <strong>analizar datos, generar hipótesis, y validarlas con usuarios reales</strong> mediante técnicas de investigación cuantitativas y cualitativas.</p>
+        <p>Graduado en diseño gráfico y <strong>certificado como UX Designer</strong> por la UOC, UXER School y la UXalliance (UX-PM1) 💪</p>
+        <button type="button" class="btn btn-primary btn-lg">Ver casos de estudio</button>
 
-        <section id="experience">
+            <section id="experience">
         <h2>Experience</h2>
         <div class="list-grid">
             <li>
@@ -121,7 +127,7 @@
         </div>
     </section>
 
-    <section id="education">
+        <section id="education">
     <h2>Education</h2>
     <div class="list-grid">
         <li>
@@ -151,7 +157,8 @@
         </li>
     </div>
 </section>
-</section>
+    </section>
+</div>
     
     <footer>
       <div class="container-fluid">
@@ -159,9 +166,6 @@
 
     <div class="item_footer social-networks">
       <ul>
-        <li>
-            Hecho con la mayor claridad posible ❤️💻
-        </li>
         <li>
             <a href="https://www.linkedin.com/in/xavipuighernandez/" target="_blank">Linkedin</a>
         </li>
@@ -174,9 +178,9 @@
       </ul>
     </div>
     
-    <!--<div class="item_footer resume">
+    <div class="item_footer resume">
         <a href="/assets/resume_xavipuig.pdf" target="_blank">Download my resume</a>
-    </div>-->
+    </div>
 
 </div>
       </div>
@@ -185,6 +189,9 @@
   
   <script src="/assets/js/basicScroll.min.js"></script>
   <script src="/assets/js/inicia-scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

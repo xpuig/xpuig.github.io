@@ -3,7 +3,7 @@ COLORES
 ------------------------------------------------------*/
 
 $main-bg:#FFFFFF;
-$c-base: #222F3E;
+$c-base: #000000;
 $c-grey: rgba(255,255,255,.4);
 $c-light: #E8ECEB;
 $c-hero: #FFD66B;
@@ -31,12 +31,13 @@ TIPOGRAFÍA
 ------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$f-base: 'Karla',sans-serif;
+$f-base: 'Be Vietnam Pro',sans-serif;
 
 $f-size-s: .8rem;
 $f-size-m: .9rem;
-$f-size-l: 1.4rem;
+$f-size-l: 1rem;
 $f-size-xl: 1.6rem;
 $f-size-xxl: 2.6rem;
 $f-size-xxxl: 3rem;

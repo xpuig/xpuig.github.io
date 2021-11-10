@@ -1,13 +1,18 @@
 ---
 layout: default
 title: About
+permalink: /about/
 ---
+<div class="container">
+    <section id="about">
+        <h1>Sobre mí</h1>
+        <p>Durante los últimos 18 años, he tenido el placer de trabajar para empresas con <strong>diferentes modelos de negocio</strong> orientados sobretodo al sector servicios.</p>
+        <p>Actualmente, estoy en Factorenergia como Product Designer y mi día a día se basa en <strong>analizar datos, generar hipótesis, y validarlas con usuarios reales</strong> mediante técnicas de investigación cuantitativas y cualitativas.</p>
+        <p>Graduado en diseño gráfico y <strong>certificado como UX Designer</strong> por la UOC, UXER School y la UXalliance (UX-PM1) 💪</p>
+        <button type="button" class="btn btn-primary btn-lg">Ver casos de estudio</button>
 
-<section id="about">
-    <h1>Hi there! 🤙</h1>
-    <p>I combine research, user flows, wireframing, prototyping, storytelling, and visual design & development to transform tricky problems into engaging solutions. With a background in Front-End Development, I understand the constraints of the web and am able to design and build around them effectively.</p>
+        {% include experience.html %}
 
-    {% include experience.html %}
-
-    {% include education.html %}
-</section>
+        {% include education.html %}
+    </section>
+</div>

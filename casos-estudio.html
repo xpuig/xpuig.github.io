@@ -1,0 +1,15 @@
+---
+layout: default
+title: Casos de estudio
+permalink: /casos-estudio/
+---
+
+<section style="margin-top: 100px">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            {% include post-item.html %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>

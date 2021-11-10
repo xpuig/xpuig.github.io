@@ -1,8 +1,8 @@
 - name: Inicio
   link: /
 - name: Casos de estudio
-  link: /
+  link: /casos-estudio/
 - name: Sobre mí
-  link: about.html
+  link: /about/
 - name: Contacto
-  link: /
+  link: /contacto/

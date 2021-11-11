@@ -1,7 +1,9 @@
 - name: Inicio
   link: /
-- name: Casos de estudio
-  link: /casos-estudio/
+- name: Proceso
+  link: /proceso/
+- name: Trabajos
+  link: /trabajos/
 - name: Sobre mí
   link: /about/
 - name: Contacto

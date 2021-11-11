@@ -20,6 +20,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/swiper.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
   <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Xavi Puig Portfolio</title>
@@ -35,7 +36,45 @@
 </head>
 
 <body>
+  
   <div class="wrapper">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="nav navbar-nav">
+          
+            <li class="nav-item">
+              <a href="/" class="current">
+                Inicio
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="/proceso/" >
+                Proceso
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="/trabajos/" >
+                Trabajos
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="/about/" >
+                Sobre mí
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a href="/contacto/" >
+                Contacto
+              </a>
+            </li>
+          
+      </ul>
+      </div>
+    </div>
     <header>
       <div class="container-fluid">
         <nav class="navbar navbar-light justify-content-between">
@@ -43,35 +82,7 @@
     Xavi Puig
   </a>
   
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="nav navbar-nav" style="justify-content: flex-end;">
-      
-        <li class="nav-item">
-          <a href="/" class="current">
-            Inicio
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="/casos-estudio/" >
-            Casos de estudio
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="/about/" >
-            Sobre mí
-          </a>
-        </li>
-      
-        <li class="nav-item">
-          <a href="/contacto/" >
-            Contacto
-          </a>
-        </li>
-      
-   </ul>
-  </div>
+ 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -82,14 +93,14 @@
       <div class="container-fluid introbg">
     <div class="container p-0">
         <section id="intro">
-            <div class="intro__text">
+            <div class="intro__text" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1300">
                 <!--<h1>Analizo datos, genero hipótesis y las valido.</h1>-->
                 <p>Durante los últimos 18 años, he tenido el placer de trabajar para empresas con <strong>diferentes modelos de negocio</strong> orientados sobretodo al sector servicios.</p>
                 <p>Actualmente, estoy en Factorenergia como Product Designer y mi día a día se basa en <strong>analizar datos, generar hipótesis, y validarlas con usuarios reales</strong> mediante técnicas de investigación cuantitativas y cualitativas.</p>
                 <p>Graduado en diseño gráfico y <strong>certificado como UX Designer</strong> por la UOC, UXER School y la UXalliance (UX-PM1).</p>
                 <!--<button type="button" class="btn btn-primary btn-lg">Ver casos de estudio</button>-->
             </div>
-            <div class="intro__image">
+            <div class="intro__image" data-aos="fade" data-aos-delay="800" data-aos-duration="1300">
                 <img src="/assets/img/foto_xavipuig.png" alt="" style="width: 100%;">
             </div>
         </section>
@@ -98,7 +109,7 @@
 
 <div class="container-fluid">
     <div class="container p-0">
-        <section id="last-posts">
+        <section id="last-posts" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <h2>Casos de estudio</h2>
             <p>A partir de aquí presento los que serían los <strong>trabajos más representativos</strong> de lo que puedo ofrecer como diseñador de producto.</p>
             <ul>
@@ -171,6 +182,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

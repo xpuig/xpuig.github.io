@@ -71,6 +71,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown (>= 2.3.0)
   kramdown-parser-gfm
   wdm (>= 0.1.0)
 

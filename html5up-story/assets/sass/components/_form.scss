@@ -224,6 +224,7 @@
 		select,
 		textarea {
 			border-color: _palette($p, border);
+			background-color: _palette(bg);
 
 			&:focus {
 				border-color: _palette($p, accent);
@@ -247,6 +248,7 @@
 
 				&:before {
 					border-color: _palette($p, border);
+					background-color: _palette(bg);
 				}
 			}
 

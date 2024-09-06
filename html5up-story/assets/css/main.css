@@ -1973,6 +1973,7 @@ input[type=url],
 select,
 textarea {
   border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 input[type=text]:focus,
 input[type=password]:focus,
@@ -2001,6 +2002,7 @@ input[type=radio] + label {
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
   border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
@@ -2071,6 +2073,7 @@ input[type=radio]:focus + label:before {
 .icon.major {
   display: block;
   margin: 0 0 1rem 0;
+  color: #00F48A;
 }
 .icon.major:before {
   font-size: 1.25rem;
@@ -2720,7 +2723,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
     min-height: 50vh;
   }
   .banner.style1.fullscreen .image {
-    height: 50vh;
+    height: 30vh;
   }
 }
 .banner.style1.orient-right {
@@ -5968,6 +5971,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert select,
 #wrapper > .invert textarea {
   border-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 #wrapper > .invert input[type=text]:focus,
 #wrapper > .invert input[type=password]:focus,
@@ -5994,6 +5998,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #wrapper > .invert input[type=checkbox] + label:before,
 #wrapper > .invert input[type=radio] + label:before {
   border-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 #wrapper > .invert input[type=checkbox]:checked + label:before,
 #wrapper > .invert input[type=radio]:checked + label:before {

@@ -148,7 +148,7 @@
 			@include vendor('user-select', 'none');
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
+			font-size: .8rem;
 			font-weight: _font(weight);
 			padding-left: (_size(element-height) * 0.6) + 0.75rem;
 			padding-right: 0.75rem;

@@ -1896,7 +1896,7 @@ input[type=radio] + label {
   user-select: none;
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 300;
   padding-left: 2.4rem;
   padding-right: 0.75rem;
